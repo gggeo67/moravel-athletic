@@ -1,0 +1,59 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# local agent/hook logs
+logs/
+
+# ephemeral Claude Code session state
+.claude/
+
+# agent skill tooling installed by the Neon integration, not authored
+.agents/
+skills-lock.json
+
+# Internal competitor research: full-text working files and screenshots >5 MB
+/docs/research/.capture/
+/docs/research/screens/
+
+# Local visual QA artifacts; summarized results are committed
+/docs/qa/screens/
+/docs/qa/lighthouse-*.html
