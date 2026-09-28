@@ -28,10 +28,14 @@ Working site: http://localhost:3019. Before/after and reference comparison board
 
 Application screenshots: `docs/qa/screens/{home,collection,product,cart,checkout}-{390,1440}.png` (ignored local artifacts). Gymshark screenshots remain outside the repo in `~/websites/references/gymshark/`; R&H was read-only.
 
-## Outstanding database and release verification
+## Database and release verification
 
-The real browser checkout/database readback and deletion is **blocked**, not passed. `.env.local` has no DATABASE_URL or POSTGRES_URL. Vercel production/preview mark the database variables sensitive, so env pull returns `[SENSITIVE]` placeholders; development has no database variables. The unusable temporary env file was removed. No test order or subscriber was inserted in this run. The user was asked to place Moravel's connection string in ignored `.env.local`.
+The real checkout check passed on 2026-09-28 using the connection supplied by the user and stored only in ignored `.env.local`. Database `current_setting('neon.project_id')` returned `broad-wave-30001028`, matching the external resource ID of Vercel's `moravel-athletic-db` store. This verified ownership before any schema changes.
 
-After credentials are available: restart the local production server with that environment, run `bun run qa:storefront --order` (real browser order + readback of awaiting_restock + exact test-row cleanup; also newsletter capture/cleanup), record results, commit the QA update, push main and run `~/.claude/skills/geo-site/scripts/verify.sh . moravel-athletic --db`. Do not substitute the unit tests for the real database check.
+The correct database initially had no commerce tables. Applied the repository's existing `db:orders` and `db:subscribers` schemas; there were zero pre-existing orders. No schema definitions or application purchasing logic changed.
 
-Release status for this chunk: committed locally with the implementation; **not pushed or deployed** while the required database check is blocked. Existing Vercel protection remains enabled for all deployments; no launch flags or domains changed.
+`bun run qa:storefront --order` passed: the browser selected Women's Training Legging / Slate / M, submitted checkout with an `@example.com` address, reached the restock confirmation and read back the correct product, variant, quantity, $98 unit price and `awaiting_restock` status. The exact test order was deleted and zero remaining rows verified. Newsletter capture, persisted consent and duplicate handling also passed; its exact test subscriber was deleted and cleanup verified. All 20 accessibility audits remained at zero violations.
+
+Implementation commit: `94e9a78`, authored as gggeo67. This QA completion accompanies the authorized push to main. Post-push deployment validation uses `~/.claude/skills/geo-site/scripts/verify.sh . moravel-athletic --db`, checking the exact Git commit, READY production deployment, home 200, real 404 and Moravel's attached Neon store. The terminal result is reported to the user after the push; no environment credentials are committed.
+
+Vercel protection was confirmed enabled for all deployments before release. No launch flags or domains changed; the site remains non-indexable.

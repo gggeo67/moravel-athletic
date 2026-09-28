@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-28T19:54:13.387Z",
+  "date": "2026-09-28T20:01:09.135Z",
   "origin": "http://127.0.0.1:3019",
   "failures": [],
   "report": [
@@ -122,6 +122,20 @@
       "width": 1440,
       "overflow": false,
       "violations": []
+    },
+    {
+      "checkout": "Real browser submit and database read passed",
+      "row": {
+        "product": "womens-training-legging",
+        "size": "M",
+        "color": "Slate",
+        "quantity": 1,
+        "unit_price": 98,
+        "status": "awaiting_restock"
+      }
+    },
+    {
+      "newsletter": "Browser submit, consent persistence and duplicate handling passed"
     }
   ]
 }
