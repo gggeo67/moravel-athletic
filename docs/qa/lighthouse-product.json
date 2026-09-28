@@ -1,0 +1,326 @@
+{
+  "date": "2026-09-28T19:48:47.998Z",
+  "scores": {
+    "performance": 99,
+    "accessibility": 100
+  },
+  "metrics": {
+    "first-contentful-paint": "0.8 s",
+    "largest-contentful-paint": "2.0 s",
+    "total-blocking-time": "10 ms",
+    "cumulative-layout-shift": "0",
+    "speed-index": "0.8 s"
+  },
+  "failedAudits": [
+    {
+      "id": "largest-contentful-paint",
+      "title": "Largest Contentful Paint",
+      "score": 0.97
+    },
+    {
+      "id": "interactive",
+      "title": "Time to Interactive",
+      "score": 0.96
+    },
+    {
+      "id": "unused-javascript",
+      "title": "Reduce unused JavaScript",
+      "score": 0.5,
+      "details": {
+        "type": "opportunity",
+        "headings": [
+          {
+            "key": "url",
+            "valueType": "url",
+            "subItemsHeading": {
+              "key": "source",
+              "valueType": "code"
+            },
+            "label": "URL"
+          },
+          {
+            "key": "totalBytes",
+            "valueType": "bytes",
+            "subItemsHeading": {
+              "key": "sourceBytes"
+            },
+            "label": "Transfer Size"
+          },
+          {
+            "key": "wastedBytes",
+            "valueType": "bytes",
+            "subItemsHeading": {
+              "key": "sourceWastedBytes"
+            },
+            "label": "Est Savings"
+          }
+        ],
+        "items": [
+          {
+            "url": "http://127.0.0.1:3019/_next/static/chunks/196x_tfexoucg.js",
+            "totalBytes": 71636,
+            "wastedBytes": 26909,
+            "wastedPercent": 37.563449559238514
+          }
+        ],
+        "overallSavingsMs": 0,
+        "overallSavingsBytes": 26909,
+        "sortedBy": [
+          "wastedBytes"
+        ],
+        "debugData": {
+          "type": "debugdata",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "lcp-discovery-insight",
+      "title": "LCP request discovery",
+      "score": 0,
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "checklist",
+            "items": {
+              "priorityHinted": {
+                "label": "fetchpriority=high should be applied to the image preload request",
+                "value": false
+              },
+              "requestDiscoverable": {
+                "label": "Request is discoverable in initial document",
+                "value": true
+              },
+              "eagerlyLoaded": {
+                "label": "LCP resources should not use loading=lazy",
+                "value": true
+              }
+            }
+          },
+          {
+            "type": "node",
+            "lhId": "page-0-IMG",
+            "path": "1,HTML,1,BODY,5,MAIN,0,DIV,3,DIV,0,DIV,0,DIV,0,IMG",
+            "selector": "div.product-layout > div.product-gallery > div.gallery-image > img",
+            "boundingRect": {
+              "top": 163,
+              "bottom": 591,
+              "left": 16,
+              "right": 358,
+              "width": 342,
+              "height": 428
+            },
+            "snippet": "<img alt=\"Women's Training Legging in Black, front view on a model lunging in a sunl…\" decoding=\"async\" data-nimg=\"fill\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"(max-width:700px) 90vw, 30vw\" srcset=\"/_next/image?url=%2Fimages%2Fproducts%2Fwomens-training-legging%2Fmodel-bl…\" src=\"http://127.0.0.1:3019/_next/image?url=%2Fimages%2Fproducts%2Fwomens-traini…\">",
+            "nodeLabel": "Women's Training Legging in Black, front view on a model lunging in a sunlit gym"
+          }
+        ]
+      }
+    },
+    {
+      "id": "legacy-javascript-insight",
+      "title": "Legacy JavaScript",
+      "score": 0.5,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "url",
+            "valueType": "url",
+            "subItemsHeading": {
+              "key": "location",
+              "valueType": "source-location"
+            },
+            "label": "URL"
+          },
+          {
+            "key": null,
+            "valueType": "code",
+            "subItemsHeading": {
+              "key": "signal"
+            },
+            "label": ""
+          },
+          {
+            "key": "wastedBytes",
+            "valueType": "bytes",
+            "label": "Wasted bytes"
+          }
+        ],
+        "items": [
+          {
+            "url": "http://127.0.0.1:3019/_next/static/chunks/196x_tfexoucg.js",
+            "wastedBytes": 13774,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "signal": "Array.prototype.at",
+                  "location": {
+                    "type": "source-location",
+                    "url": "http://127.0.0.1:3019/_next/static/chunks/196x_tfexoucg.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 1116
+                  }
+                },
+                {
+                  "signal": "Array.prototype.flat",
+                  "location": {
+                    "type": "source-location",
+                    "url": "http://127.0.0.1:3019/_next/static/chunks/196x_tfexoucg.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 504
+                  }
+                },
+                {
+                  "signal": "Array.prototype.flatMap",
+                  "location": {
+                    "type": "source-location",
+                    "url": "http://127.0.0.1:3019/_next/static/chunks/196x_tfexoucg.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 617
+                  }
+                },
+                {
+                  "signal": "Object.fromEntries",
+                  "location": {
+                    "type": "source-location",
+                    "url": "http://127.0.0.1:3019/_next/static/chunks/196x_tfexoucg.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 993
+                  }
+                },
+                {
+                  "signal": "Object.hasOwn",
+                  "location": {
+                    "type": "source-location",
+                    "url": "http://127.0.0.1:3019/_next/static/chunks/196x_tfexoucg.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 1251
+                  }
+                },
+                {
+                  "signal": "String.prototype.trimEnd",
+                  "location": {
+                    "type": "source-location",
+                    "url": "http://127.0.0.1:3019/_next/static/chunks/196x_tfexoucg.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 246
+                  }
+                },
+                {
+                  "signal": "String.prototype.trimStart",
+                  "location": {
+                    "type": "source-location",
+                    "url": "http://127.0.0.1:3019/_next/static/chunks/196x_tfexoucg.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 161
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "debugData": {
+          "type": "debugdata",
+          "wastedBytes": 13774
+        }
+      }
+    },
+    {
+      "id": "network-dependency-tree-insight",
+      "title": "Network dependency tree",
+      "score": 0,
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "B5981D3B361DCFC451CA5FB47BAAE047": {
+                  "url": "http://127.0.0.1:3019/products/womens-training-legging",
+                  "navStartToEndTime": 31,
+                  "transferSize": 10476,
+                  "isLongest": true,
+                  "children": {
+                    "64613.6": {
+                      "url": "http://127.0.0.1:3019/_next/static/chunks/0jxup0sa0zj1e.css",
+                      "navStartToEndTime": 31,
+                      "transferSize": 10084,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 31
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "render-blocking-insight",
+      "title": "Render-blocking requests",
+      "score": 0,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "url",
+            "valueType": "url",
+            "label": "URL"
+          },
+          {
+            "key": "totalBytes",
+            "valueType": "bytes",
+            "label": "Transfer Size"
+          },
+          {
+            "key": "wastedMs",
+            "valueType": "timespanMs",
+            "label": "Duration"
+          }
+        ],
+        "items": [
+          {
+            "url": "http://127.0.0.1:3019/_next/static/chunks/0jxup0sa0zj1e.css",
+            "totalBytes": 10084,
+            "wastedMs": 152
+          }
+        ]
+      }
+    }
+  ]
+}

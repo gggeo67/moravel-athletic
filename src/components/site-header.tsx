@@ -5,11 +5,17 @@ import { MobileNavigation } from "@/components/mobile-navigation";
 export function SiteHeader() {
   return (
     <>
-      <div className="announcement">{storefront.announcement}</div>
+      <div
+        className="announcement"
+        role="region"
+        aria-label="Store announcement"
+      >
+        {storefront.announcement}
+      </div>
       <header className="site-header">
         <div className="wrap header-row">
           <Link href="/" className="wordmark" aria-label={`${site.name} home`}>
-            {site.name}
+            {storefront.wordmark}
           </Link>
           <nav className="desktop-nav" aria-label="Primary">
             <ul>

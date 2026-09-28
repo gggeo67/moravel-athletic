@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-28T19:51:09.953Z",
+  "results": [
+    "Mobile menu focus trap, Escape and return focus passed",
+    "Women/Men rail switches catalogue correctly",
+    "Collection category, reset and price sorting usable",
+    "Required size, color selection and cart persistence passed",
+    "Reduced motion disables image transitions"
+  ]
+}

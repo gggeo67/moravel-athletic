@@ -24,12 +24,12 @@ export function CategoryRail({ audience }: { audience?: string }) {
                         .images[0].src
                     : c.image
                 }
-                alt={c.name}
+                alt=""
                 fill
                 sizes="(max-width:700px) 42vw, 17vw"
               />
             </div>
-            <h3>{c.name}</h3>
+            <p className="category-name">{c.name}</p>
           </Link>
         ))}
     </div>
@@ -86,7 +86,7 @@ export function BrandBanner() {
       <div className="banner-copy">
         <h2>{storefront.banner.title}</h2>
         <p>{storefront.banner.text}</p>
-        <Link className="button-link outline" href="/pages/our-story">
+        <Link className="button-link light" href="/pages/our-story">
           Our story
         </Link>
       </div>

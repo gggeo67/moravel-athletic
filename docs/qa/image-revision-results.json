@@ -1,0 +1,355 @@
+{
+  "date": "2026-09-28",
+  "origin": "http://127.0.0.1:3019",
+  "report": [
+    {
+      "name": "home",
+      "route": "/",
+      "width": 390,
+      "deviceScaleFactor": 1,
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "portraits": [
+        {
+          "width": 358,
+          "height": 537,
+          "ratio": 0.6666666666666666
+        },
+        {
+          "width": 358,
+          "height": 537,
+          "ratio": 0.6666666666666666
+        },
+        {
+          "width": 358,
+          "height": 537,
+          "ratio": 0.6666666666666666
+        }
+      ],
+      "hero": {
+        "currentSrc": "http://127.0.0.1:3019/_next/image?url=%2Fimages%2Feditorial%2Fhome-hero.webp%3Fv%3Dtrack-action-2&w=828&q=85",
+        "naturalWidth": 818,
+        "naturalHeight": 460,
+        "renderedWidth": 390,
+        "renderedHeight": 460,
+        "objectPosition": "85% 50%",
+        "deliveredPixels": {
+          "width": 828,
+          "height": 466,
+          "bytes": 28761
+        },
+        "requiredWidthAtDpr": 818
+      },
+      "screenshot": "docs/qa/screens/image-revision/home-390-1x.png"
+    },
+    {
+      "name": "journal",
+      "route": "/blogs/journal",
+      "width": 390,
+      "deviceScaleFactor": 1,
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "portraits": [
+        {
+          "width": 358,
+          "height": 537,
+          "ratio": 0.6666666666666666
+        },
+        {
+          "width": 358,
+          "height": 537,
+          "ratio": 0.6666666666666666
+        },
+        {
+          "width": 358,
+          "height": 537,
+          "ratio": 0.6666666666666666
+        }
+      ],
+      "hero": null,
+      "screenshot": "docs/qa/screens/image-revision/journal-390-1x.png"
+    },
+    {
+      "name": "gift-guide",
+      "route": "/pages/gift-guide",
+      "width": 390,
+      "deviceScaleFactor": 1,
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "portraits": [
+        {
+          "width": 390,
+          "height": 585,
+          "ratio": 0.6666666666666666
+        }
+      ],
+      "hero": null,
+      "screenshot": "docs/qa/screens/image-revision/gift-guide-390-1x.png"
+    },
+    {
+      "name": "home",
+      "route": "/",
+      "width": 1440,
+      "deviceScaleFactor": 1,
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "portraits": [
+        {
+          "width": 442.65625,
+          "height": 663.984375,
+          "ratio": 0.6666666666666666
+        },
+        {
+          "width": 442.671875,
+          "height": 664,
+          "ratio": 0.6666745105421686
+        },
+        {
+          "width": 442.65625,
+          "height": 663.984375,
+          "ratio": 0.6666666666666666
+        }
+      ],
+      "hero": {
+        "currentSrc": "http://127.0.0.1:3019/_next/image?url=%2Fimages%2Feditorial%2Fhome-hero.webp%3Fv%3Dtrack-action-2&w=1920&q=85",
+        "naturalWidth": 1254,
+        "naturalHeight": 705,
+        "renderedWidth": 1440,
+        "renderedHeight": 650,
+        "objectPosition": "50% 0%",
+        "deliveredPixels": {
+          "width": 1672,
+          "height": 941,
+          "bytes": 91679
+        },
+        "requiredWidthAtDpr": 1440
+      },
+      "screenshot": "docs/qa/screens/image-revision/home-1440-1x.png"
+    },
+    {
+      "name": "journal",
+      "route": "/blogs/journal",
+      "width": 1440,
+      "deviceScaleFactor": 1,
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "portraits": [
+        {
+          "width": 442.65625,
+          "height": 663.984375,
+          "ratio": 0.6666666666666666
+        },
+        {
+          "width": 442.671875,
+          "height": 664,
+          "ratio": 0.6666745105421686
+        },
+        {
+          "width": 442.65625,
+          "height": 663.984375,
+          "ratio": 0.6666666666666666
+        }
+      ],
+      "hero": null,
+      "screenshot": "docs/qa/screens/image-revision/journal-1440-1x.png"
+    },
+    {
+      "name": "gift-guide",
+      "route": "/pages/gift-guide",
+      "width": 1440,
+      "deviceScaleFactor": 1,
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "portraits": [
+        {
+          "width": 864,
+          "height": 1296,
+          "ratio": 0.6666666666666666
+        }
+      ],
+      "hero": null,
+      "screenshot": "docs/qa/screens/image-revision/gift-guide-1440-1x.png"
+    },
+    {
+      "name": "home",
+      "route": "/",
+      "width": 2048,
+      "deviceScaleFactor": 1,
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "portraits": [
+        {
+          "width": 496,
+          "height": 744,
+          "ratio": 0.6666666666666666
+        },
+        {
+          "width": 496,
+          "height": 744,
+          "ratio": 0.6666666666666666
+        },
+        {
+          "width": 496,
+          "height": 744,
+          "ratio": 0.6666666666666666
+        }
+      ],
+      "hero": {
+        "currentSrc": "http://127.0.0.1:3019/_next/image?url=%2Fimages%2Feditorial%2Fhome-hero.webp%3Fv%3Dtrack-action-2&w=2048&q=85",
+        "naturalWidth": 1672,
+        "naturalHeight": 941,
+        "renderedWidth": 2048,
+        "renderedHeight": 650,
+        "objectPosition": "50% 0%",
+        "deliveredPixels": {
+          "width": 1672,
+          "height": 941,
+          "bytes": 91679
+        },
+        "requiredWidthAtDpr": 2048
+      },
+      "screenshot": "docs/qa/screens/image-revision/home-2048-1x.png"
+    },
+    {
+      "name": "journal",
+      "route": "/blogs/journal",
+      "width": 2048,
+      "deviceScaleFactor": 1,
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "portraits": [
+        {
+          "width": 496,
+          "height": 744,
+          "ratio": 0.6666666666666666
+        },
+        {
+          "width": 496,
+          "height": 744,
+          "ratio": 0.6666666666666666
+        },
+        {
+          "width": 496,
+          "height": 744,
+          "ratio": 0.6666666666666666
+        }
+      ],
+      "hero": null,
+      "screenshot": "docs/qa/screens/image-revision/journal-2048-1x.png"
+    },
+    {
+      "name": "gift-guide",
+      "route": "/pages/gift-guide",
+      "width": 2048,
+      "deviceScaleFactor": 1,
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "portraits": [
+        {
+          "width": 1228.796875,
+          "height": 1843.1875,
+          "ratio": 0.6666694923875081
+        }
+      ],
+      "hero": null,
+      "screenshot": "docs/qa/screens/image-revision/gift-guide-2048-1x.png"
+    },
+    {
+      "name": "home",
+      "route": "/",
+      "width": 2048,
+      "deviceScaleFactor": 2,
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "portraits": [
+        {
+          "width": 496,
+          "height": 744,
+          "ratio": 0.6666666666666666
+        },
+        {
+          "width": 496,
+          "height": 744,
+          "ratio": 0.6666666666666666
+        },
+        {
+          "width": 496,
+          "height": 744,
+          "ratio": 0.6666666666666666
+        }
+      ],
+      "hero": {
+        "currentSrc": "http://127.0.0.1:3019/_next/image?url=%2Fimages%2Feditorial%2Fhome-hero.webp%3Fv%3Dtrack-action-2&w=3840&q=85",
+        "naturalWidth": 891,
+        "naturalHeight": 501,
+        "renderedWidth": 2048,
+        "renderedHeight": 650,
+        "objectPosition": "50% 0%",
+        "deliveredPixels": {
+          "width": 1672,
+          "height": 941,
+          "bytes": 91679
+        },
+        "requiredWidthAtDpr": 4096
+      },
+      "screenshot": "docs/qa/screens/image-revision/home-2048-2x.png"
+    },
+    {
+      "name": "journal",
+      "route": "/blogs/journal",
+      "width": 2048,
+      "deviceScaleFactor": 2,
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "portraits": [
+        {
+          "width": 496,
+          "height": 744,
+          "ratio": 0.6666666666666666
+        },
+        {
+          "width": 496,
+          "height": 744,
+          "ratio": 0.6666666666666666
+        },
+        {
+          "width": 496,
+          "height": 744,
+          "ratio": 0.6666666666666666
+        }
+      ],
+      "hero": null,
+      "screenshot": "docs/qa/screens/image-revision/journal-2048-2x.png"
+    },
+    {
+      "name": "gift-guide",
+      "route": "/pages/gift-guide",
+      "width": 2048,
+      "deviceScaleFactor": 2,
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "portraits": [
+        {
+          "width": 1228.796875,
+          "height": 1843.1875,
+          "ratio": 0.6666694923875081
+        }
+      ],
+      "hero": null,
+      "screenshot": "docs/qa/screens/image-revision/gift-guide-2048-2x.png"
+    }
+  ],
+  "errors": []
+}

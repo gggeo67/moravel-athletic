@@ -1,0 +1,49 @@
+{
+  "product": null,
+  "sourceType": "generated",
+  "intent": "new-photograph",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "refs": [
+    {
+      "id": "legging-model-front",
+      "path": "public/images/products/womens-training-legging/model-black-front.png",
+      "role": "Moravel fictional adult identity and Moravel outfit only",
+      "sha256": "0b368ea55b65599bf1f627a2624eead79de82fb030ec057d0a538ec58ed02a28"
+    },
+    {
+      "id": "jogger-model-front",
+      "path": "public/images/products/mens-jogger/model-black-front.png",
+      "role": "Moravel fictional adult identity and Moravel outfit only",
+      "sha256": "7c29eaf10e221568118d63e0d37a46da28f7e1d0f7e832f661a06db30e7e2a4f"
+    }
+  ],
+  "id": "home-hero",
+  "path": "public/images/editorial/home-hero.png",
+  "webPath": "public/images/editorial/home-hero.webp",
+  "generatedSourcePath": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-dc95eec5-4a35-49ba-8523-2550f1c68210.png",
+  "promptFile": "docs/images/prompts/home-hero.txt",
+  "prompt": "Use case: photorealistic-natural.\nCreate ONE entirely NEW editorial sports photograph for the Moravel Athletic homepage. Landscape 16:9, request 3840 x 2160 pixels native, highest supported real detail. This is a fresh photograph, not an edit or recolour of either input. Reference 1 defines only the fictional adult woman's face, age, hair, build and Moravel outfit. Reference 2 defines only the fictional adult man's face, age, hair, build and Moravel outfit. Do not reproduce their expressions, poses, lighting, camera framing or backgrounds.\nPeople: same medium-brown woman in her mid thirties, tied dark curls with flyaways, fuller athletic thighs, slate sleeveless cropped tank and plain black high-rise leggings; same East Asian man in his mid forties, short dark hair with grey temples, fit ordinary build, charcoal technical tee and black tapered cuffed joggers. Both wear unbranded black running shoes with dark soles. Subtle small tone-on-tone condensed sans MORAVEL only on rear waistband or left chest, no other text or logos.\nNew scene: a real slightly worn outdoor muted blue-grey running track with pale concrete outer apron and a low plain weathered light-grey wall in the distance, no grandstand. Hard clear late-morning side sunlight, coherent crisp shadows, restrained realistic color grading, tactile track granules and natural fabric wrinkles. Documentary sports photography at 1/1600 sec, f/5.6, 50mm equivalent, clear skin pores and hair, no portrait-mode blur, no fake haze.\nAction and camera: candid three-quarter SIDE view of a running training interval, both runners looking forward along their path to the RIGHT, never looking at viewer, no smiles or posing. Woman ahead by half a stride, man one step behind and farther from camera. Different believable gait phases, grounded running biomechanics, visible exertion with slightly open mouths, natural asymmetry in arm swing, flyaway hair. Both faces identifiable in three-quarter profile. Avoid mirrored synchronized limbs or floating bodies.\nLayout for website: both runners grouped on the RIGHT within x=51%-86%, with distinct non-overlapping faces; heads around y=15%-22%, shoes above y=90%, complete bodies fully inside the frame. Left 40% is a very quiet pale sunlit concrete wall/apron, usable behind existing DARK headline text. Composition should feel observed during real training, not two catalogue cut-outs pasted on a stadium background. No baked-in headline, labels, captions, signs, watermark, third person, white tees or white shoes. Preserve the two identities and garments only; everything else must be new.\nCritical revision to camera direction: this must be an unmistakable SIDE-ON running photograph, camera perpendicular to the running lanes, runners moving LEFT to RIGHT across the frame. See mainly their LEFT sides with slight three-quarter face visibility, not chests facing the camera. Woman's right knee driving forward, man's rear foot pushing off, bent elbows, bodies leaning slightly into effort. Put woman at 76% horizontal center and man at 61%; leave left 40% pale wall empty. Photograph from 15 metres away, complete figures about 70% of frame height, top of heads no higher than 16% of frame and shoes no lower than 88%, giving breathing room. Export the largest possible native landscape output, requested 3840 x 2160.\n",
+  "nativeDimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "dimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "sha256": "4d6795d8e0b295f1349b2b8f65135614930da9dbe1fda55b58a7d911df749a6c",
+  "webQuality": 95,
+  "resampling": "none",
+  "resolutionNote": "Requested 3840x2160. Built-in tool returned 1672x941 on both attempts. Native pixels retained; no fabricated high-resolution derivative.",
+  "supersedes": "home-hero-v1",
+  "qa": {
+    "status": "accepted",
+    "notes": "Selected for local review: clearer side-angle running, non-camera gaze, full figures, familiar fictional identities and outfits. User approved 2026-09-28 (“cool cool”)."
+  },
+  "approval": {
+    "status": "approved",
+    "scope": "replacement hero and corrected page screenshots",
+    "note": "User approved 2026-09-28 (“cool cool”)."
+  }
+}

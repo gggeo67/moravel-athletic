@@ -96,24 +96,11 @@ export function CollectionShop({
         </div>
       </div>
       {filtered.length ? (
-        <div className="product-grid">
+        <div className="product-grid" role="region" aria-label="Products">
+          <h2 className="sr-only">Products</h2>
           {filtered.map((p) => (
             <ProductCard key={p.handle} product={p} />
           ))}
-          {filtered.length > 1 && (
-            <Link href="/pages/materials" className="collection-editorial">
-              <Image
-                src={storefront.banner.image}
-                alt={storefront.banner.alt}
-                fill
-                sizes="(max-width:700px) 100vw, 50vw"
-              />
-              <div className="tile-copy">
-                <h2>Get to know the fabric.</h2>
-                <span className="text-link">Explore our materials</span>
-              </div>
-            </Link>
-          )}
         </div>
       ) : (
         <div className="empty-state">
@@ -128,6 +115,22 @@ export function CollectionShop({
             Show all styles
           </button>
         </div>
+      )}
+      {filtered.length > 1 && (
+        <Link href="/pages/materials" className="collection-editorial">
+          <div className="collection-editorial-photo">
+            <Image
+              src={storefront.banner.image}
+              alt={storefront.banner.alt}
+              fill
+              sizes="(max-width:700px) 100vw, 60vw"
+            />
+          </div>
+          <div className="tile-copy">
+            <h2>Get to know the fabric.</h2>
+            <span className="text-link">Explore our materials</span>
+          </div>
+        </Link>
       )}
     </>
   );

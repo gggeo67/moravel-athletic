@@ -250,15 +250,17 @@ export const categories = [
 ];
 
 export const storefront = {
+  wordmark: "MORAVEL",
+  categoryTitle: "Shop by category.",
   announcement: "Training and running gear for women and men",
   hero: {
     title: "Built for the next session.",
     text: "Training and running gear in technical fabrics, for women and men.",
-    image: "/images/editorial/home-hero.webp",
-    alt: "Two models running on a blue track in Black Moravel leggings and joggers",
+    image: "/images/editorial/home-hero.webp?v=track-action-2",
+    alt: "Two runners viewed from the side on a sunlit blue-grey track, wearing Black Moravel leggings and joggers",
   },
   newArrivals: {
-    title: "Shop the range",
+    title: "Find your training gear.",
     text: "Leggings, shorts, tees, sports bras and layers.",
   },
   fabrics: {
@@ -266,23 +268,23 @@ export const storefront = {
     text: "Each line has its composition stated plainly.",
   },
   banner: {
-    title: "Gear for training and running.",
+    title: "Put your gear to work.",
     text: "Technical fabrics, clear fits and two colors for every garment.",
     image: "/images/editorial/brand-banner.webp",
     alt: "Two models training in a sunlit gym in Black Moravel gear",
   },
   newsletter: {
-    title: "News from Moravel Athletic.",
+    title: "Keep up with Moravel.",
     text: "New pieces and fabric notes from Moravel Athletic.",
     consent: "Sign me up for emails from Moravel Athletic.",
   },
   story: {
-    title: "Training and running gear.",
+    title: "Gear up. Get moving.",
     intro:
       "Moravel Athletic makes performance training and running gear in technical fabrics.",
     blocks: [
       {
-        title: "Eleven garments and a gift card.",
+        title: "Your training range.",
         text: "Six pieces for women and five for men, from leggings and sports bras to shorts, tees and layers.",
         image: "/images/editorial/story-1.webp",
         alt: "Model stepping onto a gym box in Black Moravel joggers",

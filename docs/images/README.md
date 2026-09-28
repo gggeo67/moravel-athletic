@@ -14,7 +14,7 @@ The user approved the 13-image test set, palette and full-batch continuation on 
 
 ## Provenance and approval
 
-`manifest.json` records prompts, tool, date, input roles, SHA-256 hashes, source and delivery dimensions, lineage, QA and 13 rejected generated attempts. Every selected source was generated using the built-in `image_gen` tool. There was no CLI/API fallback. One initial sports-bra model call did not return an image; the successful retry is recorded, and no nonexistent output is counted.
+`manifest.json` records prompts, tool, date, input roles, SHA-256 hashes, source and delivery dimensions, lineage, QA, 14 rejected generated attempts and one superseded hero. Every selected source was generated using the built-in `image_gen` tool. There was no CLI/API fallback. One initial sports-bra model call did not return an image; the successful retry is recorded, and no nonexistent output is counted.
 
 Rennick & Hale was read-only. Only its fictional adult model-front photographs were supplied as identity references, one per matching garment slot. Its garments, backgrounds and hero were never supplied as generation references. New Moravel garments and model shots were used for consistency between subsequent views. No Gymshark photograph was uploaded. Supplied Gymshark links informed silhouette, fit and length only; garment seams and branding are original Moravel direction.
 
@@ -41,3 +41,13 @@ bun docs/images/qa-site.mjs
 ```
 
 The first two scripts are ported from R&H. They use retained Moravel sources and accepted records, generate WebP and crops, and refresh the manifest. Recreated crops are deliberately marked pending until visually reviewed again. `qa-site.mjs` expects the site on port 3019 and captures both viewport sizes and garment colours without submitting an order. Site QA results are in `docs/qa/image-site-results.json`; full screenshots are local ignored artifacts under `docs/qa/screens/images/`.
+
+## Hero and portrait revision — 2026-09-28
+
+The user requested full portraits on home, journal and gift guide, plus a less staged track-action hero. Those three portrait layouts now preserve the 2:3 image ratio on desktop and mobile. The gift guide uses its own modifier so the landscape home brand banner is unaffected.
+
+The new hero was generated from the two accepted Moravel identity/outfit references using the built-in image tool. Attempt 1 was rejected because its camera angle was too frontal; attempt 2 was selected for local page review. Both requests asked for 3840×2160, but both actual tool outputs are native 1672×941. There is no higher-resolution master or upscaled delivery rendition. The native source is retained, the WebP intermediate uses quality 95, and Next.js serves the hero at quality 85. The versioned image URL prevents reuse of the previous optimized hero. The mobile `sizes` hint accounts for the 460px-tall cover image: a 390px viewport now receives an 828px-wide response instead of enlarging a 640px image. Desktop receives all 1672 native pixels; at 2048px and DPR 2 this remains below the 4096px ideal, so large-screen sharpness is a documented limitation.
+
+`replacements/home-hero.json` selects the revision when the recording script runs; `superseded-records/home-hero-v1.json` retains the previous hero’s provenance. The original image and prompts are archived under `revisions/hero-track-action/`. There remain 72 selected generated sources plus 26 crops, or 98 logical deliverables. Archived revisions and rejected attempts are not site deliverables.
+
+Run `bun docs/images/qa-image-revision.mjs` against port 3019 to capture home, journal and gift guide at 390, 1440 and 2048 pixels, with an additional 2048px DPR-2 pass. It checks image loading, overflow and portrait container ratios; screenshot inspection checks faces, feet, hero framing and text readability. Results: `docs/qa/image-revision-results.json`. The user approved this revision (“cool cool”); publication is tracked with the Signal Blue restyle.

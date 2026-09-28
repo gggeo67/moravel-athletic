@@ -1,0 +1,30 @@
+{
+  "product": null,
+  "sourceType": "generated",
+  "intent": "new-photograph",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "refs": [
+    {
+      "id": "legging-model-front",
+      "path": "public/images/products/womens-training-legging/model-black-front.png",
+      "role": "Moravel fictional adult identity and Moravel outfit only",
+      "sha256": "0b368ea55b65599bf1f627a2624eead79de82fb030ec057d0a538ec58ed02a28"
+    },
+    {
+      "id": "jogger-model-front",
+      "path": "public/images/products/mens-jogger/model-black-front.png",
+      "role": "Moravel fictional adult identity and Moravel outfit only",
+      "sha256": "7c29eaf10e221568118d63e0d37a46da28f7e1d0f7e832f661a06db30e7e2a4f"
+    }
+  ],
+  "id": "home-hero-track-attempt-01",
+  "path": "docs/images/revisions/hero-track-action/attempt-01.png",
+  "generatedSourcePath": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-b3da41c2-43fc-4071-9762-1ec26daaf077.png",
+  "promptFile": "docs/images/revisions/hero-track-action/prompt.txt",
+  "prompt": "Use case: photorealistic-natural.\nCreate ONE entirely NEW editorial sports photograph for the Moravel Athletic homepage. Landscape 16:9, request 3840 x 2160 pixels native, highest supported real detail. This is a fresh photograph, not an edit or recolour of either input. Reference 1 defines only the fictional adult woman's face, age, hair, build and Moravel outfit. Reference 2 defines only the fictional adult man's face, age, hair, build and Moravel outfit. Do not reproduce their expressions, poses, lighting, camera framing or backgrounds.\nPeople: same medium-brown woman in her mid thirties, tied dark curls with flyaways, fuller athletic thighs, slate sleeveless cropped tank and plain black high-rise leggings; same East Asian man in his mid forties, short dark hair with grey temples, fit ordinary build, charcoal technical tee and black tapered cuffed joggers. Both wear unbranded black running shoes with dark soles. Subtle small tone-on-tone condensed sans MORAVEL only on rear waistband or left chest, no other text or logos.\nNew scene: a real slightly worn outdoor muted blue-grey running track with pale concrete outer apron and a low plain weathered light-grey wall in the distance, no grandstand. Hard clear late-morning side sunlight, coherent crisp shadows, restrained realistic color grading, tactile track granules and natural fabric wrinkles. Documentary sports photography at 1/1600 sec, f/5.6, 50mm equivalent, clear skin pores and hair, no portrait-mode blur, no fake haze.\nAction and camera: candid three-quarter SIDE view of a running training interval, both runners looking forward along their path to the RIGHT, never looking at viewer, no smiles or posing. Woman ahead by half a stride, man one step behind and farther from camera. Different believable gait phases, grounded running biomechanics, visible exertion with slightly open mouths, natural asymmetry in arm swing, flyaway hair. Both faces identifiable in three-quarter profile. Avoid mirrored synchronized limbs or floating bodies.\nLayout for website: both runners grouped on the RIGHT within x=51%-86%, with distinct non-overlapping faces; heads around y=15%-22%, shoes above y=90%, complete bodies fully inside the frame. Left 40% is a very quiet pale sunlit concrete wall/apron, usable behind existing DARK headline text. Composition should feel observed during real training, not two catalogue cut-outs pasted on a stadium background. No baked-in headline, labels, captions, signs, watermark, third person, white tees or white shoes. Preserve the two identities and garments only; everything else must be new.\n",
+  "qa": {
+    "status": "rejected",
+    "notes": "Camera angle remains too frontal for the chosen side-angle direction."
+  }
+}

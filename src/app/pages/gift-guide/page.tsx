@@ -12,7 +12,7 @@ export default function Page() {
         <h1>{storefront.giftGuide.title}</h1>
         <p>{storefront.giftGuide.text}</p>
       </div>
-      <section className="brand-banner">
+      <section className="brand-banner gift-guide-banner">
         <div className="banner-photo">
           <Image
             src={storefront.giftGuide.image}

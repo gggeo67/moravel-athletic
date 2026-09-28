@@ -34,7 +34,7 @@ export function NewArrivals({ products }: { products: Product[] }) {
       <div
         className="product-rail"
         tabIndex={0}
-        aria-label="Everyday favorites"
+        aria-label={storefront.newArrivals.title}
       >
         {products
           .filter((p) => p.audience === audience)

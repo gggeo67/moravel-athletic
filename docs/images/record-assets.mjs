@@ -10,7 +10,16 @@ const manifest = await read('docs/images/test-set-manifest.json');
 const records = await Promise.all((await fs.readdir('docs/images/records')).filter(f => f.endsWith('.json')).sort().map(f => read(`docs/images/records/${f}`)));
 const rejected = await Promise.all((await fs.readdir('docs/images/rejected-records')).filter(f => f.endsWith('.json')).sort().map(f => read(`docs/images/rejected-records/${f}`)));
 const initial = manifest.assets.filter(a => a.qa.status !== 'rejected');
-const selected = [...initial, ...records];
+const optionalRecords = async (directory) => {
+  const files = await fs.readdir(directory).catch(error => {
+    if (error.code === 'ENOENT') return [];
+    throw error;
+  });
+  return Promise.all(files.filter(f => f.endsWith('.json')).sort().map(f => read(`${directory}/${f}`)));
+};
+const replacements = await optionalRecords('docs/images/replacements');
+const superseded = await optionalRecords('docs/images/superseded-records');
+const selected = [...initial, ...records].map(record => replacements.find(r => r.id === record.id) ?? record);
 if (selected.length !== 72) throw new Error(`Expected 72 generated sources, got ${selected.length}`);
 const assets = [];
 for (const record of selected) {
@@ -25,18 +34,18 @@ for (const record of selected) {
   await fs.mkdir(path.dirname(destination), { recursive: true });
   if (source !== destination) await fs.copyFile(source, destination);
   const webPath = destination.replace(/\.png$/, '.webp');
-  await sharp(destination).webp({ quality: 85 }).toFile(webPath);
+  await sharp(destination).webp({ quality: record.webQuality ?? 85 }).toFile(webPath);
   const refs = [];
   for (const ref of record.refs ?? []) refs.push({ ...ref, sha256: ref.sha256 ?? await hash(ref.path) });
   assets.push({ ...record, path: destination, webPath, promptFile: record.promptFile ?? `docs/images/prompts/${record.id}.txt`, sourceType: 'generated', intent: 'new-photograph', generatedSourcePath: record.generatedSourcePath ?? record.source, refs, dimensions: { width: meta.width, height: meta.height }, nativeDimensions: { width: meta.width, height: meta.height }, resampling: 'none', sha256: await hash(destination) });
 }
-for (const record of [...manifest.assets.filter(a => a.qa.status === 'rejected'), ...rejected]) {
+for (const record of [...manifest.assets.filter(a => a.qa.status === 'rejected'), ...rejected, ...superseded]) {
   const meta = await sharp(record.path).metadata();
   assets.push({ ...record, sourceType: 'generated', dimensions: { width: meta.width, height: meta.height }, sha256: await hash(record.path) });
 }
 manifest.version = 2;
 manifest.status = 'Generated sources installed; derivatives and site QA pending';
 manifest.assets = assets;
-manifest.counts = { generationAttempts: assets.length, selectedSources: 72, rejected: assets.length - 72, derivedDetails: 0, derivedEditorials: 0, logicalDeliverables: 72 };
+manifest.counts = { generationAttempts: assets.length, selectedSources: 72, rejected: assets.filter(a => a.qa.status === 'rejected').length, superseded: superseded.length, derivedDetails: 0, derivedEditorials: 0, logicalDeliverables: 72 };
 await fs.writeFile('docs/images/manifest.json', JSON.stringify(manifest, null, 2) + '\n');
 console.log(manifest.counts);

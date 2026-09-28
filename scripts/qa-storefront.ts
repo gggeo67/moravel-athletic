@@ -20,7 +20,12 @@ try {
       localStorage.setItem(
         "moravel-athletic.cart.v1",
         JSON.stringify([
-          { handle: "womens-training-legging", size: "M", color: "Black", quantity: 1 },
+          {
+            handle: "womens-training-legging",
+            size: "M",
+            color: "Black",
+            quantity: 1,
+          },
         ]),
       ),
     );
@@ -28,18 +33,30 @@ try {
       ["home", "/"],
       ["collection", "/collections/womens"],
       ["product", "/products/womens-training-legging"],
+      ["cart", "/cart"],
       ["checkout", "/checkout"],
+      ["journal", "/blogs/journal"],
+      ["gift-guide", "/pages/gift-guide"],
+      ["story", "/pages/our-story"],
+      ["materials", "/pages/materials"],
       ["restock", "/checkout/payment"],
     ]) {
       await page.goto(origin + path);
       await page.waitForLoadState("networkidle");
+      await page.evaluate(async () => {
+        await document.fonts.ready;
+        await Promise.all(
+          Array.from(document.images).map(async (image) => {
+            image.loading = "eager";
+            await image.decode().catch(() => {});
+          }),
+        );
+      });
       const overflow = await page.evaluate(
         () => document.documentElement.scrollWidth > innerWidth,
       );
       if (overflow) failures.push(`${name} overflows at ${width}px`);
-      const results = await new AxeBuilder({ page })
-        .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
-        .analyze();
+      const results = await new AxeBuilder({ page }).analyze();
       report.push({
         name,
         width,

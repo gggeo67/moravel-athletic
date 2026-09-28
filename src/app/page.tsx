@@ -20,7 +20,8 @@ export default function Home() {
             alt={storefront.hero.alt}
             fill
             preload
-            sizes="100vw"
+            quality={85}
+            sizes="(max-width: 700px) 818px, 100vw"
           />
         </div>
         <div className="hero-copy">
@@ -36,15 +37,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <NewArrivals products={allProducts()} />
-      <FabricTiles />
       <section className="wrap section-space">
         <div className="section-heading">
-          <h2>Make it your own</h2>
+          <h2>{storefront.categoryTitle}</h2>
         </div>
         <CategoryRail />
       </section>
+      <NewArrivals products={allProducts()} />
       <BrandBanner />
+      <FabricTiles />
     </>
   );
 }

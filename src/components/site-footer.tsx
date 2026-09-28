@@ -1,12 +1,22 @@
 import Link from "next/link";
-import { site } from "@/config/site";
+import { site, storefront } from "@/config/site";
 import { Newsletter } from "@/components/newsletter";
 export function SiteFooter() {
   return (
     <footer className="site-footer">
-      <div className="wrap">
+      <Newsletter />
+      <div className="wrap footer-content">
         <div className="footer-grid">
-          <Newsletter />
+          <div className="footer-brand">
+            <Link
+              href="/"
+              className="wordmark"
+              aria-label={`${site.name} home`}
+            >
+              {storefront.wordmark}
+            </Link>
+            <p>{site.line}</p>
+          </div>
           {site.footerGroups.slice(0, 3).map((group) => (
             <nav key={group.title} aria-label={`${group.title} footer`}>
               <h2>{group.title}</h2>

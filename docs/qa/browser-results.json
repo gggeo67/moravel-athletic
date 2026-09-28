@@ -1,0 +1,127 @@
+{
+  "date": "2026-09-28T19:54:13.387Z",
+  "origin": "http://127.0.0.1:3019",
+  "failures": [],
+  "report": [
+    {
+      "name": "home",
+      "width": 390,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "collection",
+      "width": 390,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "product",
+      "width": 390,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "cart",
+      "width": 390,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "checkout",
+      "width": 390,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "journal",
+      "width": 390,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "gift-guide",
+      "width": 390,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "story",
+      "width": 390,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "materials",
+      "width": 390,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "restock",
+      "width": 390,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "home",
+      "width": 1440,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "collection",
+      "width": 1440,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "product",
+      "width": 1440,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "cart",
+      "width": 1440,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "checkout",
+      "width": 1440,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "journal",
+      "width": 1440,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "gift-guide",
+      "width": 1440,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "story",
+      "width": 1440,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "materials",
+      "width": 1440,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "restock",
+      "width": 1440,
+      "overflow": false,
+      "violations": []
+    }
+  ]
+}

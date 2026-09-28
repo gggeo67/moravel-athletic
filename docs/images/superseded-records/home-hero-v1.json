@@ -1,0 +1,48 @@
+{
+  "id": "home-hero-v1",
+  "product": null,
+  "sourceType": "generated",
+  "intent": "new-photograph",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "path": "docs/images/revisions/hero-track-action/previous-home-hero.png",
+  "generatedSourcePath": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-0a874d3a-3051-41df-9815-e430d8ce2842.png",
+  "promptFile": "docs/images/revisions/hero-track-action/previous-prompt.txt",
+  "prompt": "Use case: ads-marketing. Create ONE entirely NEW photorealistic 16:9 landscape homepage campaign photograph for Moravel Athletic, target EXACT 1672x941 pixels or larger 16:9. Input1 is Moravel fictional adult woman identity and legging outfit, input2 Moravel fictional adult man identity and jogger outfit. Preserve exact faces, ages, skin, hair and body proportions: woman mid30s medium-brown skin tied dark curls fuller athletic thighs; man mid40s East Asian short dark gray-templed hair fit ordinary build. Preserve woman's black high-rise leggings, slate sleeveless opaque cropped athletic tank; man's black tapered cuffed joggers and tucked charcoal fitted technical tee. Both wear black unbranded training shoes with dark soles. NEW scene: outdoor running track with muted cobalt-blue lanes, light grey concrete stadium terraces far behind, bright hard directional sunlight, crisp shadows, high contrast, energetic premium training campaign. Both are running toward camera at a slight diagonal, natural arm swing and staggered strides, focused expressions, realistic anatomy, natural sweat and skin. They run close together grouped around x=65% of frame; keep both full bodies WITH shoes within x=48%-84% so mobile center-right crop preserves both faces. Full bodies occupy about 80% image height. Left 38% is uncluttered pale sunlit concrete apron, suitable for existing DARK overlaid site text, no baked text. New low tracking camera angle, dynamic perspective, NO quiet limestone walkway, NO standing/casual strolling, NO white tees or shoes. No third people, signage, captions, watermarks, logos except discreet existing MORAVEL garment marks where visible. Never copy or edit reference photographs; generate the NEW track scene from scratch with references only guiding person and Moravel clothes. Required WIDE 16:9 canvas 1672x941, not portrait, not square.",
+  "refs": [
+    {
+      "id": "legging-model-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-08a83438-90cc-48dc-acb3-6384e8d3a2f3.png",
+      "role": "Moravel fictional-w01 identity and outfit",
+      "sha256": "0b368ea55b65599bf1f627a2624eead79de82fb030ec057d0a538ec58ed02a28",
+      "retainedPath": "public/images/products/womens-training-legging/model-black-front.png"
+    },
+    {
+      "id": "jogger-model-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-6c21cfb2-a624-4f62-bb2e-95e4eda5015c.png",
+      "role": "Moravel fictional-m01 identity and outfit",
+      "sha256": "7c29eaf10e221568118d63e0d37a46da28f7e1d0f7e832f661a06db30e7e2a4f",
+      "retainedPath": "public/images/products/mens-jogger/model-black-front.png"
+    }
+  ],
+  "comparison": {
+    "id": "home-hero",
+    "path": "/Users/tjmcgovern/websites/rennick_hale/public/images/editorial/home-hero.png",
+    "sha256": "6c430013f7b6906898534f6f7511803e7fe58ed033a95e158e97c11184cf52d5",
+    "role": "Review comparison only; not a generation input unless separately listed as identity reference"
+  },
+  "sha256": "b2c90d59d7143d0b6699e794aebfdbc5314bb2c54ee6956b27a8477ad96ce8b5",
+  "dimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "nativeDimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "resampling": "none",
+  "qa": {
+    "status": "superseded",
+    "notes": "User reported soft, overly staged hero; replaced with fresh track action. Originally approved 2026-09-28."
+  }
+}

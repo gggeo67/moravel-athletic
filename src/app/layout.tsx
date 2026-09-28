@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans, Libre_Caslon_Text } from "next/font/google";
+import { Barlow, Barlow_Condensed } from "next/font/google";
 import "./globals.css";
 
 import { site } from "@/config/site";
@@ -10,16 +10,16 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { CartProvider } from "@/components/cart-provider";
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
+const bodyFont = Barlow({
+  variable: "--font-barlow",
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "600"],
   display: "swap",
 });
-const wordmark = Libre_Caslon_Text({
+const wordmark = Barlow_Condensed({
   variable: "--font-wordmark",
   subsets: ["latin"],
-  weight: "400",
+  weight: "800",
   display: "swap",
 });
 
@@ -41,7 +41,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang={site.lang}
-      className={`${dmSans.variable} ${wordmark.variable} h-full antialiased`}
+      className={`${bodyFont.variable} ${wordmark.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
         <a
