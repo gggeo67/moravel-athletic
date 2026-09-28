@@ -466,6 +466,15 @@
 .banner-photo img {
   object-fit: cover;
 }
+/* Keep the homepage campaign image at its native ratio at every viewport. */
+.home-brand-banner .banner-photo {
+  aspect-ratio: 1672 / 941;
+  min-height: 0;
+  align-self: center;
+}
+.home-brand-banner .banner-photo img {
+  object-fit: contain;
+}
 .gift-guide-banner .banner-photo {
   aspect-ratio: 2/3;
   min-height: 0;

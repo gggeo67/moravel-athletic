@@ -74,7 +74,7 @@ export function FabricTiles() {
 }
 export function BrandBanner() {
   return (
-    <section className="brand-banner">
+    <section className="brand-banner home-brand-banner">
       <div className="banner-photo">
         <Image
           src={storefront.banner.image}
