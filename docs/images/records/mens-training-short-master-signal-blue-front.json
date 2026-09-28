@@ -1,0 +1,26 @@
+{
+  "id": "mens-training-short-master-signal-blue-front",
+  "product": "mens-training-short",
+  "file": "master-signal-blue-front.png",
+  "refs": [
+    {
+      "id": "mens-training-short-master-black-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-7feb67aa-ef22-4157-b1e9-0a211abcdedd.png",
+      "role": "New Moravel construction reference ONLY",
+      "sha256": "c57e064152adc7217c4e20fe4a23d89e684081acad3c4b668ba4d7d18990c53f",
+      "retainedPath": "public/images/products/mens-training-short/master-black-front.png"
+    }
+  ],
+  "prompt": "Use case: product-mockup. Generate a NEW FRONT ghost-mannequin photograph of Men's Training Short in signal-blue #1F5BFF. Reference is a new Moravel garment for construction only. Slim training shorts with 7-inch inseam above knee, matte light woven stretch fabric, elastic waist with internal drawcord, discreet zipped side pockets, straight hem, no rear pockets or liner visible. Original simple seams, no contrast stripes. Tiny tonal MORAVEL centered rear waistband only, no front mark.  Match garment silhouette and seam construction, but use fresh fabric folds and tension, slightly different ghost volume and hard directional shadows. Never recolor or edit reference pixels. Plain light-grey #E5E7EB background, high-contrast studio light, no visible mannequin, no person, no props. Tiny tone-on-tone directly printed condensed uppercase sans MORAVEL only where specified, no rectangular patch, no white logo. EXACT 4:5 1122x1402 canvas; full garment centered with margins. Required image canvas: EXACTLY 1122 pixels wide by 1402 pixels tall. Use WIDER 4:5 composition, not tall 3:4. Add horizontal grey space, keep full garment visible. Do not output 1072x1467.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-d75e0184-c209-4647-a14a-ee6c8144b377.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "accepted",
+    "notes": "Visually inspected generation: garment silhouette, colour family, view, framing and scene; model identity and anatomy where applicable. Native dimensions independently verified at installation.",
+    "colorCheck": "Visual colour-family comparison; hex values are design targets.",
+    "typographyCheck": "Small generated condensed sans lettering; not vector-exact.",
+    "reviewDate": "2026-09-28"
+  },
+  "path": "public/images/products/mens-training-short/master-signal-blue-front.png"
+}

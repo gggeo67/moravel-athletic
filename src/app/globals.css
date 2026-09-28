@@ -360,17 +360,17 @@
   border-radius: 100%;
   border: 1px solid #aaa99f;
 }
-.swatch-coal {
-  background: #303330;
+.swatch-black {
+  background: #111111;
 }
-.swatch-chalk {
-  background: #e9e5dd;
+.swatch-white {
+  background: #f2f2f0;
 }
-.swatch-reed {
-  background: #717763;
+.swatch-slate {
+  background: #4a4f57;
 }
-.swatch-silt {
-  background: #9b8679;
+.swatch-signal.blue {
+  background: #1f5bff;
 }
 .fabric-section {
   background: #e9e5dd;

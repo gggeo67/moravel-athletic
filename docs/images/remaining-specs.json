@@ -1,0 +1,137 @@
+[
+  {
+    "handle": "womens-sports-bra",
+    "rh": "linden-bra",
+    "rhColor": "coal",
+    "name": "Women's Sports Bra",
+    "colors": [
+      "black",
+      "slate"
+    ],
+    "design": "Close fitting opaque scoop-neck sports bra, narrow adjustable straps, low straight back, broad smooth underbust band, matte fine stretch knit, removable internal cups not visible. Simple original seams, no contour shading. Tiny tonal MORAVEL at left front underbust hem, no rear logo.",
+    "style": "black full-length high-waisted leggings and black training shoes",
+    "scene": "charcoal gym with rubber floor, blurred free weights, hard side sunlight",
+    "pose": "front view standing in athletic split stance holding one black dumbbell down in each hand, normal anatomy",
+    "rear": "neutral athletic side view, arms relaxed with dumbbells down, showing side fit"
+  },
+  {
+    "handle": "womens-bike-short",
+    "rh": "linden-bike-short",
+    "rhColor": "coal",
+    "name": "Women's Bike Short",
+    "colors": [
+      "black",
+      "slate"
+    ],
+    "design": "High-waisted fitted cycling shorts, 8-inch inseam reaching just above knee, broad smooth waistband, matte fine stretch knit, no front seam, simple inner leg seams and center back seam, no decorative contour panels or pockets. Tiny tonal MORAVEL centered rear waistband only; front has no mark.",
+    "style": "opaque slate sleeveless training tank ending at waistband and black trainers",
+    "scene": "blue running track with charcoal stadium steps, sharp late-afternoon side light",
+    "pose": "front three-quarter forward lunge with hands on hips and clear garment view",
+    "rear": "rear three-quarter walking lunge, head turned gently into profile"
+  },
+  {
+    "handle": "womens-training-tee",
+    "rh": "marlow-tee",
+    "rhColor": "chalk",
+    "name": "Women's Training Tee",
+    "colors": [
+      "white",
+      "signal-blue"
+    ],
+    "design": "Regular-fit short-sleeve crewneck training tee, straight hip-length hem, simple raglan sleeves, matte smooth lightweight technical jersey, original minimal seams. Tiny tonal MORAVEL at left chest in condensed uppercase sans, no other marks.",
+    "style": "black fitted leggings and black trainers",
+    "scene": "industrial city training court, dark concrete wall, hard morning side sunlight",
+    "pose": "front view brisk jogging stride with natural bent arm swing",
+    "rear": "rear three-quarter jogging stride looking slightly aside into profile"
+  },
+  {
+    "handle": "womens-jogger",
+    "rh": "marlow-jogger",
+    "rhColor": "coal",
+    "name": "Women's Jogger",
+    "colors": [
+      "black",
+      "slate"
+    ],
+    "design": "High-rise relaxed tapered training joggers, elastic waist with tonal drawcord, open side pockets, narrow rib ankle cuffs, matte fine technical jersey, simple straight seams, no rear pockets. Small tonal MORAVEL at center rear waistband only; no front branding.",
+    "style": "opaque charcoal sleeveless athletic tank tucked into waist, black trainers",
+    "scene": "concrete gym training bay with low exercise step, directional sunlight and strong floor shadows",
+    "pose": "front three-quarter high step onto low box, hands naturally balanced, waist unobscured",
+    "rear": "rear three-quarter step down from low box, head slightly turned into profile"
+  },
+  {
+    "handle": "womens-zip-hoodie",
+    "rh": "marlow-zip-hoodie",
+    "rhColor": "chalk",
+    "name": "Women's Zip Hoodie",
+    "colors": [
+      "black",
+      "slate"
+    ],
+    "design": "Slim-fit regular hip-length zip hoodie, full center zip, long sleeves, plain cuffs and straight hem, simple hood without cords, two discreet side pockets, matte fine flat-knit technical fabric. Original minimal seams, no contour panels. Small tonal MORAVEL left chest condensed uppercase sans; back plain.",
+    "style": "black fitted leggings and black trainers, hoodie zipped closed",
+    "scene": "city athletics walkway beside raw charcoal concrete, strong oblique morning sun",
+    "pose": "front three-quarter power-walking stride with bent arms",
+    "rear": "rear three-quarter brisk walking stride, hood down and head slightly turned"
+  },
+  {
+    "handle": "mens-training-tee",
+    "rh": "rowan-tee",
+    "rhColor": "chalk",
+    "name": "Men's Training Tee",
+    "colors": [
+      "white",
+      "black"
+    ],
+    "design": "Slim athletic-fit short-sleeve crewneck training tee, regular hip length, set-in sleeves, straight hem, matte smooth lightweight technical jersey. Simple original seams. Tiny tone-on-tone MORAVEL left chest in condensed uppercase sans, no other branding.",
+    "style": "black training shorts, black socks and black trainers",
+    "scene": "dark concrete gym with cable equipment blurred behind, hard directional light",
+    "pose": "front view athletic split stance with one black dumbbell at each side, elbows slightly bent, relaxed normal hands",
+    "rear": "rear three-quarter walking stance carrying dumbbells at sides, head turned into profile"
+  },
+  {
+    "handle": "mens-training-short",
+    "rh": "fen-training-short",
+    "rhColor": "coal",
+    "name": "Men's Training Short",
+    "colors": [
+      "black",
+      "signal-blue"
+    ],
+    "design": "Slim training shorts with 7-inch inseam above knee, matte light woven stretch fabric, elastic waist with internal drawcord, discreet zipped side pockets, straight hem, no rear pockets or liner visible. Original simple seams, no contrast stripes. Tiny tonal MORAVEL centered rear waistband only, no front mark.",
+    "style": "slate sleeveless fitted training top tucked to reveal waistband, black trainers",
+    "scene": "blue outdoor track with dark stadium background, hard sunlight",
+    "pose": "front-facing running stride with natural bent arms and both legs visible",
+    "rear": "rear three-quarter running stride, head slightly turned into profile"
+  },
+  {
+    "handle": "mens-quarter-zip",
+    "rh": "rowan-quarter-zip",
+    "rhColor": "coal",
+    "name": "Men's Quarter-Zip",
+    "colors": [
+      "black",
+      "signal-blue"
+    ],
+    "design": "Regular-fit hip-length long-sleeve quarter-zip training pullover, mock neck, center zip reaches upper chest, simple raglan sleeves, plain cuffs and straight hem, matte smooth technical stretch jersey, NO muscle-contour seams, no pockets. Tiny tonal MORAVEL at left chest condensed uppercase sans, plain rear.",
+    "style": "black training shorts, black socks and black trainers",
+    "scene": "urban concrete training plaza with dark steps, hard sun and crisp shadows",
+    "pose": "front three-quarter warm-up jogging stride with elbows bent",
+    "rear": "rear three-quarter jogging stride, slight head turn into profile"
+  },
+  {
+    "handle": "mens-hoodie",
+    "rh": "rowan-hoodie",
+    "rhColor": "chalk",
+    "name": "Men's Hoodie",
+    "colors": [
+      "slate",
+      "black"
+    ],
+    "design": "Oversized relaxed hip-length pullover hoodie, dropped shoulders, roomy long sleeves, rib cuffs and rib hem, simple hood without drawstrings, discreet on-seam side pockets, NO central kangaroo pocket. Matte fine dense technical jersey, simple original seams. Small tonal MORAVEL left chest condensed uppercase sans, plain rear.",
+    "style": "black tapered joggers and black trainers",
+    "scene": "dark industrial gym entrance with concrete wall, hard directional sunlight",
+    "pose": "front three-quarter purposeful walking stride holding black gym bag low in one hand clear of hoodie",
+    "rear": "rear three-quarter walking stride, hood down, head slightly turned into profile"
+  }
+]

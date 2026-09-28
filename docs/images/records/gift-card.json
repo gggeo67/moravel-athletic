@@ -1,0 +1,18 @@
+{
+  "id": "gift-card",
+  "product": "gift-card",
+  "file": "artwork.png",
+  "refs": [],
+  "prompt": "Create ONE photorealistic premium ecommerce still life, exact 4:5 portrait canvas 1122x1402. A single matte BLACK #111111 rectangular gift card, horizontal credit-card shape, floating slightly above a plain cool light-grey surface. Hard directional upper-left studio lighting, deep crisp diagonal shadow, high contrast. Card angled subtly in perspective, centered with generous margin. ONLY two lines of clean refined silver-grey lettering: \"Moravel Athletic\" and below smaller \"Gift card\". Condensed sans typography. No barcode, amount, other text, logo, envelope, ribbon or props. Entirely new original photograph from text. Exact 4:5 1122 wide 1402 tall.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-b339232f-481b-4749-bbd2-23fc548fa96d.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "accepted",
+    "notes": "Visually inspected generation: garment silhouette, colour family, view, framing and scene; model identity and anatomy where applicable. Native dimensions independently verified at installation.",
+    "colorCheck": "Visual colour-family comparison; hex values are design targets.",
+    "typographyCheck": "Small generated condensed sans lettering; not vector-exact.",
+    "reviewDate": "2026-09-28"
+  },
+  "path": "public/images/products/gift-card/artwork.png"
+}

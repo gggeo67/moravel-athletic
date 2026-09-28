@@ -1,0 +1,26 @@
+{
+  "id": "womens-sports-bra-master-slate-front",
+  "product": "womens-sports-bra",
+  "file": "master-slate-front.png",
+  "refs": [
+    {
+      "id": "womens-sports-bra-master-black-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-91909178-a418-462e-ab10-8c5c03522901.png",
+      "role": "New Moravel construction reference ONLY",
+      "sha256": "3dcfa20f7b9f7da1281c404e2e7e5ea1b467ff7c267790f8da5baba0feaf7477",
+      "retainedPath": "public/images/products/womens-sports-bra/master-black-front.png"
+    }
+  ],
+  "prompt": "Use case: product-mockup. Generate a NEW FRONT ghost-mannequin photograph of Women's Sports Bra in slate #4A4F57. Reference is a new Moravel garment for construction only. Close fitting opaque scoop-neck sports bra, narrow adjustable straps, low straight back, broad smooth underbust band, matte fine stretch knit, removable internal cups not visible. Simple original seams, no contour shading. Tiny tonal MORAVEL at left front underbust hem, no rear logo.  Match garment silhouette and seam construction, but use fresh fabric folds and tension, slightly different ghost volume and hard directional shadows. Never recolor or edit reference pixels. Plain light-grey #E5E7EB background, high-contrast studio light, no visible mannequin, no person, no props. Tiny tone-on-tone directly printed condensed uppercase sans MORAVEL only where specified, no rectangular patch, no white logo. EXACT 4:5 1122x1402 canvas; full garment centered with margins.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-0d04c339-fe05-4b08-b0fd-1c0c259c7ae2.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "accepted",
+    "notes": "Visually inspected generation: garment silhouette, colour family, view, framing and scene; model identity and anatomy where applicable. Native dimensions independently verified at installation.",
+    "colorCheck": "Visual colour-family comparison; hex values are design targets.",
+    "typographyCheck": "Small generated condensed sans lettering; not vector-exact.",
+    "reviewDate": "2026-09-28"
+  },
+  "path": "public/images/products/womens-sports-bra/master-slate-front.png"
+}

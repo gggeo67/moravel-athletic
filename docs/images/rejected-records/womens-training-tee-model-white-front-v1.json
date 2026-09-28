@@ -1,0 +1,26 @@
+{
+  "id": "womens-training-tee-model-white-front-v1-rejected",
+  "product": "womens-training-tee",
+  "file": "model-white-front.png",
+  "refs": [
+    {
+      "id": "rh-marlow-tee-identity",
+      "path": "/Users/tjmcgovern/websites/rennick_hale/public/images/products/marlow-tee/model-chalk-front.png",
+      "role": "Rennick & Hale fictional adult identity only: face and body; do not copy clothing, styling, setting, lighting or pose"
+    },
+    {
+      "id": "womens-training-tee-master-white-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-a47940e0-274e-47fe-9414-617212426933.png",
+      "role": "Original Moravel garment construction reference"
+    }
+  ],
+  "prompt": "Generate ONE entirely NEW photorealistic athletic campaign photograph, portrait 4:5 1122x1402. First image reference is ONLY fictional adult identity: keep same face, age, skin tone, hair and body proportions. Do not reuse its pixels, pose, clothing, lighting, background or framing. Second reference defines the new Moravel garment. Dress this same adult in Moravel Women's Training Tee, white #F2F2F0. Regular-fit short-sleeve crewneck training tee, straight hip-length hem, simple raglan sleeves, matte smooth lightweight technical jersey, original minimal seams. Tiny tonal MORAVEL at left chest in condensed uppercase sans, no other marks. Styling: black fitted leggings and black trainers, no white shoes, no other logos. Scene: industrial city training court, dark concrete wall, hard morning side sunlight. Pose: front view brisk jogging stride with natural bent arm swing. High contrast movement, believable athletic body, natural hands, sharp garment detail. Entire person including head and shoes within frame with clear margin; keep person in central 65% width for editorial crops. New front-focused camera angle and new setting, not an edit of the identity image. Wordmark tiny tone-on-tone MORAVEL in condensed uppercase sans like DIN Condensed only at rear waistband of bottoms or left chest/hem of tops. No extra text, logos or watermark. Generate exact wide portrait 4:5, 1122x1402.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-7bc2cc33-674f-4930-995e-a4d550032896.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "rejected",
+    "notes": "Wrong native aspect ratio; required 1122\u00d71402."
+  },
+  "path": "docs/images/rejected/womens-training-tee-model-white-front-v1.png"
+}

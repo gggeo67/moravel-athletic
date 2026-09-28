@@ -1,0 +1,33 @@
+{
+  "id": "womens-training-tee-model-white-back",
+  "product": "womens-training-tee",
+  "file": "model-white-back.png",
+  "refs": [
+    {
+      "id": "womens-training-tee-model-white-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-f1e8786d-34e8-42c5-9bdd-4b26709092d5.png",
+      "role": "New Moravel model: fictional identity and garment consistency",
+      "sha256": "678335c448c2a77608a5eedafca8a8794ec6c9bb19d8d0030f8c63cf2931f152",
+      "retainedPath": "public/images/products/womens-training-tee/model-white-front.png"
+    },
+    {
+      "id": "womens-training-tee-master-white-back",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-48d6a16d-9713-4e8f-a541-aa95eea0cf25.png",
+      "role": "New Moravel rear garment construction",
+      "sha256": "5e4b3e252e06a0ad1a150be8d3ae22065b4f2bd51435e62d882bc9db1f0193ba",
+      "retainedPath": "public/images/products/womens-training-tee/master-white-back.png"
+    }
+  ],
+  "prompt": "Create ONE NEW photorealistic Moravel sportswear photograph, same fictional adult person and exact garment as references. Show a back view: rear three-quarter jogging stride looking slightly aside into profile. Women's Training Tee in white #F2F2F0. Regular-fit short-sleeve crewneck training tee, straight hip-length hem, simple raglan sleeves, matte smooth lightweight technical jersey, original minimal seams. Tiny tonal MORAVEL at left chest in condensed uppercase sans, no other marks. Styling: black fitted leggings and black trainers. Entire head and shoes visible, garment unobscured. New camera placement in industrial city training court, dark concrete wall, hard morning side sunlight, hard directional light, strong shadows and realistic anatomy. Different pose and framing from first Moravel model image. Shoes entirely plain black including soles and tongues, NO shoe marks or text. Tops blank rear, bottoms only tiny tone-on-tone MORAVEL centered rear waistband, condensed sans DIN Condensed-like. No other logos or text. Generate a new photograph, not a mirror or edit. REQUIRED CANVAS: EXACT 4:5 aspect ratio, 1122 pixels wide by 1402 pixels tall, or larger 4:5 such as 2048x2560. Compose on a wider 4:5 frame, not a tall 3:4 frame. Add horizontal scene space around the subject to achieve 4:5. No border. Keep entire shoes and hair within frame.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-f393b271-8168-46ea-8e78-446fb216f271.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "accepted",
+    "notes": "Visually inspected generation: garment silhouette, colour family, view, framing and scene; model identity and anatomy where applicable. Native dimensions independently verified at installation.",
+    "colorCheck": "Visual colour-family comparison; hex values are design targets.",
+    "typographyCheck": "Small generated condensed sans lettering; not vector-exact.",
+    "reviewDate": "2026-09-28"
+  },
+  "path": "public/images/products/womens-training-tee/model-white-back.png"
+}

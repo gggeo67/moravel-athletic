@@ -1,0 +1,32 @@
+{
+  "id": "womens-bike-short-model-black-front",
+  "product": "womens-bike-short",
+  "file": "model-black-front.png",
+  "refs": [
+    {
+      "id": "rh-linden-bike-short-identity",
+      "path": "/Users/tjmcgovern/websites/rennick_hale/public/images/products/linden-bike-short/model-coal-front.png",
+      "role": "Rennick & Hale fictional adult identity only: face and body; do not copy clothing, styling, setting, lighting or pose",
+      "sha256": "fdffdda04e3e170c4cff4f679825bf5e261bfd411816e7ef57a41e33b99c14a7"
+    },
+    {
+      "id": "womens-bike-short-master-black-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-c2915190-2bdb-476e-a253-5d01157aeff1.png",
+      "role": "Original Moravel garment construction reference",
+      "sha256": "2a42acce96b07980ee2e220bd8155aee59dcf9481f1ab5b38339f452184546c4",
+      "retainedPath": "public/images/products/womens-bike-short/master-black-front.png"
+    }
+  ],
+  "prompt": "Create ONE entirely new photorealistic sportswear campaign photograph. Input1 ONLY face and body identity of the fictional adult freckled red-haired woman. Preserve that same person. Do not copy her clothing, studio, pose, lighting or framing. Input2 is the original Moravel black bike-short construction. Dress her in these HIGH WAIST 8-INCH INSEAM shorts, long hems ending JUST ABOVE BOTH KNEES, opaque slate sleeveless tank and totally plain black shoes with black soles and blank tongues. New pose: walking briskly toward camera, front view, natural arm swing, legs only slightly apart. New setting: blue athletics track with dark stadium bleachers, strong afternoon side light and long shadows. Full figure, athletic movement. No text or logos on front, no contour graphics. Generate new photograph, not an edit. REQUIRED CANVAS: EXACT 4:5 aspect ratio, 1122 pixels wide by 1402 pixels tall, or larger 4:5 such as 2048x2560. Compose on a wider 4:5 frame, not a tall 3:4 frame. Add horizontal track space around the subject to achieve 4:5. No border. Keep entire shoes and hair within frame.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-b0c7a965-5486-46d2-a67f-afa0fb89fcff.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "accepted",
+    "notes": "Visually inspected generation: garment silhouette, colour family, view, framing and scene; model identity and anatomy where applicable. Native dimensions independently verified at installation.",
+    "colorCheck": "Visual colour-family comparison; hex values are design targets.",
+    "typographyCheck": "Small generated condensed sans lettering; not vector-exact.",
+    "reviewDate": "2026-09-28"
+  },
+  "path": "public/images/products/womens-bike-short/model-black-front.png"
+}

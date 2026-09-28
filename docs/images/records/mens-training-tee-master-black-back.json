@@ -1,0 +1,26 @@
+{
+  "id": "mens-training-tee-master-black-back",
+  "product": "mens-training-tee",
+  "file": "master-black-back.png",
+  "refs": [
+    {
+      "id": "mens-training-tee-master-black-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-63029bc6-72ba-4b8a-9378-a1cf3e91826d.png",
+      "role": "Moravel alternate-colour front construction reference",
+      "sha256": "045ef3420b37cba39b6c985c7c72b552caf618bbf369c16d03b702815a0bb4e4",
+      "retainedPath": "public/images/products/mens-training-tee/master-black-front.png"
+    }
+  ],
+  "prompt": "Create a single 4:5 1122x1402 ecommerce photograph. NEW ghost-mannequin BACK view of Men's Training Tee in black #111111. Slim athletic-fit short-sleeve crewneck training tee, regular hip length, set-in sleeves, straight hem, matte smooth lightweight technical jersey. Simple original seams. Tiny tone-on-tone MORAVEL left chest in condensed uppercase sans, no other branding. Rear view, no front closure, no front logo, no front drawcord. Bottoms have tiny centered rear waistband MORAVEL, tops have blank rear. Use Moravel reference only for silhouette and construction, create fresh rear view, folds and shadows; do not recolor, mirror or edit the image. Plain cool light-grey background, hard directional light, full garment with margins, no person or props. Exact 4:5 aspect, wider portrait 1122x1402, not tall 3:4.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-f611b542-f764-4e28-8cc2-f61792874e4c.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "accepted",
+    "notes": "Visually inspected generation: garment silhouette, colour family, view, framing and scene; model identity and anatomy where applicable. Native dimensions independently verified at installation.",
+    "colorCheck": "Visual colour-family comparison; hex values are design targets.",
+    "typographyCheck": "Small generated condensed sans lettering; not vector-exact.",
+    "reviewDate": "2026-09-28"
+  },
+  "path": "public/images/products/mens-training-tee/master-black-back.png"
+}

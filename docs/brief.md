@@ -25,8 +25,8 @@ Exactly **12 product records: six women's, five men's, one gift card**, matching
 Rennick & Hale. Colours and sizes are variants, not extra products.
 
 The skeleton uses plain descriptive stand-ins in the same slots, with Rennick &
-Hale's slot prices and variants so the funnel and tests stay identical. Every
-name, price, colour, size, composition and feature below is replaced at sign-off.
+Hale's slot prices and variants so the funnel and tests stay identical. Remaining
+name, price, size and composition facts are still open; colours and the image-aligned fit updates were approved separately on 2026-09-28.
 
 | # | Slot (stand-in name / handle) | Audience / category | Fabric-line slot | Slot price |
 | -- | -- | -- | -- | -- |
@@ -43,7 +43,7 @@ name, price, colour, size, composition and feature below is replaced at sign-off
 | 11 | Men's Hoodie / `mens-hoodie` | Men / hoodie | Line One | $118 |
 | 12 | Moravel Athletic Gift Card / `gift-card` | Unisex / gift card | none | $50 / $100 |
 
-Stand-in colours: Black, White, Olive, Taupe (two per garment). Fabric-line slots:
+Approved colours (2026-09-28): Black #111111, White #F2F2F0, Slate #4A4F57, Signal Blue #1F5BFF (two per garment). Fabric-line slots:
 Line One, Line Two, Line Three (`/collections/line-one` etc.).
 
 ## Voice and look
@@ -52,14 +52,12 @@ Line One, Line Two, Line Three (`/collections/line-one` etc.).
   [Gymshark](https://www.gymshark.com): bold, energetic, high-contrast performance
   look. Reference only: never copy its copy, photos, product names or logos.
 - **Voice:** energetic (GEO-2316). Exact words and what it must never sound like: open fact.
-- **Palette and typefaces:** open fact, chosen within the Gymshark-like direction at
-  the build stage. The skeleton still carries Rennick & Hale's shared styling.
+- **Image palette (approved 2026-09-28):** Black, White, Slate and Signal Blue. Small tonal MORAVEL garment marks use a condensed sans treatment. Site typography is unchanged in this image-only release.
 - **References (GEO-2316, checked live 2026-09-24):** Gymshark (primary), Tracksmith,
   Janji, rabbit, Oiselle, Bandit Running, Path Projects, Soar Running, On, Satisfy.
   Moravel does its own reference research later; Rennick & Hale's research was not carried over.
-- **Image source:** proposed: the same route as Rennick & Hale's signed-off brief
-  (original fictional AI adult models and generated garments). Confirm for Moravel at
-  sign-off. Until then, image slots render flat colour blocks.
+- **Image source (approved 2026-09-28):** original AI-generated Moravel garments and fictional adult models. The same adult identity per paired product slot; R&H model photographs used only for identity, never garments or backgrounds. New gym, track and city scenes. 72 generated sources plus 26 crops; lineage, prompts and QA in `images/manifest.json`.
+- **Fit-description alignment (approved 2026-09-28):** user approved updating fit, length and visible features to match the supplied silhouette references and generated garments. Bike short: 8-inch inseam; women’s tee: regular hip length; zip hoodie: slim hip length; men’s tee and short: slim; men’s hoodie: oversized. No changes to prices, sizes, fabric compositions or checkout.
 
 ## Pages (copied exactly from Rennick & Hale; modeled on Vuori, sized for ~12 products)
 
@@ -102,11 +100,11 @@ returns a 404; the pair uses the restock page the user approved for Rennick & Ha
 
 ## Open facts (do not invent; leave out of the site until filled)
 
-- [ ] Voice words and palette/type within the Gymshark-like direction
+- [ ] Voice words and site type within the Gymshark-like direction (image palette approved)
 - [ ] Product names, exact prices, colours and sizes for the 12 records; gift-card denominations
 - [ ] Names of the three fabric lines (three slots matching Rennick & Hale)
 - [ ] Compositions, weights, fits, lengths and features (stand-ins carry Rennick & Hale's slot values)
-- [ ] Image source for Moravel (proposed: same route as Rennick & Hale)
+- [x] Image source and palette approved 2026-09-28; full brief remains unsigned
 - [ ] What makes us different from the references (2–3 concrete points)
 - [ ] Who buys it
 - [ ] Founding year, ships-to region, shipping costs and holiday cutoffs, returns window details

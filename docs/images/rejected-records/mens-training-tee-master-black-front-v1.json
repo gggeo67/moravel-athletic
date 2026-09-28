@@ -1,0 +1,22 @@
+{
+  "id": "mens-training-tee-master-black-front-v1-rejected",
+  "product": "mens-training-tee",
+  "file": "master-black-front.png",
+  "refs": [
+    {
+      "id": "mens-training-tee-master-white-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-232cff94-a013-4968-8748-42ebd4239f8c.png",
+      "role": "New Moravel construction reference ONLY"
+    }
+  ],
+  "prompt": "Use case: product-mockup. Generate a NEW FRONT ghost-mannequin photograph of Men's Training Tee in black #111111. Reference is a new Moravel garment for construction only. Slim athletic-fit short-sleeve crewneck training tee, regular hip length, set-in sleeves, straight hem, matte smooth lightweight technical jersey. Simple original seams. Tiny tone-on-tone MORAVEL left chest in condensed uppercase sans, no other branding.  Match garment silhouette and seam construction, but use fresh fabric folds and tension, slightly different ghost volume and hard directional shadows. Never recolor or edit reference pixels. Plain light-grey #E5E7EB background, high-contrast studio light, no visible mannequin, no person, no props. Tiny tone-on-tone directly printed condensed uppercase sans MORAVEL only where specified, no rectangular patch, no white logo. EXACT 4:5 1122x1402 canvas; full garment centered with margins. Required image canvas: EXACTLY 1122 pixels wide by 1402 pixels tall. Use WIDER 4:5 composition, not tall 3:4. Add horizontal grey space, keep full garment visible. Do not output 1072x1467.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-085ff255-1a98-4052-9bc1-86828e083d84.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "rejected",
+    "notes": "Native 1072x1467; required 1122x1402."
+  },
+  "path": "docs/images/rejected/mens-training-tee-master-black-front-v1.png",
+  "rejectionReason": "Native 1072x1467; required 1122x1402."
+}

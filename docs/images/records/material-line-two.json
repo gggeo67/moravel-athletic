@@ -1,0 +1,18 @@
+{
+  "id": "material-line-two",
+  "directory": "materials",
+  "file": "line-two.png",
+  "refs": [],
+  "prompt": "Create ONE entirely new photorealistic extreme fabric macro photograph, square 1:1 exact1254x1254. Original Moravel technical black #111111 dense matte smooth stretch knit rolled into a shallow diagonal wave. Hard raking directional studio light, high contrast, realistic microtexture clearly visible, focus on central fibers. Fabric fills every edge, no background or garment, no seams, text, logos, labels or props. Not a copy of any reference. Required SQUARE 1254 pixels wide and 1254 tall.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-cc8a6224-98f6-4d84-85db-2eae6fa2001e.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "accepted",
+    "notes": "Visually inspected generation: garment silhouette, colour family, view, framing and scene; model identity and anatomy where applicable. Native dimensions independently verified at installation.",
+    "colorCheck": "Visual colour-family comparison; hex values are design targets.",
+    "typographyCheck": "Small generated condensed sans lettering; not vector-exact.",
+    "reviewDate": "2026-09-28"
+  },
+  "path": "public/images/materials/line-two.png"
+}

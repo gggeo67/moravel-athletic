@@ -1,0 +1,33 @@
+{
+  "id": "brand-banner",
+  "directory": "editorial",
+  "file": "brand-banner.png",
+  "refs": [
+    {
+      "id": "womens-jogger-model-black-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-e5ea2b49-59ab-4aa3-a755-cf336195bbcc.png",
+      "role": "Moravel fictional woman identity and garment",
+      "sha256": "f1e2efb0fcec6f66309e4b98c5ace1770f8efb3c7181e31b035f316858272a8a",
+      "retainedPath": "public/images/products/womens-jogger/model-black-front.png"
+    },
+    {
+      "id": "mens-quarter-zip-model-black-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-0427eee8-5a26-42b4-8e10-94d96f803119.png",
+      "role": "Moravel fictional man identity and garment",
+      "sha256": "45e3178426a7801cb72feaffafb39a895bbf27e1b8df9738605757efdf57b501",
+      "retainedPath": "public/images/products/mens-quarter-zip/model-black-front.png"
+    }
+  ],
+  "prompt": "Create ONE completely new 16:9 landscape sportswear campaign photograph, 1672x941. Same two fictional adult identities in references: East Asian woman with dark bob in black tapered joggers and slate tank, and silver-haired adult man in black quarter-zip and black training shorts. Entirely plain black shoes dark soles. New setting: cavernous charcoal industrial gym, raw dark wall, low benches, black rubber floor, dramatic diagonal beams of hard sunlight. Both adults in motion: woman lunging forward on left, man stepping onto low exercise box on right, natural athletic limbs and realistic anatomy, full figures. New expressions, viewpoints and lighting. Dynamic high-contrast commercial photography. Keep subjects in middle 60% width, clear dark space far left/right for layout. Tiny tonal MORAVEL condensed sans at left chest or rear waistband only; no other marks or text. Do not copy backgrounds or pose from inputs. REQUIRED landscape 16:9 canvas 1672 pixels wide by 941 tall, not portrait. New photograph, not a collage or edit.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-77580ae4-ea3a-477d-b2b6-137a48bd5e5f.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "accepted",
+    "notes": "Visually inspected generation: garment silhouette, colour family, view, framing and scene; model identity and anatomy where applicable. Native dimensions independently verified at installation.",
+    "colorCheck": "Visual colour-family comparison; hex values are design targets.",
+    "typographyCheck": "Small generated condensed sans lettering; not vector-exact.",
+    "reviewDate": "2026-09-28"
+  },
+  "path": "public/images/editorial/brand-banner.png"
+}

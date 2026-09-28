@@ -1,0 +1,26 @@
+{
+  "id": "mens-hoodie-master-black-front",
+  "product": "mens-hoodie",
+  "file": "master-black-front.png",
+  "refs": [
+    {
+      "id": "mens-hoodie-master-slate-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-51ef3ec2-d94b-4a97-8a5b-d278e9571d96.png",
+      "role": "New Moravel construction reference ONLY",
+      "sha256": "1c14c9929d79eacd814f26df4924547cc6bfab3a139f959c0e36844e0c99facc",
+      "retainedPath": "public/images/products/mens-hoodie/master-slate-front.png"
+    }
+  ],
+  "prompt": "Use case: product-mockup. Generate a NEW FRONT ghost-mannequin photograph of Men's Hoodie in black #111111. Reference is a new Moravel garment for construction only. Oversized relaxed hip-length pullover hoodie, dropped shoulders, roomy long sleeves, rib cuffs and rib hem, simple hood without drawstrings, discreet on-seam side pockets, NO central kangaroo pocket. Matte fine dense technical jersey, simple original seams. Small tonal MORAVEL left chest condensed uppercase sans, plain rear.  Match garment silhouette and seam construction, but use fresh fabric folds and tension, slightly different ghost volume and hard directional shadows. Never recolor or edit reference pixels. Plain light-grey #E5E7EB background, high-contrast studio light, no visible mannequin, no person, no props. Tiny tone-on-tone directly printed condensed uppercase sans MORAVEL only where specified, no rectangular patch, no white logo. EXACT 4:5 1122x1402 canvas; full garment centered with margins. Required image canvas: EXACTLY 1122 pixels wide by 1402 pixels tall. Use WIDER 4:5 composition, not tall 3:4. Add horizontal grey space, keep full garment visible. Do not output 1072x1467.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-14630083-50ef-4394-a846-1fd3c19d5ab5.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "accepted",
+    "notes": "Visually inspected generation: garment silhouette, colour family, view, framing and scene; model identity and anatomy where applicable. Native dimensions independently verified at installation.",
+    "colorCheck": "Visual colour-family comparison; hex values are design targets.",
+    "typographyCheck": "Small generated condensed sans lettering; not vector-exact.",
+    "reviewDate": "2026-09-28"
+  },
+  "path": "public/images/products/mens-hoodie/master-black-front.png"
+}

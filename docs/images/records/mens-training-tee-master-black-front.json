@@ -1,0 +1,18 @@
+{
+  "id": "mens-training-tee-master-black-front",
+  "product": "mens-training-tee",
+  "file": "master-black-front.png",
+  "refs": [],
+  "prompt": "Create a single 4:5 portrait ecommerce photograph, exactly 1122x1402. Men's Training Tee FRONT view in black #111111, ghost mannequin no body visible, on plain cool light-grey seamless. Slim athletic-fit short-sleeve crewneck training tee, regular hip length, set-in sleeves, straight hem, matte smooth lightweight technical jersey. Simple original seams. Tiny tone-on-tone MORAVEL left chest in condensed uppercase sans, no other branding.   New product photo with hard upper-left light and high contrast; entire garment including sleeve ends within frame. Minimal original seams. Tiny tonal condensed sans MORAVEL only where specified; no other text. Wider portrait FOUR by FIVE composition, NOT three by four. Add space left and right. Native image must be at least 1122 pixels wide, target 1122x1402.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-63029bc6-72ba-4b8a-9378-a1cf3e91826d.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "accepted",
+    "notes": "Visually inspected generation: garment silhouette, colour family, view, framing and scene; model identity and anatomy where applicable. Native dimensions independently verified at installation.",
+    "colorCheck": "Visual colour-family comparison; hex values are design targets.",
+    "typographyCheck": "Small generated condensed sans lettering; not vector-exact.",
+    "reviewDate": "2026-09-28"
+  },
+  "path": "public/images/products/mens-training-tee/master-black-front.png"
+}

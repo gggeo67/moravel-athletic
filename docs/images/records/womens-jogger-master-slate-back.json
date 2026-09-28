@@ -1,0 +1,26 @@
+{
+  "id": "womens-jogger-master-slate-back",
+  "product": "womens-jogger",
+  "file": "master-slate-back.png",
+  "refs": [
+    {
+      "id": "womens-jogger-master-slate-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-31cd87d8-8e35-4478-ae30-02ba46775c1c.png",
+      "role": "Moravel alternate-colour front construction reference",
+      "sha256": "7783495d8cb744adbc489e911eb341bdf211854da8b06623e383aa224bd07dd4",
+      "retainedPath": "public/images/products/womens-jogger/master-slate-front.png"
+    }
+  ],
+  "prompt": "Create a single 4:5 1122x1402 ecommerce photograph. NEW ghost-mannequin BACK view of Women's Jogger in slate #4A4F57. High-rise relaxed tapered training joggers, elastic waist with tonal drawcord, open side pockets, narrow rib ankle cuffs, matte fine technical jersey, simple straight seams, no rear pockets. Small tonal MORAVEL at center rear waistband only; no front branding. Rear view, no front closure, no front logo, no front drawcord. Bottoms have tiny centered rear waistband MORAVEL, tops have blank rear. Use Moravel reference only for silhouette and construction, create fresh rear view, folds and shadows; do not recolor, mirror or edit the image. Plain cool light-grey background, hard directional light, full garment with margins, no person or props. Exact 4:5 aspect, wider portrait 1122x1402, not tall 3:4.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-14b706b0-cb0d-42d4-81ad-40d94f301ba1.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "accepted",
+    "notes": "Visually inspected generation: garment silhouette, colour family, view, framing and scene; model identity and anatomy where applicable. Native dimensions independently verified at installation.",
+    "colorCheck": "Visual colour-family comparison; hex values are design targets.",
+    "typographyCheck": "Small generated condensed sans lettering; not vector-exact.",
+    "reviewDate": "2026-09-28"
+  },
+  "path": "public/images/products/womens-jogger/master-slate-back.png"
+}

@@ -55,8 +55,7 @@ export const collections: Collection[] = [
   {
     handle: "line-one",
     title: "Line One",
-    description:
-      "Stretch jersey for tees, joggers and layers.",
+    description: "Stretch jersey for tees, joggers and layers.",
   },
   {
     handle: "line-two",
@@ -179,11 +178,10 @@ export const fabricLines = [
   {
     handle: "line-one",
     name: "Line One",
-    description:
-      "Stretch jersey for tees, joggers and layers.",
+    description: "Stretch jersey for tees, joggers and layers.",
     composition: "89% polyester / 11% elastane",
     image: "/images/editorial/collection-line-one.webp",
-    alt: "Line One tee in White",
+    alt: "Model carrying dumbbells in a White Moravel training tee",
     macro: "/images/materials/line-one.webp",
   },
   {
@@ -192,7 +190,7 @@ export const fabricLines = [
     description: "Close-fitting stretch pieces, made to wear together.",
     composition: "87% polyester / 13% elastane",
     image: "/images/editorial/collection-line-two.webp",
-    alt: "Line Two pieces in Black",
+    alt: "Model wearing a Black Moravel sports bra in a gym",
     macro: "/images/materials/line-two.webp",
   },
   {
@@ -201,7 +199,7 @@ export const fabricLines = [
     description: "Light woven stretch, with the details training calls for.",
     composition: "86% polyester / 14% elastane · 137 GSM",
     image: "/images/editorial/collection-line-three.webp",
-    alt: "Line Three training shorts in Black",
+    alt: "Model running on a blue track in Black Moravel training shorts",
     macro: "/images/materials/line-three.webp",
   },
 ];
@@ -257,7 +255,7 @@ export const storefront = {
     title: "Built for the next session.",
     text: "Training and running gear in technical fabrics, for women and men.",
     image: "/images/editorial/home-hero.webp",
-    alt: "Moravel Athletic training and running gear",
+    alt: "Two models running on a blue track in Black Moravel leggings and joggers",
   },
   newArrivals: {
     title: "Shop the range",
@@ -271,7 +269,7 @@ export const storefront = {
     title: "Gear for training and running.",
     text: "Technical fabrics, clear fits and two colors for every garment.",
     image: "/images/editorial/brand-banner.webp",
-    alt: "Moravel Athletic training gear",
+    alt: "Two models training in a sunlit gym in Black Moravel gear",
   },
   newsletter: {
     title: "News from Moravel Athletic.",
@@ -287,25 +285,25 @@ export const storefront = {
         title: "Eleven garments and a gift card.",
         text: "Six pieces for women and five for men, from leggings and sports bras to shorts, tees and layers.",
         image: "/images/editorial/story-1.webp",
-        alt: "Moravel Athletic training gear",
+        alt: "Model stepping onto a gym box in Black Moravel joggers",
       },
       {
         title: "Start with the fabric.",
         text: "Three fabric lines, each with its composition stated plainly on every product page.",
         image: "/images/editorial/story-2.webp",
-        alt: "Moravel Athletic fabric",
+        alt: "Model jogging in a White Moravel raglan training tee",
       },
       {
         title: "Two colors for every garment.",
-        text: "Black, White, Olive and Taupe. Select a color on any product page to see it.",
+        text: "Black, White, Slate and Signal Blue. Select a color on any product page to see it.",
         image: "/images/editorial/story-3.webp",
-        alt: "Moravel Athletic garments in Black",
+        alt: "Model walking on a blue track in Black Moravel bike shorts",
       },
       {
         title: "Details you can check.",
         text: "Fit, sizes, inseams and features are listed on each product page.",
         image: "/images/editorial/story-4.webp",
-        alt: "Moravel Athletic training shorts",
+        alt: "Model running in Black Moravel training shorts",
       },
     ],
   },
@@ -313,7 +311,7 @@ export const storefront = {
     title: "Gifts for training and running.",
     text: "A layer, a pair of shorts, or the choice of a gift card.",
     image: "/images/editorial/gift-guide.webp",
-    alt: "Moravel Athletic gift ideas",
+    alt: "Model outside a gym wearing a Slate Moravel hoodie",
   },
   journal: {
     title: "Notes on fabric & fit",

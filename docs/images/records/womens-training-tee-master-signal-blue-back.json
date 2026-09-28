@@ -1,0 +1,26 @@
+{
+  "id": "womens-training-tee-master-signal-blue-back",
+  "product": "womens-training-tee",
+  "file": "master-signal-blue-back.png",
+  "refs": [
+    {
+      "id": "womens-training-tee-master-signal-blue-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-9469c28a-c0ee-4e81-a013-0ada0552f337.png",
+      "role": "Moravel alternate-colour front construction reference",
+      "sha256": "4d0aad63c8f85a90561070598e752b7a0e7e3b2ad1b98bee21a5a2cc0c6feddb",
+      "retainedPath": "public/images/products/womens-training-tee/master-signal-blue-front.png"
+    }
+  ],
+  "prompt": "Create a single 4:5 1122x1402 ecommerce photograph. NEW ghost-mannequin BACK view of Women's Training Tee in signal-blue #1F5BFF. Regular-fit short-sleeve crewneck training tee, straight hip-length hem, simple raglan sleeves, matte smooth lightweight technical jersey, original minimal seams. Tiny tonal MORAVEL at left chest in condensed uppercase sans, no other marks. Rear view, no front closure, no front logo, no front drawcord. Bottoms have tiny centered rear waistband MORAVEL, tops have blank rear. Use Moravel reference only for silhouette and construction, create fresh rear view, folds and shadows; do not recolor, mirror or edit the image. Plain cool light-grey background, hard directional light, full garment with margins, no person or props. Exact 4:5 aspect, wider portrait 1122x1402, not tall 3:4.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-8f2ff4f8-93b4-43b2-ae41-8564b8e7c194.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "accepted",
+    "notes": "Visually inspected generation: garment silhouette, colour family, view, framing and scene; model identity and anatomy where applicable. Native dimensions independently verified at installation.",
+    "colorCheck": "Visual colour-family comparison; hex values are design targets.",
+    "typographyCheck": "Small generated condensed sans lettering; not vector-exact.",
+    "reviewDate": "2026-09-28"
+  },
+  "path": "public/images/products/womens-training-tee/master-signal-blue-back.png"
+}

@@ -20,14 +20,14 @@ describe("approved catalog and purchasing", () => {
   });
   test("different colors remain distinct through persistence and checkout resolution", () => {
     let lines = addLine([], "womens-training-legging", "M", 1, { color: "Black" });
-    lines = addLine(lines, "womens-training-legging", "M", 2, { color: "Olive" });
+    lines = addLine(lines, "womens-training-legging", "M", 2, { color: "Slate" });
     const resolved = resolveLines(
       parseLines(JSON.parse(JSON.stringify(lines))),
     );
     expect(resolved).toHaveLength(2);
     expect(resolved.map((l) => [l.color, l.quantity, l.unitPrice])).toEqual([
       ["Black", 1, 98],
-      ["Olive", 2, 98],
+      ["Slate", 2, 98],
     ]);
     expect(subtotal(resolved)).toBe(294);
   });

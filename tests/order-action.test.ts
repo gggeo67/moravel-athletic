@@ -29,7 +29,7 @@ function submission() {
     state: "CA",
     zip: "94000",
     lines: JSON.stringify([
-      { handle: "womens-training-legging", color: "Olive", size: "M", quantity: 1 },
+      { handle: "womens-training-legging", color: "Slate", size: "M", quantity: 1 },
     ]),
   }))
     form.set(key, value);

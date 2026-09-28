@@ -1,0 +1,26 @@
+{
+  "id": "womens-zip-hoodie-master-slate-back",
+  "product": "womens-zip-hoodie",
+  "file": "master-slate-back.png",
+  "refs": [
+    {
+      "id": "womens-zip-hoodie-master-slate-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-20e69fe4-ec31-4730-bcb0-435bf164be32.png",
+      "role": "Moravel alternate-colour front construction reference",
+      "sha256": "ea37ea1434e35b1c82c00e1d67f02e1feb097f992e196c610efd9e42f940b11c",
+      "retainedPath": "public/images/products/womens-zip-hoodie/master-slate-front.png"
+    }
+  ],
+  "prompt": "Create a single 4:5 1122x1402 ecommerce photograph. NEW ghost-mannequin BACK view of Women's Zip Hoodie in slate #4A4F57. Slim-fit regular hip-length zip hoodie, full center zip, long sleeves, plain cuffs and straight hem, simple hood without cords, two discreet side pockets, matte fine flat-knit technical fabric. Original minimal seams, no contour panels. Small tonal MORAVEL left chest condensed uppercase sans; back plain. Rear view, no front closure, no front logo, no front drawcord. Bottoms have tiny centered rear waistband MORAVEL, tops have blank rear. Use Moravel reference only for silhouette and construction, create fresh rear view, folds and shadows; do not recolor, mirror or edit the image. Plain cool light-grey background, hard directional light, full garment with margins, no person or props. Exact 4:5 aspect, wider portrait 1122x1402, not tall 3:4.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-bba48654-bff0-44b1-ac1d-ea95170f8d6a.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "accepted",
+    "notes": "Visually inspected generation: garment silhouette, colour family, view, framing and scene; model identity and anatomy where applicable. Native dimensions independently verified at installation.",
+    "colorCheck": "Visual colour-family comparison; hex values are design targets.",
+    "typographyCheck": "Small generated condensed sans lettering; not vector-exact.",
+    "reviewDate": "2026-09-28"
+  },
+  "path": "public/images/products/womens-zip-hoodie/master-slate-back.png"
+}

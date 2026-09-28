@@ -43,41 +43,41 @@ export const products: Product[] = [
     colors: [
       {
         name: "Black",
-        hex: "#303330",
+        hex: "#111111",
         images: [
           {
             src: "/images/products/womens-training-legging/model-black-front.webp",
-            alt: "Women's Training Legging in Black, model front view",
+            alt: "Women's Training Legging in Black, front view on a model lunging in a sunlit gym",
           },
           {
             src: "/images/products/womens-training-legging/model-black-back.webp",
-            alt: "Women's Training Legging in Black, model back view",
+            alt: "Women's Training Legging in Black, back view on the same model",
           },
           {
             src: "/images/products/womens-training-legging/master-black-front.webp",
-            alt: "Women's Training Legging in Black, front garment view",
+            alt: "Women's Training Legging in Black, ghost-mannequin front view on light grey",
           },
           {
             src: "/images/products/womens-training-legging/master-black-back.webp",
-            alt: "Women's Training Legging in Black, back garment view",
+            alt: "Women's Training Legging in Black, ghost-mannequin back view on light grey",
           },
           {
             src: "/images/products/womens-training-legging/detail-black.webp",
-            alt: "Women's Training Legging fabric and construction detail",
+            alt: "Women's Training Legging in Black, close-up of fabric and stitching",
           },
         ],
       },
       {
-        name: "Olive",
-        hex: "#717763",
+        name: "Slate",
+        hex: "#4A4F57",
         images: [
           {
-            src: "/images/products/womens-training-legging/master-olive-front.webp",
-            alt: "Women's Training Legging in Olive, front garment view",
+            src: "/images/products/womens-training-legging/master-slate-front.webp",
+            alt: "Women's Training Legging in Slate, ghost-mannequin front view on light grey",
           },
           {
-            src: "/images/products/womens-training-legging/master-olive-back-v2.webp",
-            alt: "Women's Training Legging in Olive, back garment view",
+            src: "/images/products/womens-training-legging/master-slate-back.webp",
+            alt: "Women's Training Legging in Slate, ghost-mannequin back view on light grey",
           },
         ],
       },
@@ -87,30 +87,30 @@ export const products: Product[] = [
     images: [
       {
         src: "/images/products/womens-training-legging/model-black-front.webp",
-        alt: "Women's Training Legging in Black, model front view",
+        alt: "Women's Training Legging in Black, front view on a model lunging in a sunlit gym",
       },
       {
         src: "/images/products/womens-training-legging/model-black-back.webp",
-        alt: "Women's Training Legging in Black, model back view",
+        alt: "Women's Training Legging in Black, back view on the same model",
       },
       {
         src: "/images/products/womens-training-legging/master-black-front.webp",
-        alt: "Women's Training Legging in Black, front garment view",
+        alt: "Women's Training Legging in Black, ghost-mannequin front view on light grey",
       },
       {
         src: "/images/products/womens-training-legging/master-black-back.webp",
-        alt: "Women's Training Legging in Black, back garment view",
+        alt: "Women's Training Legging in Black, ghost-mannequin back view on light grey",
       },
       {
         src: "/images/products/womens-training-legging/detail-black.webp",
-        alt: "Women's Training Legging fabric and construction detail",
+        alt: "Women's Training Legging in Black, close-up of fabric and stitching",
       },
     ],
     composition: "87% polyester / 13% elastane",
     weightGsm: null,
     fit: "Close fitting, high rise",
     length: "25-inch inseam",
-    features: ["Wide waistband", "Rear storage pocket", "Four-way stretch"],
+    features: ["Wide waistband", "Clean rear waistband", "Four-way stretch"],
   },
   {
     handle: "womens-sports-bra",
@@ -127,41 +127,41 @@ export const products: Product[] = [
     colors: [
       {
         name: "Black",
-        hex: "#303330",
+        hex: "#111111",
         images: [
           {
             src: "/images/products/womens-sports-bra/model-black-front.webp",
-            alt: "Women's Sports Bra in Black, model front view",
+            alt: "Women's Sports Bra in Black, front view on a model holding dumbbells in a gym",
           },
           {
             src: "/images/products/womens-sports-bra/model-black-side.webp",
-            alt: "Women's Sports Bra in Black, model side view",
+            alt: "Women's Sports Bra in Black, side view on the same model",
           },
           {
             src: "/images/products/womens-sports-bra/master-black-front.webp",
-            alt: "Women's Sports Bra in Black, front garment view",
+            alt: "Women's Sports Bra in Black, ghost-mannequin front view on light grey",
           },
           {
             src: "/images/products/womens-sports-bra/master-black-back.webp",
-            alt: "Women's Sports Bra in Black, back garment view",
+            alt: "Women's Sports Bra in Black, ghost-mannequin back view on light grey",
           },
           {
             src: "/images/products/womens-sports-bra/detail-black.webp",
-            alt: "Women's Sports Bra fabric and construction detail",
+            alt: "Women's Sports Bra in Black, close-up of fabric and stitching",
           },
         ],
       },
       {
-        name: "Olive",
-        hex: "#717763",
+        name: "Slate",
+        hex: "#4A4F57",
         images: [
           {
-            src: "/images/products/womens-sports-bra/master-olive-front.webp",
-            alt: "Women's Sports Bra in Olive, front garment view",
+            src: "/images/products/womens-sports-bra/master-slate-front.webp",
+            alt: "Women's Sports Bra in Slate, ghost-mannequin front view on light grey",
           },
           {
-            src: "/images/products/womens-sports-bra/master-olive-back.webp",
-            alt: "Women's Sports Bra in Olive, back garment view",
+            src: "/images/products/womens-sports-bra/master-slate-back.webp",
+            alt: "Women's Sports Bra in Slate, ghost-mannequin back view on light grey",
           },
         ],
       },
@@ -171,23 +171,23 @@ export const products: Product[] = [
     images: [
       {
         src: "/images/products/womens-sports-bra/model-black-front.webp",
-        alt: "Women's Sports Bra in Black, model front view",
+        alt: "Women's Sports Bra in Black, front view on a model holding dumbbells in a gym",
       },
       {
         src: "/images/products/womens-sports-bra/model-black-side.webp",
-        alt: "Women's Sports Bra in Black, model side view",
+        alt: "Women's Sports Bra in Black, side view on the same model",
       },
       {
         src: "/images/products/womens-sports-bra/master-black-front.webp",
-        alt: "Women's Sports Bra in Black, front garment view",
+        alt: "Women's Sports Bra in Black, ghost-mannequin front view on light grey",
       },
       {
         src: "/images/products/womens-sports-bra/master-black-back.webp",
-        alt: "Women's Sports Bra in Black, back garment view",
+        alt: "Women's Sports Bra in Black, ghost-mannequin back view on light grey",
       },
       {
         src: "/images/products/womens-sports-bra/detail-black.webp",
-        alt: "Women's Sports Bra fabric and construction detail",
+        alt: "Women's Sports Bra in Black, close-up of fabric and stitching",
       },
     ],
     composition: "87% polyester / 13% elastane",
@@ -214,41 +214,41 @@ export const products: Product[] = [
     colors: [
       {
         name: "Black",
-        hex: "#303330",
+        hex: "#111111",
         images: [
           {
             src: "/images/products/womens-bike-short/model-black-front.webp",
-            alt: "Women's Bike Short in Black, model front view",
+            alt: "Women's Bike Short in Black, front view on a model moving on a blue running track",
           },
           {
             src: "/images/products/womens-bike-short/model-black-back.webp",
-            alt: "Women's Bike Short in Black, model back view",
+            alt: "Women's Bike Short in Black, back view on the same model",
           },
           {
             src: "/images/products/womens-bike-short/master-black-front.webp",
-            alt: "Women's Bike Short in Black, front garment view",
+            alt: "Women's Bike Short in Black, ghost-mannequin front view on light grey",
           },
           {
             src: "/images/products/womens-bike-short/master-black-back.webp",
-            alt: "Women's Bike Short in Black, back garment view",
+            alt: "Women's Bike Short in Black, ghost-mannequin back view on light grey",
           },
           {
             src: "/images/products/womens-bike-short/detail-black.webp",
-            alt: "Women's Bike Short fabric and construction detail",
+            alt: "Women's Bike Short in Black, close-up of fabric and stitching",
           },
         ],
       },
       {
-        name: "Olive",
-        hex: "#717763",
+        name: "Slate",
+        hex: "#4A4F57",
         images: [
           {
-            src: "/images/products/womens-bike-short/master-olive-front.webp",
-            alt: "Women's Bike Short in Olive, front garment view",
+            src: "/images/products/womens-bike-short/master-slate-front.webp",
+            alt: "Women's Bike Short in Slate, ghost-mannequin front view on light grey",
           },
           {
-            src: "/images/products/womens-bike-short/master-olive-back.webp",
-            alt: "Women's Bike Short in Olive, back garment view",
+            src: "/images/products/womens-bike-short/master-slate-back.webp",
+            alt: "Women's Bike Short in Slate, ghost-mannequin back view on light grey",
           },
         ],
       },
@@ -258,29 +258,29 @@ export const products: Product[] = [
     images: [
       {
         src: "/images/products/womens-bike-short/model-black-front.webp",
-        alt: "Women's Bike Short in Black, model front view",
+        alt: "Women's Bike Short in Black, front view on a model moving on a blue running track",
       },
       {
         src: "/images/products/womens-bike-short/model-black-back.webp",
-        alt: "Women's Bike Short in Black, model back view",
+        alt: "Women's Bike Short in Black, back view on the same model",
       },
       {
         src: "/images/products/womens-bike-short/master-black-front.webp",
-        alt: "Women's Bike Short in Black, front garment view",
+        alt: "Women's Bike Short in Black, ghost-mannequin front view on light grey",
       },
       {
         src: "/images/products/womens-bike-short/master-black-back.webp",
-        alt: "Women's Bike Short in Black, back garment view",
+        alt: "Women's Bike Short in Black, ghost-mannequin back view on light grey",
       },
       {
         src: "/images/products/womens-bike-short/detail-black.webp",
-        alt: "Women's Bike Short fabric and construction detail",
+        alt: "Women's Bike Short in Black, close-up of fabric and stitching",
       },
     ],
     composition: "87% polyester / 13% elastane",
     weightGsm: null,
     fit: "Fitted",
-    length: "5-inch inseam",
+    length: "8-inch inseam",
     features: ["High waistband", "No front seam", "Four-way stretch"],
   },
   {
@@ -291,47 +291,47 @@ export const products: Product[] = [
     kind: "apparel",
     collections: ["womens", "line-one"],
     fabricLine: "line-one",
-    summary: "A fitted raglan tee in softly brushed stretch jersey.",
+    summary: "A regular-fit raglan tee in softly brushed stretch jersey.",
     priceUsd: 48,
     color: "White",
     colors: [
       {
         name: "White",
-        hex: "#E9E5DD",
+        hex: "#F2F2F0",
         images: [
           {
             src: "/images/products/womens-training-tee/model-white-front.webp",
-            alt: "Women's Training Tee in White, model front view",
+            alt: "Women's Training Tee in White, front view on a model jogging on a city training court",
           },
           {
             src: "/images/products/womens-training-tee/model-white-back.webp",
-            alt: "Women's Training Tee in White, model back view",
+            alt: "Women's Training Tee in White, back view on the same model",
           },
           {
             src: "/images/products/womens-training-tee/master-white-front.webp",
-            alt: "Women's Training Tee in White, front garment view",
+            alt: "Women's Training Tee in White, ghost-mannequin front view on light grey",
           },
           {
             src: "/images/products/womens-training-tee/master-white-back.webp",
-            alt: "Women's Training Tee in White, back garment view",
+            alt: "Women's Training Tee in White, ghost-mannequin back view on light grey",
           },
           {
             src: "/images/products/womens-training-tee/detail-white.webp",
-            alt: "Women's Training Tee fabric and construction detail",
+            alt: "Women's Training Tee in White, close-up of fabric and stitching",
           },
         ],
       },
       {
-        name: "Taupe",
-        hex: "#9B8679",
+        name: "Signal Blue",
+        hex: "#1F5BFF",
         images: [
           {
-            src: "/images/products/womens-training-tee/master-taupe-front.webp",
-            alt: "Women's Training Tee in Taupe, front garment view",
+            src: "/images/products/womens-training-tee/master-signal-blue-front.webp",
+            alt: "Women's Training Tee in Signal Blue, ghost-mannequin front view on light grey",
           },
           {
-            src: "/images/products/womens-training-tee/master-taupe-back.webp",
-            alt: "Women's Training Tee in Taupe, back garment view",
+            src: "/images/products/womens-training-tee/master-signal-blue-back.webp",
+            alt: "Women's Training Tee in Signal Blue, ghost-mannequin back view on light grey",
           },
         ],
       },
@@ -341,28 +341,28 @@ export const products: Product[] = [
     images: [
       {
         src: "/images/products/womens-training-tee/model-white-front.webp",
-        alt: "Women's Training Tee in White, model front view",
+        alt: "Women's Training Tee in White, front view on a model jogging on a city training court",
       },
       {
         src: "/images/products/womens-training-tee/model-white-back.webp",
-        alt: "Women's Training Tee in White, model back view",
+        alt: "Women's Training Tee in White, back view on the same model",
       },
       {
         src: "/images/products/womens-training-tee/master-white-front.webp",
-        alt: "Women's Training Tee in White, front garment view",
+        alt: "Women's Training Tee in White, ghost-mannequin front view on light grey",
       },
       {
         src: "/images/products/womens-training-tee/master-white-back.webp",
-        alt: "Women's Training Tee in White, back garment view",
+        alt: "Women's Training Tee in White, ghost-mannequin back view on light grey",
       },
       {
         src: "/images/products/womens-training-tee/detail-white.webp",
-        alt: "Women's Training Tee fabric and construction detail",
+        alt: "Women's Training Tee in White, close-up of fabric and stitching",
       },
     ],
     composition: "89% polyester / 11% elastane",
     weightGsm: null,
-    fit: "Fitted, high hip",
+    fit: "Regular fit, hip length",
     length: null,
     features: ["Raglan sleeves", "Four-way stretch", "Moisture wicking"],
   },
@@ -380,41 +380,41 @@ export const products: Product[] = [
     colors: [
       {
         name: "Black",
-        hex: "#303330",
+        hex: "#111111",
         images: [
           {
             src: "/images/products/womens-jogger/model-black-front.webp",
-            alt: "Women's Jogger in Black, model front view",
+            alt: "Women's Jogger in Black, front view on a model stepping onto a gym box",
           },
           {
             src: "/images/products/womens-jogger/model-black-back.webp",
-            alt: "Women's Jogger in Black, model back view",
+            alt: "Women's Jogger in Black, back view on the same model",
           },
           {
             src: "/images/products/womens-jogger/master-black-front.webp",
-            alt: "Women's Jogger in Black, front garment view",
+            alt: "Women's Jogger in Black, ghost-mannequin front view on light grey",
           },
           {
             src: "/images/products/womens-jogger/master-black-back.webp",
-            alt: "Women's Jogger in Black, back garment view",
+            alt: "Women's Jogger in Black, ghost-mannequin back view on light grey",
           },
           {
             src: "/images/products/womens-jogger/detail-black.webp",
-            alt: "Women's Jogger fabric and construction detail",
+            alt: "Women's Jogger in Black, close-up of fabric and stitching",
           },
         ],
       },
       {
-        name: "Taupe",
-        hex: "#9B8679",
+        name: "Slate",
+        hex: "#4A4F57",
         images: [
           {
-            src: "/images/products/womens-jogger/master-taupe-front.webp",
-            alt: "Women's Jogger in Taupe, front garment view",
+            src: "/images/products/womens-jogger/master-slate-front.webp",
+            alt: "Women's Jogger in Slate, ghost-mannequin front view on light grey",
           },
           {
-            src: "/images/products/womens-jogger/master-taupe-back.webp",
-            alt: "Women's Jogger in Taupe, back garment view",
+            src: "/images/products/womens-jogger/master-slate-back.webp",
+            alt: "Women's Jogger in Slate, ghost-mannequin back view on light grey",
           },
         ],
       },
@@ -424,23 +424,23 @@ export const products: Product[] = [
     images: [
       {
         src: "/images/products/womens-jogger/model-black-front.webp",
-        alt: "Women's Jogger in Black, model front view",
+        alt: "Women's Jogger in Black, front view on a model stepping onto a gym box",
       },
       {
         src: "/images/products/womens-jogger/model-black-back.webp",
-        alt: "Women's Jogger in Black, model back view",
+        alt: "Women's Jogger in Black, back view on the same model",
       },
       {
         src: "/images/products/womens-jogger/master-black-front.webp",
-        alt: "Women's Jogger in Black, front garment view",
+        alt: "Women's Jogger in Black, ghost-mannequin front view on light grey",
       },
       {
         src: "/images/products/womens-jogger/master-black-back.webp",
-        alt: "Women's Jogger in Black, back garment view",
+        alt: "Women's Jogger in Black, ghost-mannequin back view on light grey",
       },
       {
         src: "/images/products/womens-jogger/detail-black.webp",
-        alt: "Women's Jogger fabric and construction detail",
+        alt: "Women's Jogger in Black, close-up of fabric and stitching",
       },
     ],
     composition: "89% polyester / 11% elastane",
@@ -457,47 +457,47 @@ export const products: Product[] = [
     kind: "apparel",
     collections: ["womens", "line-one"],
     fabricLine: "line-one",
-    summary: "An easy full-zip layer in softly brushed stretch jersey.",
+    summary: "A slim full-zip layer in softly brushed stretch jersey.",
     priceUsd: 110,
-    color: "White",
+    color: "Black",
     colors: [
       {
-        name: "White",
-        hex: "#E9E5DD",
+        name: "Black",
+        hex: "#111111",
         images: [
           {
-            src: "/images/products/womens-zip-hoodie/model-white-front.webp",
-            alt: "Women's Zip Hoodie in White, model front view",
+            src: "/images/products/womens-zip-hoodie/model-black-front.webp",
+            alt: "Women's Zip Hoodie in Black, front view on a model walking along a concrete city walkway",
           },
           {
-            src: "/images/products/womens-zip-hoodie/model-white-back.webp",
-            alt: "Women's Zip Hoodie in White, model back view",
+            src: "/images/products/womens-zip-hoodie/model-black-back.webp",
+            alt: "Women's Zip Hoodie in Black, back view on the same model",
           },
           {
-            src: "/images/products/womens-zip-hoodie/master-white-front.webp",
-            alt: "Women's Zip Hoodie in White, front garment view",
+            src: "/images/products/womens-zip-hoodie/master-black-front.webp",
+            alt: "Women's Zip Hoodie in Black, ghost-mannequin front view on light grey",
           },
           {
-            src: "/images/products/womens-zip-hoodie/master-white-back.webp",
-            alt: "Women's Zip Hoodie in White, back garment view",
+            src: "/images/products/womens-zip-hoodie/master-black-back.webp",
+            alt: "Women's Zip Hoodie in Black, ghost-mannequin back view on light grey",
           },
           {
-            src: "/images/products/womens-zip-hoodie/detail-white.webp",
-            alt: "Women's Zip Hoodie fabric and construction detail",
+            src: "/images/products/womens-zip-hoodie/detail-black.webp",
+            alt: "Women's Zip Hoodie in Black, close-up of fabric and stitching",
           },
         ],
       },
       {
-        name: "Taupe",
-        hex: "#9B8679",
+        name: "Slate",
+        hex: "#4A4F57",
         images: [
           {
-            src: "/images/products/womens-zip-hoodie/master-taupe-front.webp",
-            alt: "Women's Zip Hoodie in Taupe, front garment view",
+            src: "/images/products/womens-zip-hoodie/master-slate-front.webp",
+            alt: "Women's Zip Hoodie in Slate, ghost-mannequin front view on light grey",
           },
           {
-            src: "/images/products/womens-zip-hoodie/master-taupe-back.webp",
-            alt: "Women's Zip Hoodie in Taupe, back garment view",
+            src: "/images/products/womens-zip-hoodie/master-slate-back.webp",
+            alt: "Women's Zip Hoodie in Slate, ghost-mannequin back view on light grey",
           },
         ],
       },
@@ -506,31 +506,31 @@ export const products: Product[] = [
     status: "active",
     images: [
       {
-        src: "/images/products/womens-zip-hoodie/model-white-front.webp",
-        alt: "Women's Zip Hoodie in White, model front view",
+        src: "/images/products/womens-zip-hoodie/model-black-front.webp",
+        alt: "Women's Zip Hoodie in Black, front view on a model walking along a concrete city walkway",
       },
       {
-        src: "/images/products/womens-zip-hoodie/model-white-back.webp",
-        alt: "Women's Zip Hoodie in White, model back view",
+        src: "/images/products/womens-zip-hoodie/model-black-back.webp",
+        alt: "Women's Zip Hoodie in Black, back view on the same model",
       },
       {
-        src: "/images/products/womens-zip-hoodie/master-white-front.webp",
-        alt: "Women's Zip Hoodie in White, front garment view",
+        src: "/images/products/womens-zip-hoodie/master-black-front.webp",
+        alt: "Women's Zip Hoodie in Black, ghost-mannequin front view on light grey",
       },
       {
-        src: "/images/products/womens-zip-hoodie/master-white-back.webp",
-        alt: "Women's Zip Hoodie in White, back garment view",
+        src: "/images/products/womens-zip-hoodie/master-black-back.webp",
+        alt: "Women's Zip Hoodie in Black, ghost-mannequin back view on light grey",
       },
       {
-        src: "/images/products/womens-zip-hoodie/detail-white.webp",
-        alt: "Women's Zip Hoodie fabric and construction detail",
+        src: "/images/products/womens-zip-hoodie/detail-black.webp",
+        alt: "Women's Zip Hoodie in Black, close-up of fabric and stitching",
       },
     ],
     composition: "89% polyester / 11% elastane",
     weightGsm: null,
-    fit: "Easy fit, low hip",
+    fit: "Slim fit, hip length",
     length: null,
-    features: ["Full zip", "Side pockets", "Hanging loop"],
+    features: ["Full zip", "Side pockets", "Cord-free hood"],
   },
   {
     handle: "mens-training-tee",
@@ -540,47 +540,48 @@ export const products: Product[] = [
     kind: "apparel",
     collections: ["mens", "line-one"],
     fabricLine: "line-one",
-    summary: "A brushed jersey tee with an athletic fit and four-way stretch.",
+    summary:
+      "A brushed jersey tee with a slim athletic fit and four-way stretch.",
     priceUsd: 58,
     color: "White",
     colors: [
       {
         name: "White",
-        hex: "#E9E5DD",
+        hex: "#F2F2F0",
         images: [
           {
             src: "/images/products/mens-training-tee/model-white-front.webp",
-            alt: "Men's Training Tee in White, model front view",
+            alt: "Men's Training Tee in White, front view on a model carrying dumbbells in a gym",
           },
           {
             src: "/images/products/mens-training-tee/model-white-back.webp",
-            alt: "Men's Training Tee in White, model back view",
+            alt: "Men's Training Tee in White, back view on the same model",
           },
           {
             src: "/images/products/mens-training-tee/master-white-front.webp",
-            alt: "Men's Training Tee in White, front garment view",
+            alt: "Men's Training Tee in White, ghost-mannequin front view on light grey",
           },
           {
             src: "/images/products/mens-training-tee/master-white-back.webp",
-            alt: "Men's Training Tee in White, back garment view",
+            alt: "Men's Training Tee in White, ghost-mannequin back view on light grey",
           },
           {
             src: "/images/products/mens-training-tee/detail-white.webp",
-            alt: "Men's Training Tee fabric and construction detail",
+            alt: "Men's Training Tee in White, close-up of fabric and stitching",
           },
         ],
       },
       {
         name: "Black",
-        hex: "#303330",
+        hex: "#111111",
         images: [
           {
             src: "/images/products/mens-training-tee/master-black-front.webp",
-            alt: "Men's Training Tee in Black, front garment view",
+            alt: "Men's Training Tee in Black, ghost-mannequin front view on light grey",
           },
           {
             src: "/images/products/mens-training-tee/master-black-back.webp",
-            alt: "Men's Training Tee in Black, back garment view",
+            alt: "Men's Training Tee in Black, ghost-mannequin back view on light grey",
           },
         ],
       },
@@ -590,28 +591,28 @@ export const products: Product[] = [
     images: [
       {
         src: "/images/products/mens-training-tee/model-white-front.webp",
-        alt: "Men's Training Tee in White, model front view",
+        alt: "Men's Training Tee in White, front view on a model carrying dumbbells in a gym",
       },
       {
         src: "/images/products/mens-training-tee/model-white-back.webp",
-        alt: "Men's Training Tee in White, model back view",
+        alt: "Men's Training Tee in White, back view on the same model",
       },
       {
         src: "/images/products/mens-training-tee/master-white-front.webp",
-        alt: "Men's Training Tee in White, front garment view",
+        alt: "Men's Training Tee in White, ghost-mannequin front view on light grey",
       },
       {
         src: "/images/products/mens-training-tee/master-white-back.webp",
-        alt: "Men's Training Tee in White, back garment view",
+        alt: "Men's Training Tee in White, ghost-mannequin back view on light grey",
       },
       {
         src: "/images/products/mens-training-tee/detail-white.webp",
-        alt: "Men's Training Tee fabric and construction detail",
+        alt: "Men's Training Tee in White, close-up of fabric and stitching",
       },
     ],
     composition: "89% polyester / 11% elastane",
     weightGsm: null,
-    fit: "Athletic fit",
+    fit: "Slim athletic fit",
     length: null,
     features: ["Brushed jersey", "Four-way stretch", "Moisture wicking"],
   },
@@ -623,47 +624,47 @@ export const products: Product[] = [
     kind: "apparel",
     collections: ["mens", "line-three"],
     fabricLine: "line-three",
-    summary: "Light woven shorts with a classic fit and a zip storage pocket.",
+    summary: "Light woven shorts with a slim fit and zip side pockets.",
     priceUsd: 78,
     color: "Black",
     colors: [
       {
         name: "Black",
-        hex: "#303330",
+        hex: "#111111",
         images: [
           {
             src: "/images/products/mens-training-short/model-black-front.webp",
-            alt: "Men's Training Short in Black, model front view",
+            alt: "Men's Training Short in Black, front view on a model running on a blue track",
           },
           {
             src: "/images/products/mens-training-short/model-black-back.webp",
-            alt: "Men's Training Short in Black, model back view",
+            alt: "Men's Training Short in Black, back view on the same model",
           },
           {
             src: "/images/products/mens-training-short/master-black-front.webp",
-            alt: "Men's Training Short in Black, front garment view",
+            alt: "Men's Training Short in Black, ghost-mannequin front view on light grey",
           },
           {
             src: "/images/products/mens-training-short/master-black-back.webp",
-            alt: "Men's Training Short in Black, back garment view",
+            alt: "Men's Training Short in Black, ghost-mannequin back view on light grey",
           },
           {
             src: "/images/products/mens-training-short/detail-black.webp",
-            alt: "Men's Training Short fabric and construction detail",
+            alt: "Men's Training Short in Black, close-up of fabric and stitching",
           },
         ],
       },
       {
-        name: "Olive",
-        hex: "#717763",
+        name: "Signal Blue",
+        hex: "#1F5BFF",
         images: [
           {
-            src: "/images/products/mens-training-short/master-olive-front.webp",
-            alt: "Men's Training Short in Olive, front garment view",
+            src: "/images/products/mens-training-short/master-signal-blue-front.webp",
+            alt: "Men's Training Short in Signal Blue, ghost-mannequin front view on light grey",
           },
           {
-            src: "/images/products/mens-training-short/master-olive-back.webp",
-            alt: "Men's Training Short in Olive, back garment view",
+            src: "/images/products/mens-training-short/master-signal-blue-back.webp",
+            alt: "Men's Training Short in Signal Blue, ghost-mannequin back view on light grey",
           },
         ],
       },
@@ -673,30 +674,30 @@ export const products: Product[] = [
     images: [
       {
         src: "/images/products/mens-training-short/model-black-front.webp",
-        alt: "Men's Training Short in Black, model front view",
+        alt: "Men's Training Short in Black, front view on a model running on a blue track",
       },
       {
         src: "/images/products/mens-training-short/model-black-back.webp",
-        alt: "Men's Training Short in Black, model back view",
+        alt: "Men's Training Short in Black, back view on the same model",
       },
       {
         src: "/images/products/mens-training-short/master-black-front.webp",
-        alt: "Men's Training Short in Black, front garment view",
+        alt: "Men's Training Short in Black, ghost-mannequin front view on light grey",
       },
       {
         src: "/images/products/mens-training-short/master-black-back.webp",
-        alt: "Men's Training Short in Black, back garment view",
+        alt: "Men's Training Short in Black, ghost-mannequin back view on light grey",
       },
       {
         src: "/images/products/mens-training-short/detail-black.webp",
-        alt: "Men's Training Short fabric and construction detail",
+        alt: "Men's Training Short in Black, close-up of fabric and stitching",
       },
     ],
     composition: "86% polyester / 14% elastane",
     weightGsm: 137,
-    fit: "Classic fit, unlined",
+    fit: "Slim fit, unlined",
     length: "7-inch inseam",
-    features: ["Internal drawcord", "Zip storage pocket", "Four-way stretch"],
+    features: ["Drawcord waist", "Zip side pockets", "Four-way stretch"],
   },
   {
     handle: "mens-jogger",
@@ -713,41 +714,41 @@ export const products: Product[] = [
     colors: [
       {
         name: "Black",
-        hex: "#303330",
+        hex: "#111111",
         images: [
           {
             src: "/images/products/mens-jogger/model-black-front.webp",
-            alt: "Men's Jogger in Black, model front view",
+            alt: "Men's Jogger in Black, front view on a model running through a concrete city plaza",
           },
           {
             src: "/images/products/mens-jogger/model-black-back.webp",
-            alt: "Men's Jogger in Black, model back view",
+            alt: "Men's Jogger in Black, back view on the same model",
           },
           {
             src: "/images/products/mens-jogger/master-black-front.webp",
-            alt: "Men's Jogger in Black, front garment view",
+            alt: "Men's Jogger in Black, ghost-mannequin front view on light grey",
           },
           {
-            src: "/images/products/mens-jogger/master-black-back-v4.webp",
-            alt: "Men's Jogger in Black, back garment view",
+            src: "/images/products/mens-jogger/master-black-back.webp",
+            alt: "Men's Jogger in Black, ghost-mannequin back view on light grey",
           },
           {
             src: "/images/products/mens-jogger/detail-black.webp",
-            alt: "Men's Jogger fabric and construction detail",
+            alt: "Men's Jogger in Black, close-up of fabric and stitching",
           },
         ],
       },
       {
-        name: "Taupe",
-        hex: "#9B8679",
+        name: "Slate",
+        hex: "#4A4F57",
         images: [
           {
-            src: "/images/products/mens-jogger/master-taupe-front.webp",
-            alt: "Men's Jogger in Taupe, front garment view",
+            src: "/images/products/mens-jogger/master-slate-front.webp",
+            alt: "Men's Jogger in Slate, ghost-mannequin front view on light grey",
           },
           {
-            src: "/images/products/mens-jogger/master-taupe-back-v3.webp",
-            alt: "Men's Jogger in Taupe, back garment view",
+            src: "/images/products/mens-jogger/master-slate-back.webp",
+            alt: "Men's Jogger in Slate, ghost-mannequin back view on light grey",
           },
         ],
       },
@@ -757,23 +758,23 @@ export const products: Product[] = [
     images: [
       {
         src: "/images/products/mens-jogger/model-black-front.webp",
-        alt: "Men's Jogger in Black, model front view",
+        alt: "Men's Jogger in Black, front view on a model running through a concrete city plaza",
       },
       {
         src: "/images/products/mens-jogger/model-black-back.webp",
-        alt: "Men's Jogger in Black, model back view",
+        alt: "Men's Jogger in Black, back view on the same model",
       },
       {
         src: "/images/products/mens-jogger/master-black-front.webp",
-        alt: "Men's Jogger in Black, front garment view",
+        alt: "Men's Jogger in Black, ghost-mannequin front view on light grey",
       },
       {
-        src: "/images/products/mens-jogger/master-black-back-v4.webp",
-        alt: "Men's Jogger in Black, back garment view",
+        src: "/images/products/mens-jogger/master-black-back.webp",
+        alt: "Men's Jogger in Black, ghost-mannequin back view on light grey",
       },
       {
         src: "/images/products/mens-jogger/detail-black.webp",
-        alt: "Men's Jogger fabric and construction detail",
+        alt: "Men's Jogger in Black, close-up of fabric and stitching",
       },
     ],
     composition: "89% polyester / 11% elastane",
@@ -796,41 +797,41 @@ export const products: Product[] = [
     colors: [
       {
         name: "Black",
-        hex: "#303330",
+        hex: "#111111",
         images: [
           {
             src: "/images/products/mens-quarter-zip/model-black-front.webp",
-            alt: "Men's Quarter-Zip in Black, model front view",
+            alt: "Men's Quarter-Zip in Black, front view on a model jogging beside city steps",
           },
           {
             src: "/images/products/mens-quarter-zip/model-black-back.webp",
-            alt: "Men's Quarter-Zip in Black, model back view",
+            alt: "Men's Quarter-Zip in Black, back view on the same model",
           },
           {
             src: "/images/products/mens-quarter-zip/master-black-front.webp",
-            alt: "Men's Quarter-Zip in Black, front garment view",
+            alt: "Men's Quarter-Zip in Black, ghost-mannequin front view on light grey",
           },
           {
             src: "/images/products/mens-quarter-zip/master-black-back.webp",
-            alt: "Men's Quarter-Zip in Black, back garment view",
+            alt: "Men's Quarter-Zip in Black, ghost-mannequin back view on light grey",
           },
           {
             src: "/images/products/mens-quarter-zip/detail-black.webp",
-            alt: "Men's Quarter-Zip fabric and construction detail",
+            alt: "Men's Quarter-Zip in Black, close-up of fabric and stitching",
           },
         ],
       },
       {
-        name: "Olive",
-        hex: "#717763",
+        name: "Signal Blue",
+        hex: "#1F5BFF",
         images: [
           {
-            src: "/images/products/mens-quarter-zip/master-olive-front.webp",
-            alt: "Men's Quarter-Zip in Olive, front garment view",
+            src: "/images/products/mens-quarter-zip/master-signal-blue-front.webp",
+            alt: "Men's Quarter-Zip in Signal Blue, ghost-mannequin front view on light grey",
           },
           {
-            src: "/images/products/mens-quarter-zip/master-olive-back.webp",
-            alt: "Men's Quarter-Zip in Olive, back garment view",
+            src: "/images/products/mens-quarter-zip/master-signal-blue-back.webp",
+            alt: "Men's Quarter-Zip in Signal Blue, ghost-mannequin back view on light grey",
           },
         ],
       },
@@ -840,28 +841,28 @@ export const products: Product[] = [
     images: [
       {
         src: "/images/products/mens-quarter-zip/model-black-front.webp",
-        alt: "Men's Quarter-Zip in Black, model front view",
+        alt: "Men's Quarter-Zip in Black, front view on a model jogging beside city steps",
       },
       {
         src: "/images/products/mens-quarter-zip/model-black-back.webp",
-        alt: "Men's Quarter-Zip in Black, model back view",
+        alt: "Men's Quarter-Zip in Black, back view on the same model",
       },
       {
         src: "/images/products/mens-quarter-zip/master-black-front.webp",
-        alt: "Men's Quarter-Zip in Black, front garment view",
+        alt: "Men's Quarter-Zip in Black, ghost-mannequin front view on light grey",
       },
       {
         src: "/images/products/mens-quarter-zip/master-black-back.webp",
-        alt: "Men's Quarter-Zip in Black, back garment view",
+        alt: "Men's Quarter-Zip in Black, ghost-mannequin back view on light grey",
       },
       {
         src: "/images/products/mens-quarter-zip/detail-black.webp",
-        alt: "Men's Quarter-Zip fabric and construction detail",
+        alt: "Men's Quarter-Zip in Black, close-up of fabric and stitching",
       },
     ],
     composition: "89% polyester / 11% elastane",
     weightGsm: null,
-    fit: "Classic fit",
+    fit: "Regular fit",
     length: null,
     features: ["Quarter-zip closure", "Mock neck", "Four-way stretch"],
   },
@@ -874,47 +875,47 @@ export const products: Product[] = [
     collections: ["mens", "line-one"],
     fabricLine: "line-one",
     summary:
-      "A relaxed pullover with ribbed cuffs, a ribbed hem and on-seam pockets.",
+      "An oversized pullover with ribbed cuffs, a ribbed hem and on-seam pockets.",
     priceUsd: 118,
-    color: "White",
+    color: "Slate",
     colors: [
       {
-        name: "White",
-        hex: "#E9E5DD",
+        name: "Slate",
+        hex: "#4A4F57",
         images: [
           {
-            src: "/images/products/mens-hoodie/model-white-front.webp",
-            alt: "Men's Hoodie in White, model front view",
+            src: "/images/products/mens-hoodie/model-slate-front.webp",
+            alt: "Men's Hoodie in Slate, front view on a model walking outside a gym",
           },
           {
-            src: "/images/products/mens-hoodie/model-white-back.webp",
-            alt: "Men's Hoodie in White, model back view",
+            src: "/images/products/mens-hoodie/model-slate-back.webp",
+            alt: "Men's Hoodie in Slate, back view on the same model",
           },
           {
-            src: "/images/products/mens-hoodie/master-white-front.webp",
-            alt: "Men's Hoodie in White, front garment view",
+            src: "/images/products/mens-hoodie/master-slate-front.webp",
+            alt: "Men's Hoodie in Slate, ghost-mannequin front view on light grey",
           },
           {
-            src: "/images/products/mens-hoodie/master-white-back.webp",
-            alt: "Men's Hoodie in White, back garment view",
+            src: "/images/products/mens-hoodie/master-slate-back.webp",
+            alt: "Men's Hoodie in Slate, ghost-mannequin back view on light grey",
           },
           {
-            src: "/images/products/mens-hoodie/detail-white.webp",
-            alt: "Men's Hoodie fabric and construction detail",
+            src: "/images/products/mens-hoodie/detail-slate.webp",
+            alt: "Men's Hoodie in Slate, close-up of fabric and stitching",
           },
         ],
       },
       {
         name: "Black",
-        hex: "#303330",
+        hex: "#111111",
         images: [
           {
             src: "/images/products/mens-hoodie/master-black-front.webp",
-            alt: "Men's Hoodie in Black, front garment view",
+            alt: "Men's Hoodie in Black, ghost-mannequin front view on light grey",
           },
           {
             src: "/images/products/mens-hoodie/master-black-back.webp",
-            alt: "Men's Hoodie in Black, back garment view",
+            alt: "Men's Hoodie in Black, ghost-mannequin back view on light grey",
           },
         ],
       },
@@ -923,29 +924,29 @@ export const products: Product[] = [
     status: "active",
     images: [
       {
-        src: "/images/products/mens-hoodie/model-white-front.webp",
-        alt: "Men's Hoodie in White, model front view",
+        src: "/images/products/mens-hoodie/model-slate-front.webp",
+        alt: "Men's Hoodie in Slate, front view on a model walking outside a gym",
       },
       {
-        src: "/images/products/mens-hoodie/model-white-back.webp",
-        alt: "Men's Hoodie in White, model back view",
+        src: "/images/products/mens-hoodie/model-slate-back.webp",
+        alt: "Men's Hoodie in Slate, back view on the same model",
       },
       {
-        src: "/images/products/mens-hoodie/master-white-front.webp",
-        alt: "Men's Hoodie in White, front garment view",
+        src: "/images/products/mens-hoodie/master-slate-front.webp",
+        alt: "Men's Hoodie in Slate, ghost-mannequin front view on light grey",
       },
       {
-        src: "/images/products/mens-hoodie/master-white-back.webp",
-        alt: "Men's Hoodie in White, back garment view",
+        src: "/images/products/mens-hoodie/master-slate-back.webp",
+        alt: "Men's Hoodie in Slate, ghost-mannequin back view on light grey",
       },
       {
-        src: "/images/products/mens-hoodie/detail-white.webp",
-        alt: "Men's Hoodie fabric and construction detail",
+        src: "/images/products/mens-hoodie/detail-slate.webp",
+        alt: "Men's Hoodie in Slate, close-up of fabric and stitching",
       },
     ],
     composition: "89% polyester / 11% elastane",
     weightGsm: null,
-    fit: "Relaxed, hip length",
+    fit: "Oversized, hip length",
     length: null,
     features: ["On-seam pockets", "Rib cuffs", "Rib hem"],
   },
@@ -957,18 +958,17 @@ export const products: Product[] = [
     kind: "gift-card",
     collections: [],
     fabricLine: null,
-    summary:
-      "Let them choose. Select a $50 or $100 gift card.",
+    summary: "Let them choose. Select a $50 or $100 gift card.",
     priceUsd: 50,
-    color: "White",
+    color: "Black",
     colors: [
       {
-        name: "White",
-        hex: "#E9E5DD",
+        name: "Black",
+        hex: "#111111",
         images: [
           {
             src: "/images/products/gift-card/artwork.webp",
-            alt: "Moravel Athletic gift card in White and Black",
+            alt: "Matte black Moravel Athletic gift card with silver lettering",
           },
         ],
       },
@@ -978,7 +978,7 @@ export const products: Product[] = [
     images: [
       {
         src: "/images/products/gift-card/artwork.webp",
-        alt: "Moravel Athletic gift card in White and Black",
+        alt: "Matte black Moravel Athletic gift card with silver lettering",
       },
     ],
     composition: null,

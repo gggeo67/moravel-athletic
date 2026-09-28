@@ -1,0 +1,26 @@
+{
+  "id": "womens-sports-bra-master-slate-back",
+  "product": "womens-sports-bra",
+  "file": "master-slate-back.png",
+  "refs": [
+    {
+      "id": "womens-sports-bra-master-slate-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-0d04c339-fe05-4b08-b0fd-1c0c259c7ae2.png",
+      "role": "Moravel alternate-colour front construction reference",
+      "sha256": "3d5cf5e00d5c2d435127cc71b3717597218b63186ad8761ae79f366c4e1d760e",
+      "retainedPath": "public/images/products/womens-sports-bra/master-slate-front.png"
+    }
+  ],
+  "prompt": "Create a single 4:5 1122x1402 ecommerce photograph. NEW ghost-mannequin BACK view of Women's Sports Bra in slate #4A4F57. Close fitting opaque scoop-neck sports bra, narrow adjustable straps, low straight back, broad smooth underbust band, matte fine stretch knit, removable internal cups not visible. Simple original seams, no contour shading. Tiny tonal MORAVEL at left front underbust hem, no rear logo. BACK: low straight horizontal band with two narrow adjustable vertical straps, open upper back, no shaped cups, no rear logo. Use Moravel reference only for silhouette and construction, create fresh rear view, folds and shadows; do not recolor, mirror or edit the image. Plain cool light-grey background, hard directional light, full garment with margins, no person or props. Exact 4:5 aspect, wider portrait 1122x1402, not tall 3:4.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-adc33de4-6245-40cd-ac38-d1fb23012ce7.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "accepted",
+    "notes": "Visually inspected generation: garment silhouette, colour family, view, framing and scene; model identity and anatomy where applicable. Native dimensions independently verified at installation.",
+    "colorCheck": "Visual colour-family comparison; hex values are design targets.",
+    "typographyCheck": "Small generated condensed sans lettering; not vector-exact.",
+    "reviewDate": "2026-09-28"
+  },
+  "path": "public/images/products/womens-sports-bra/master-slate-back.png"
+}

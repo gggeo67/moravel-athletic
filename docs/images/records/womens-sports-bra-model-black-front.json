@@ -1,0 +1,32 @@
+{
+  "id": "womens-sports-bra-model-black-front",
+  "product": "womens-sports-bra",
+  "file": "model-black-front.png",
+  "refs": [
+    {
+      "id": "rh-linden-bra-identity",
+      "path": "/Users/tjmcgovern/websites/rennick_hale/public/images/products/linden-bra/model-coal-front.png",
+      "role": "Rennick & Hale fictional adult identity only: face and body; do not copy clothing, styling, setting, lighting or pose",
+      "sha256": "92e7476b03cff3cfe84055a018f1053f24ffcec0e25fe2aed3377b8336416fae"
+    },
+    {
+      "id": "womens-sports-bra-master-black-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-91909178-a418-462e-ab10-8c5c03522901.png",
+      "role": "Original Moravel garment construction reference",
+      "sha256": "3dcfa20f7b9f7da1281c404e2e7e5ea1b467ff7c267790f8da5baba0feaf7477",
+      "retainedPath": "public/images/products/womens-sports-bra/master-black-front.png"
+    }
+  ],
+  "prompt": "Aspect ratio 4:5. Image size 1122x1402. Create a NEW athletic photograph on a 4:5 canvas. First image reference is ONLY fictional adult identity: keep same face, age, skin tone, hair and body proportions. Do not reuse its pixels, pose, clothing, lighting, background or framing. Second reference defines the new Moravel garment. Dress this same adult in Moravel Women's Sports Bra, black #111111. Close fitting opaque scoop-neck sports bra, narrow adjustable straps, low straight back, broad smooth underbust band, matte fine stretch knit, removable internal cups not visible. Simple original seams, no contour shading. Tiny tonal MORAVEL at left front underbust hem, no rear logo. Styling: black full-length high-waisted leggings and black training shoes, no white shoes, no other logos. Scene: charcoal gym with rubber floor, blurred free weights, hard side sunlight. Pose: front view standing in athletic split stance holding one black dumbbell down in each hand, normal anatomy. High contrast movement, believable athletic body, natural hands, sharp garment detail. Entire person including head and shoes within frame with clear margin; keep person in central 65% width for editorial crops. New front-focused camera angle and new setting, not an edit of the identity image. Wordmark tiny tone-on-tone MORAVEL in condensed uppercase sans like DIN Condensed only at rear waistband of bottoms or left chest/hem of tops. No extra text, logos or watermark. Generate exact wide portrait 4:5, 1122x1402.\nREQUIRED CANVAS: EXACT 4:5 aspect ratio, 1122 pixels wide by 1402 pixels tall, or larger 4:5 such as 2048x2560. Compose on a wider 4:5 frame, not a tall 3:4 frame. Add horizontal gym/track/city space around the subject to achieve 4:5. No border. Keep entire shoes and hair within frame.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-2a188484-3aea-431d-a092-b2952b5276dd.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "accepted",
+    "notes": "Visually inspected generation: garment silhouette, colour family, view, framing and scene; model identity and anatomy where applicable. Native dimensions independently verified at installation.",
+    "colorCheck": "Visual colour-family comparison; hex values are design targets.",
+    "typographyCheck": "Small generated condensed sans lettering; not vector-exact.",
+    "reviewDate": "2026-09-28"
+  },
+  "path": "public/images/products/womens-sports-bra/model-black-front.png"
+}

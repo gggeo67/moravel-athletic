@@ -1,0 +1,269 @@
+[
+  {
+    "id": "legging-black-front",
+    "product": "womens-training-legging",
+    "file": "master-black-front.png",
+    "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-416da32f-dafe-41a0-8464-84313cb75c24.png",
+    "prompt": "Use case: product-mockup. Create ONE entirely new photorealistic ecommerce ghost-mannequin garment photograph, not a collage. Portrait 4:5, target 1122x1402 or higher. No visible human, mannequin, hanger or styling props. Cool plain light-grey #E5E7EB seamless studio background. Hard directional upper-left studio light, clean decisive shadow, high contrast yet visible fabric detail. Entire garment with generous margins. Original Moravel garment, no borrowed brand signature seams, no contour graphics. Women's Training Legging, BLACK #111111, FRONT view. High-rise body-hugging performance leggings, ankle length, broad smooth supportive waistband, opaque fine matte stretch knit. Original minimal construction: clean horizontal waistband join, discreet straight inner-leg seams, no decorative curved panels, no visible front pockets or zip. Athletic sculpted ghost volume with gently separated legs, slight asymmetric fabric tension, straight-on camera. FRONT has NO text or logo. Rear-only small tonal MORAVEL branding is not visible from front. Generate from text only.",
+    "refs": []
+  },
+  {
+    "id": "legging-black-back",
+    "product": "womens-training-legging",
+    "file": "master-black-back.png",
+    "text": "Women's Training Legging, BLACK #111111, BACK view. High-rise close-fitting ankle-length matte fine stretch knit. Broad smooth waistband, horizontal waistband join, minimal center rear and straight inner leg seams. No curved contour panels or decorative yoke. Small tone-on-tone MORAVEL wordmark centered on rear waistband, uppercase condensed sans like DIN Condensed, dark charcoal ink barely lighter than black, not white. No pockets. Entire garment rear view, athletic ghost volume, legs gently separated. Match the original Moravel front reference's construction and proportions, but render a newly photographed back viewpoint, new folds and directional shadow, not an edit.",
+    "parent": "legging-black-front",
+    "prompt": "Use case: product-mockup. Create ONE entirely new photorealistic ecommerce ghost-mannequin garment photograph, not a collage. Portrait 4:5, target 1122x1402 or higher. No visible human, mannequin, hanger or styling props. Cool plain light-grey #E5E7EB seamless studio background. Hard directional upper-left studio light, clean decisive shadow, high contrast yet visible fabric detail. Entire garment with generous margins. Original Moravel garment, no borrowed brand signature seams, no contour graphics. Women's Training Legging, BLACK #111111, BACK view. High-rise close-fitting ankle-length matte fine stretch knit. Broad smooth waistband, horizontal waistband join, minimal center rear and straight inner leg seams. No curved contour panels or decorative yoke. Small tone-on-tone MORAVEL wordmark centered on rear waistband, uppercase condensed sans like DIN Condensed, dark charcoal ink barely lighter than black, not white. No pockets. Entire garment rear view, athletic ghost volume, legs gently separated. Match the original Moravel front reference's construction and proportions, but render a newly photographed back viewpoint, new folds and directional shadow, not an edit.",
+    "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-c1f5a70d-1b70-44be-9880-af9bbc35c096.png",
+    "refs": [
+      {
+        "id": "legging-black-front",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-416da32f-dafe-41a0-8464-84313cb75c24.png",
+        "role": "Moravel garment construction only; new photograph"
+      }
+    ]
+  },
+  {
+    "id": "legging-slate-front",
+    "product": "womens-training-legging",
+    "file": "master-slate-front.png",
+    "text": "Women's Training Legging, SLATE #4A4F57, FRONT view. High-rise close-fitting ankle-length matte fine stretch knit. Broad smooth waistband, horizontal waistband join, small center front seam and straight inner leg seams; no contour panels. No front logos, no pockets. Match construction and proportions of the original Moravel front reference. Create a NEW photograph with fresh ghost volume, leg spacing and fabric tension and different directional shadow. Do not recolor or edit the reference image.",
+    "parent": "legging-black-front",
+    "prompt": "Use case: product-mockup. Create ONE entirely new photorealistic ecommerce ghost-mannequin garment photograph, not a collage. Portrait 4:5, target 1122x1402 or higher. No visible human, mannequin, hanger or styling props. Cool plain light-grey #E5E7EB seamless studio background. Hard directional upper-left studio light, clean decisive shadow, high contrast yet visible fabric detail. Entire garment with generous margins. Original Moravel garment, no borrowed brand signature seams, no contour graphics. Women's Training Legging, SLATE #4A4F57, FRONT view. High-rise close-fitting ankle-length matte fine stretch knit. Broad smooth waistband, horizontal waistband join, small center front seam and straight inner leg seams; no contour panels. No front logos, no pockets. Match construction and proportions of the original Moravel front reference. Create a NEW photograph with fresh ghost volume, leg spacing and fabric tension and different directional shadow. Do not recolor or edit the reference image.",
+    "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-da3bb184-0dba-4da8-ad15-4a4b6a21bf82.png",
+    "refs": [
+      {
+        "id": "legging-black-front",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-416da32f-dafe-41a0-8464-84313cb75c24.png",
+        "role": "Moravel garment construction only; new photograph"
+      }
+    ]
+  },
+  {
+    "id": "legging-slate-back",
+    "product": "womens-training-legging",
+    "file": "master-slate-back.png",
+    "text": "Women's Training Legging, SLATE #4A4F57, BACK view. High-rise close-fitting ankle-length matte fine stretch knit. Broad smooth waistband, horizontal waistband join, minimal center rear and straight inner leg seams, no decorative curved yoke. Small tone-on-tone MORAVEL centered rear waistband, uppercase condensed sans like DIN Condensed, slightly darker slate ink, no white mark. No pockets. Match original Moravel construction reference only. Create a NEW photographed back view with fresh folds and shadow, no recoloring or editing.",
+    "parent": "legging-black-back",
+    "prompt": "Use case: product-mockup. Create ONE entirely new photorealistic ecommerce ghost-mannequin garment photograph, not a collage. Portrait 4:5, target 1122x1402 or higher. No visible human, mannequin, hanger or styling props. Cool plain light-grey #E5E7EB seamless studio background. Hard directional upper-left studio light, clean decisive shadow, high contrast yet visible fabric detail. Entire garment with generous margins. Original Moravel garment, no borrowed brand signature seams, no contour graphics. Women's Training Legging, SLATE #4A4F57, BACK view. High-rise close-fitting ankle-length matte fine stretch knit. Broad smooth waistband, horizontal waistband join, minimal center rear and straight inner leg seams, no decorative curved yoke. Small tone-on-tone MORAVEL centered rear waistband, uppercase condensed sans like DIN Condensed, slightly darker slate ink, no white mark. No pockets. Match original Moravel construction reference only. Create a NEW photographed back view with fresh folds and shadow, no recoloring or editing.",
+    "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-f343889a-531d-49ea-8381-25f49da9c184.png",
+    "refs": [
+      {
+        "id": "legging-black-back",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-c1f5a70d-1b70-44be-9880-af9bbc35c096.png",
+        "role": "Moravel garment construction only; new photograph"
+      }
+    ]
+  },
+  {
+    "id": "jogger-black-front",
+    "product": "mens-jogger",
+    "file": "master-black-front.png",
+    "text": "Men's Jogger, BLACK #111111, FRONT view. Athletic tapered performance joggers: room through thigh, slim lower leg, ankle-length narrow rib cuffs. Matte fine technical stretch jersey, elastic gathered waistband, centered black drawcord with two short ends, two slanted front zip pockets, straight minimal side seams, no rear pockets. No front logo or words. Full garment, naturally dimensional ghost volume, slightly asymmetric knees and folds. Original design, generate from text only.",
+    "prompt": "Use case: product-mockup. Create ONE entirely new photorealistic ecommerce ghost-mannequin garment photograph, not a collage. Portrait 4:5, target 1122x1402 or higher. No visible human, mannequin, hanger or styling props. Cool plain light-grey #E5E7EB seamless studio background. Hard directional upper-left studio light, clean decisive shadow, high contrast yet visible fabric detail. Entire garment with generous margins. Original Moravel garment, no borrowed brand signature seams, no contour graphics. Men's Jogger, BLACK #111111, FRONT view. Athletic tapered performance joggers: room through thigh, slim lower leg, ankle-length narrow rib cuffs. Matte fine technical stretch jersey, elastic gathered waistband, centered black drawcord with two short ends, two slanted front zip pockets, straight minimal side seams, no rear pockets. No front logo or words. Full garment, naturally dimensional ghost volume, slightly asymmetric knees and folds. Original design, generate from text only.",
+    "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-8a1ca5dd-b5bd-4f10-8b83-bc0e6e965248.png",
+    "refs": []
+  },
+  {
+    "id": "jogger-black-back",
+    "product": "mens-jogger",
+    "file": "master-black-back.png",
+    "text": "Men's Jogger, BLACK #111111, BACK view. Athletic tapered performance joggers with room through thigh, slim lower legs, narrow ankle rib cuffs. Matte fine technical stretch jersey, gathered elastic waistband, plain back with center seam and NO rear pockets. Small tonal MORAVEL wordmark centered on rear waistband in uppercase DIN Condensed-like condensed sans, dark charcoal barely lighter than black. Front drawcord not visible. Match original Moravel construction reference only, newly photograph back with different folds and ghost volume.",
+    "parent": "jogger-black-front",
+    "prompt": "Use case: product-mockup. Create ONE entirely new photorealistic ecommerce ghost-mannequin garment photograph, not a collage. Portrait 4:5, target 1122x1402 or higher. No visible human, mannequin, hanger or styling props. Cool plain light-grey #E5E7EB seamless studio background. Hard directional upper-left studio light, clean decisive shadow, high contrast yet visible fabric detail. Entire garment with generous margins. Original Moravel garment, no borrowed brand signature seams, no contour graphics. Men's Jogger, BLACK #111111, BACK view. Athletic tapered performance joggers with room through thigh, slim lower legs, narrow ankle rib cuffs. Matte fine technical stretch jersey, gathered elastic waistband, plain back with center seam and NO rear pockets. Small tonal MORAVEL wordmark centered on rear waistband in uppercase DIN Condensed-like condensed sans, dark charcoal barely lighter than black. Front drawcord not visible. Match original Moravel construction reference only, newly photograph back with different folds and ghost volume. Input 1 is original Moravel jogger FRONT construction only. Input 2 is original Moravel legging BACK for typographic print treatment only. CRITICAL: MORAVEL must be tiny directly printed ink on the elastic fabric, narrow spaced condensed letters, no rectangle, NO PATCH, no label, no badge, no plaque, no backing panel, no contrast block. Black tone on black, subtle and legible at full resolution. Small print spans only one quarter of waistband width. New jogger rear photograph, not a legging.",
+    "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-f661b93d-c63e-44cf-9715-b3aa3c0cbed6.png",
+    "refs": [
+      {
+        "id": "jogger-black-front",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-8a1ca5dd-b5bd-4f10-8b83-bc0e6e965248.png",
+        "role": "Moravel garment construction"
+      },
+      {
+        "id": "legging-black-back",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-c1f5a70d-1b70-44be-9880-af9bbc35c096.png",
+        "role": "Moravel direct-print wordmark treatment"
+      }
+    ]
+  },
+  {
+    "id": "jogger-slate-front",
+    "product": "mens-jogger",
+    "file": "master-slate-front.png",
+    "text": "Men's Jogger, SLATE #4A4F57, FRONT view. Athletic tapered performance joggers, roomy thigh, slim lower leg, narrow rib ankle cuffs. Matte fine technical stretch jersey, gathered elastic waistband, centered tonal drawcord two short ends, two slanted front zip pockets, minimal straight seams. No front wordmark or other text. Use original Moravel reference for construction ONLY. Generate a NEW photographed garment with new folds, slightly different leg spacing and directional shadows. Never recolor or edit the reference.",
+    "parent": "jogger-black-front",
+    "prompt": "Use case: product-mockup. Create ONE entirely new photorealistic ecommerce ghost-mannequin garment photograph, not a collage. Portrait 4:5, target 1122x1402 or higher. No visible human, mannequin, hanger or styling props. Cool plain light-grey #E5E7EB seamless studio background. Hard directional upper-left studio light, clean decisive shadow, high contrast yet visible fabric detail. Entire garment with generous margins. Original Moravel garment, no borrowed brand signature seams, no contour graphics. Men's Jogger, SLATE #4A4F57, FRONT view. Athletic tapered performance joggers, roomy thigh, slim lower leg, narrow rib ankle cuffs. Matte fine technical stretch jersey, gathered elastic waistband, centered tonal drawcord two short ends, two slanted front zip pockets, minimal straight seams. No front wordmark or other text. Use original Moravel reference for construction ONLY. Generate a NEW photographed garment with new folds, slightly different leg spacing and directional shadows. Never recolor or edit the reference.",
+    "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-c62dd25d-f10f-4950-a17e-1b74358e354a.png",
+    "refs": [
+      {
+        "id": "jogger-black-front",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-8a1ca5dd-b5bd-4f10-8b83-bc0e6e965248.png",
+        "role": "Moravel garment construction only; new photograph"
+      }
+    ]
+  },
+  {
+    "id": "jogger-slate-back",
+    "product": "mens-jogger",
+    "file": "master-slate-back.png",
+    "text": "Men's Jogger, SLATE #4A4F57, BACK view. Athletic tapered performance joggers, room in thigh, slim lower leg, narrow rib ankle cuffs. Matte technical stretch jersey, gathered waistband, plain rear with center seam and NO rear pockets. Small tone-on-tone MORAVEL at center rear waistband, uppercase DIN Condensed-like condensed sans in slightly darker slate. Front drawcord not visible. Original Moravel construction reference only, create NEW photographed rear view with fresh folds and shadow, no recoloring or editing.",
+    "parent": "jogger-black-back",
+    "prompt": "Use case: product-mockup. Create ONE entirely new photorealistic ecommerce ghost-mannequin garment photograph, not a collage. Portrait 4:5, target 1122x1402 or higher. No visible human, mannequin, hanger or styling props. Cool plain light-grey #E5E7EB seamless studio background. Hard directional upper-left studio light, clean decisive shadow, high contrast yet visible fabric detail. Entire garment with generous margins. Original Moravel garment, no borrowed brand signature seams, no contour graphics. Men's Jogger, SLATE #4A4F57, BACK view. Athletic tapered performance joggers, room in thigh, slim lower leg, narrow rib ankle cuffs. Matte technical stretch jersey, gathered waistband, plain rear with center seam and NO rear pockets. Small tone-on-tone MORAVEL at center rear waistband, uppercase DIN Condensed-like condensed sans in slightly darker slate. Front drawcord not visible. Original Moravel construction reference only, create NEW photographed rear view with fresh folds and shadow, no recoloring or editing. Wordmark is tiny direct ink on waistband fabric: no sewn label, no patch, no backing rectangle. Match narrow spaced typography in reference.",
+    "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-05e13059-f0b8-4b10-b8d2-56ec47222eac.png",
+    "refs": [
+      {
+        "id": "jogger-black-back",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-f661b93d-c63e-44cf-9715-b3aa3c0cbed6.png",
+        "role": "Moravel garment construction only; new photograph"
+      }
+    ]
+  },
+  {
+    "id": "legging-model-front",
+    "product": "womens-training-legging",
+    "file": "model-black-front.png",
+    "prompt": "Use case: photorealistic-natural. Generate a completely NEW sportswear campaign photograph, portrait 4:5 1122x1402 or higher. Input 1 is ONLY the identity reference for this fictional adult woman: preserve her exact face, medium-brown skin, dark tied curls, age about 35, athletic fuller thighs and body proportions. Do NOT copy reference clothing, white tee, white shoes, studio, lighting, pose or framing; do not edit that photograph. Input 2 is the NEW original Moravel Black #111111 high-rise ankle-length legging garment construction reference; dress her in precisely this garment, with broad smooth waistband and clean minimal seams. Front view of product clearly visible. NEW scene: gritty charcoal gym with rubber floor, out-of-focus dark squat rack far behind, a diagonal shaft of hard sunlight. NEW pose: front three-quarter walking lunge toward camera, one leg bent forward and other extended back, hands on hips above waistband with normal anatomy, focused expression, full head and black shoes in frame. Camera a little below waist height, subject slightly left of center, generous margins for later 2:3 crop. Styling: simple sleeveless fitted SLATE athletic tank cropped just above waistband, opaque full chest coverage, no text or logo; black low-profile training shoes with black soles no logos. High-contrast athletic editorial, directional rim light, realistic skin and cloth tension, sharp face, accurate adult anatomy. No signage, no added text, no R&H mark, no white tee or white sneakers, no borrowed contour graphics. Legging front has no logo; MORAVEL rear mark is not visible.\nREQUIRED CANVAS: EXACT 4:5 aspect ratio, 1122 pixels wide by 1402 pixels tall, or larger 4:5 such as 2048x2560. Compose on a wider 4:5 frame, not a tall 3:4 frame. Add horizontal gym space around the subject to achieve 4:5. No border. Keep entire shoes and hair within frame.",
+    "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-08a83438-90cc-48dc-acb3-6384e8d3a2f3.png",
+    "refs": [
+      {
+        "path": "/Users/tjmcgovern/websites/rennick_hale/public/images/products/alder-legging/model-coal-front.png",
+        "role": "R&H fictional-w01 face/body identity ONLY"
+      },
+      {
+        "id": "legging-black-front",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-416da32f-dafe-41a0-8464-84313cb75c24.png",
+        "role": "Moravel garment construction"
+      }
+    ]
+  },
+  {
+    "id": "jogger-model-front",
+    "product": "mens-jogger",
+    "file": "model-black-front.png",
+    "prompt": "Create ONE new photorealistic sportswear campaign photograph. Input1: ONLY face and body identity of the fictional East Asian adult man about45, short dark hair with gray temples, fit ordinary build. Keep that person, not his white tee, shoes, pose, light, background or framing. Input2: original Moravel Black #111111 jogger construction: elastic drawcord waist, two diagonal zip front pockets, tapered legs and rib ankle cuffs, no front logo. Show same man in NEW pose: front-facing brisk running stride, bent arms pumping naturally, mid-step, entire face and both black trainers visible. NEW location: city training plaza with raw dark concrete steps, no signage, hard oblique morning sunlight with strong shadows. Clothing: exact black joggers, fitted charcoal/slate unbranded technical tee tucked neatly to expose drawcord, black socks and black trainers with dark soles. No white clothing or shoes. Natural realistic skin, face, body and fingers; powerful athletic mood. Product front clearly readable. Generate new pixels, not an edit of reference. No R&H marks or other logos. REQUIRED CANVAS: EXACT 4:5 aspect ratio, 1122 pixels wide by 1402 pixels tall, or larger 4:5 such as 2048x2560. Compose on a wider 4:5 frame, not a tall 3:4 frame. Add horizontal plaza space around the subject to achieve 4:5. No border. Keep entire shoes and hair within frame.",
+    "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-6c21cfb2-a624-4f62-bb2e-95e4eda5015c.png",
+    "refs": [
+      {
+        "path": "/Users/tjmcgovern/websites/rennick_hale/public/images/products/rowan-jogger/model-coal-front.png",
+        "role": "R&H fictional-m01 face/body identity ONLY"
+      },
+      {
+        "id": "jogger-black-front",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-8a1ca5dd-b5bd-4f10-8b83-bc0e6e965248.png",
+        "role": "Moravel garment construction"
+      }
+    ]
+  },
+  {
+    "id": "legging-model-back",
+    "product": "womens-training-legging",
+    "file": "model-black-back.png",
+    "prompt": "Use case: photorealistic-natural. Create a NEW sportswear ecommerce action photograph, exact 4:5 canvas 1122x1402 pixels or larger 4:5. Input 1 is the original Moravel fictional adult woman's face/body identity and styling reference; preserve her medium-brown skin, dark tied curls, approximately 35-year-old face and fuller athletic thighs, slate sleeveless cropped opaque tank and black unbranded training shoes. Input 2 is the exact original Moravel legging rear construction reference. Show BLACK #111111 high-waist ankle-length leggings with smooth broad waistband and small tonal condensed sans MORAVEL direct print at rear center waistband, no patch, no other text. NEW pose: rear three-quarter full-body view, a purposeful ascending step onto a low gym plyometric platform with one foot raised and the other on ground, arms naturally balanced, head turned slightly to show recognizable cheek profile. Frame the entire person and shoes with margin and waistband fully visible. New camera position and gym background: dark concrete training bay, a low unmarked black box, oblique late-afternoon hard side light and sharp floor shadows. Product rear is the main view; fully opaque athletic apparel, standard neutral professional sportswear photograph. No white tee or white sneakers, no studio backdrop, no R&H logo, no lifted hems or extra skin exposure. Normal anatomical hands and legs. Preserve garment and identity but do not reuse or edit prior pixels.\nREQUIRED CANVAS: EXACT 4:5 aspect ratio, 1122 pixels wide by 1402 pixels tall. Compose on a wider 4:5 frame, not a tall 3:4 frame. Add horizontal gym space around the subject and box to achieve 4:5. No border. Keep entire shoes and hair within frame. Camera farther away, subject occupies central 60 percent of width.",
+    "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-a998a34a-4c19-42fd-93cc-1913f47161a2.png",
+    "refs": [
+      {
+        "id": "legging-model-front",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-08a83438-90cc-48dc-acb3-6384e8d3a2f3.png",
+        "role": "Moravel model identity and new styling"
+      },
+      {
+        "id": "legging-black-back",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-c1f5a70d-1b70-44be-9880-af9bbc35c096.png",
+        "role": "Moravel rear garment construction"
+      }
+    ]
+  },
+  {
+    "id": "jogger-model-back",
+    "product": "mens-jogger",
+    "file": "model-black-back.png",
+    "prompt": "Create ONE new photorealistic athletic ecommerce photograph. Input1 is original Moravel fictional adult man's identity and outfit reference; same East Asian man around45, dark short hair gray at temples, ordinary athletic build, fitted charcoal tee tucked into waistband and black unbranded trainers. Input2 is Moravel jogger rear construction. NEW rear three-quarter view showing him running diagonally away across an urban concrete training plaza, one foot planted and other lifted, natural bent arm swing, head turned gently so recognizable facial profile appears. Full body, shoes and hair included. Exact BLACK #111111 matte joggers, gathered waistband, tapered lower legs and rib cuffs, center back seam, NO rear pockets. Small tonal direct-print MORAVEL centered on rear waistband, same narrow spaced condensed sans as reference, no patches or other marks. Shirt must expose waistband naturally without lifting. New oblique camera angle with dark concrete retaining wall and angular hard sun shadows, high contrast but detail in black fabric. Do not copy R&H studio, standing pose, framing, white tee or white shoes; no R&H inputs are supplied. New photograph, not pixel editing of the Moravel reference. REQUIRED CANVAS: EXACT 4:5 aspect ratio, 1122 pixels wide by 1402 pixels tall, or larger 4:5 such as 2048x2560. Compose on a wider 4:5 frame, not a tall 3:4 frame. Add horizontal plaza space around the subject to achieve 4:5. No border. Keep entire shoes and hair within frame.",
+    "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-4d37c81b-27ff-4b2c-b292-9000bc610c84.png",
+    "refs": [
+      {
+        "id": "jogger-model-front",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-6c21cfb2-a624-4f62-bb2e-95e4eda5015c.png",
+        "role": "Moravel model identity and styling"
+      },
+      {
+        "id": "jogger-black-back",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-f661b93d-c63e-44cf-9715-b3aa3c0cbed6.png",
+        "role": "Moravel rear garment construction"
+      }
+    ]
+  },
+  {
+    "id": "home-hero",
+    "product": null,
+    "file": "home-hero.png",
+    "prompt": "Use case: ads-marketing. Create ONE entirely NEW photorealistic 16:9 landscape homepage campaign photograph for Moravel Athletic, target EXACT 1672x941 pixels or larger 16:9. Input1 is Moravel fictional adult woman identity and legging outfit, input2 Moravel fictional adult man identity and jogger outfit. Preserve exact faces, ages, skin, hair and body proportions: woman mid30s medium-brown skin tied dark curls fuller athletic thighs; man mid40s East Asian short dark gray-templed hair fit ordinary build. Preserve woman's black high-rise leggings, slate sleeveless opaque cropped athletic tank; man's black tapered cuffed joggers and tucked charcoal fitted technical tee. Both wear black unbranded training shoes with dark soles. NEW scene: outdoor running track with muted cobalt-blue lanes, light grey concrete stadium terraces far behind, bright hard directional sunlight, crisp shadows, high contrast, energetic premium training campaign. Both are running toward camera at a slight diagonal, natural arm swing and staggered strides, focused expressions, realistic anatomy, natural sweat and skin. They run close together grouped around x=65% of frame; keep both full bodies WITH shoes within x=48%-84% so mobile center-right crop preserves both faces. Full bodies occupy about 80% image height. Left 38% is uncluttered pale sunlit concrete apron, suitable for existing DARK overlaid site text, no baked text. New low tracking camera angle, dynamic perspective, NO quiet limestone walkway, NO standing/casual strolling, NO white tees or shoes. No third people, signage, captions, watermarks, logos except discreet existing MORAVEL garment marks where visible. Never copy or edit reference photographs; generate the NEW track scene from scratch with references only guiding person and Moravel clothes. Required WIDE 16:9 canvas 1672x941, not portrait, not square.",
+    "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-0a874d3a-3051-41df-9815-e430d8ce2842.png",
+    "refs": [
+      {
+        "id": "legging-model-front",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-08a83438-90cc-48dc-acb3-6384e8d3a2f3.png",
+        "role": "Moravel fictional-w01 identity and outfit"
+      },
+      {
+        "id": "jogger-model-front",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-6c21cfb2-a624-4f62-bb2e-95e4eda5015c.png",
+        "role": "Moravel fictional-m01 identity and outfit"
+      }
+    ]
+  },
+  {
+    "id": "jogger-black-back-rejected-1",
+    "product": "mens-jogger",
+    "file": "master-black-back.png",
+    "text": "Men's Jogger, BLACK #111111, BACK view. Athletic tapered performance joggers with room through thigh, slim lower legs, narrow ankle rib cuffs. Matte fine technical stretch jersey, gathered elastic waistband, plain back with center seam and NO rear pockets. Small tonal MORAVEL wordmark centered on rear waistband in uppercase DIN Condensed-like condensed sans, dark charcoal barely lighter than black. Front drawcord not visible. Match original Moravel construction reference only, newly photograph back with different folds and ghost volume.",
+    "parent": "jogger-black-front",
+    "prompt": "Use case: product-mockup. Create ONE entirely new photorealistic ecommerce ghost-mannequin garment photograph, not a collage. Portrait 4:5, target 1122x1402 or higher. No visible human, mannequin, hanger or styling props. Cool plain light-grey #E5E7EB seamless studio background. Hard directional upper-left studio light, clean decisive shadow, high contrast yet visible fabric detail. Entire garment with generous margins. Original Moravel garment, no borrowed brand signature seams, no contour graphics. Men's Jogger, BLACK #111111, BACK view. Athletic tapered performance joggers with room through thigh, slim lower legs, narrow ankle rib cuffs. Matte fine technical stretch jersey, gathered elastic waistband, plain back with center seam and NO rear pockets. Small tonal MORAVEL wordmark centered on rear waistband in uppercase DIN Condensed-like condensed sans, dark charcoal barely lighter than black. Front drawcord not visible. Match original Moravel construction reference only, newly photograph back with different folds and ghost volume.",
+    "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-6d4f4780-147b-4388-b58c-dbbb23965124.png",
+    "refs": [
+      {
+        "id": "jogger-black-front",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-8a1ca5dd-b5bd-4f10-8b83-bc0e6e965248.png",
+        "role": "Moravel garment construction only; new photograph"
+      }
+    ],
+    "rejectionReason": "Added rectangular logo patch and overly prominent mark; requires direct tonal print consistent with legging."
+  },
+  {
+    "id": "legging-model-front-rejected-2",
+    "product": "womens-training-legging",
+    "file": "model-black-front.png",
+    "prompt": "Use case: photorealistic-natural. Generate a completely NEW sportswear campaign photograph, portrait 4:5 1122x1402 or higher. Input 1 is ONLY the identity reference for this fictional adult woman: preserve her exact face, medium-brown skin, dark tied curls, age about 35, athletic fuller thighs and body proportions. Do NOT copy reference clothing, white tee, white shoes, studio, lighting, pose or framing; do not edit that photograph. Input 2 is the NEW original Moravel Black #111111 high-rise ankle-length legging garment construction reference; dress her in precisely this garment, with broad smooth waistband and clean minimal seams. Front view of product clearly visible. NEW scene: gritty charcoal gym with rubber floor, out-of-focus dark squat rack far behind, a diagonal shaft of hard sunlight. NEW pose: front three-quarter walking lunge toward camera, one leg bent forward and other extended back, hands on hips above waistband with normal anatomy, focused expression, full head and black shoes in frame. Camera a little below waist height, subject slightly left of center, generous margins for later 2:3 crop. Styling: simple sleeveless fitted SLATE athletic tank cropped just above waistband, opaque full chest coverage, no text or logo; black low-profile training shoes with black soles no logos. High-contrast athletic editorial, directional rim light, realistic skin and cloth tension, sharp face, accurate adult anatomy. No signage, no added text, no R&H mark, no white tee or white sneakers, no borrowed contour graphics. Legging front has no logo; MORAVEL rear mark is not visible.",
+    "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-e64e9373-e4e7-46e0-94b4-0101f03f606c.png",
+    "refs": [
+      {
+        "path": "/Users/tjmcgovern/websites/rennick_hale/public/images/products/alder-legging/model-coal-front.png",
+        "role": "R&H fictional-w01 face/body identity ONLY"
+      },
+      {
+        "id": "legging-black-front",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-416da32f-dafe-41a0-8464-84313cb75c24.png",
+        "role": "Moravel garment construction"
+      }
+    ],
+    "rejectionReason": "Native 1072x1467 is too narrow for requested 1122x1402 delivery without upscaling."
+  },
+  {
+    "id": "legging-model-back-rejected-3",
+    "product": "womens-training-legging",
+    "file": "model-black-back.png",
+    "prompt": "Use case: photorealistic-natural. Create a NEW sportswear ecommerce action photograph, exact 4:5 canvas 1122x1402 pixels or larger 4:5. Input 1 is the original Moravel fictional adult woman's face/body identity and styling reference; preserve her medium-brown skin, dark tied curls, approximately 35-year-old face and fuller athletic thighs, slate sleeveless cropped opaque tank and black unbranded training shoes. Input 2 is the exact original Moravel legging rear construction reference. Show BLACK #111111 high-waist ankle-length leggings with smooth broad waistband and small tonal condensed sans MORAVEL direct print at rear center waistband, no patch, no other text. NEW pose: rear three-quarter full-body view, a purposeful ascending step onto a low gym plyometric platform with one foot raised and the other on ground, arms naturally balanced, head turned slightly to show recognizable cheek profile. Frame the entire person and shoes with margin and waistband fully visible. New camera position and gym background: dark concrete training bay, a low unmarked black box, oblique late-afternoon hard side light and sharp floor shadows. Product rear is the main view; fully opaque athletic apparel, standard neutral professional sportswear photograph. No white tee or white sneakers, no studio backdrop, no R&H logo, no lifted hems or extra skin exposure. Normal anatomical hands and legs. Preserve garment and identity but do not reuse or edit prior pixels.",
+    "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-87741986-ac30-4316-98d1-874329908ee0.png",
+    "refs": [
+      {
+        "id": "legging-model-front",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-08a83438-90cc-48dc-acb3-6384e8d3a2f3.png",
+        "role": "Moravel model identity and new styling"
+      },
+      {
+        "id": "legging-black-back",
+        "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-c1f5a70d-1b70-44be-9880-af9bbc35c096.png",
+        "role": "Moravel rear garment construction"
+      }
+    ],
+    "rejectionReason": "Native 1072x1467 too narrow for requested 1122x1402 without upscaling."
+  }
+]

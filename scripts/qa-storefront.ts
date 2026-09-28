@@ -70,7 +70,7 @@ try {
     const page = await context.newPage();
     try {
       await page.goto(origin + "/products/womens-training-legging");
-      await page.getByRole("button", { name: "Olive", exact: true }).click();
+      await page.getByRole("button", { name: "Slate", exact: true }).click();
       await page.getByRole("button", { name: "M", exact: true }).click();
       await page
         .getByRole("button", { name: "Add to bag", exact: true })
@@ -105,7 +105,7 @@ try {
       if (
         rows.length !== 1 ||
         rows[0].product !== "womens-training-legging" ||
-        rows[0].color !== "Olive" ||
+        rows[0].color !== "Slate" ||
         rows[0].size !== "M" ||
         rows[0].quantity !== 1 ||
         Number(rows[0].unit_price) !== 98 ||

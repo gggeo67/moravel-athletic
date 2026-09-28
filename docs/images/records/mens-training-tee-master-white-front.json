@@ -1,0 +1,18 @@
+{
+  "id": "mens-training-tee-master-white-front",
+  "product": "mens-training-tee",
+  "file": "master-white-front.png",
+  "refs": [],
+  "prompt": "Use case: product-mockup. ONE original photorealistic ghost-mannequin FRONT photograph of Men's Training Tee in white #F2F2F0. Slim athletic-fit short-sleeve crewneck training tee, regular hip length, set-in sleeves, straight hem, matte smooth lightweight technical jersey. Simple original seams. Tiny tone-on-tone MORAVEL left chest in condensed uppercase sans, no other branding. Invisible mannequin, no person or props. Entire garment dimensional athletic volume, isolated on plain cool light-grey #E5E7EB background, hard upper-left light, crisp shadow and high contrast with fabric detail. MORAVEL letters are small direct tonal ink, narrow spaced DIN Condensed-like uppercase, no patch, no bright white logo. No other text, brand or decorative seam signature. New photograph generated from text only. EXACT 4:5 canvas 1122x1402 pixels, full garment centered with generous margins. Not square, not collage.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-232cff94-a013-4968-8748-42ebd4239f8c.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "accepted",
+    "notes": "Visually inspected generation: garment silhouette, colour family, view, framing and scene; model identity and anatomy where applicable. Native dimensions independently verified at installation.",
+    "colorCheck": "Visual colour-family comparison; hex values are design targets.",
+    "typographyCheck": "Small generated condensed sans lettering; not vector-exact.",
+    "reviewDate": "2026-09-28"
+  },
+  "path": "public/images/products/mens-training-tee/master-white-front.png"
+}

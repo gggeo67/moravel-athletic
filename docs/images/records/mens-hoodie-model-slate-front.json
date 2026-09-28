@@ -1,0 +1,32 @@
+{
+  "id": "mens-hoodie-model-slate-front",
+  "product": "mens-hoodie",
+  "file": "model-slate-front.png",
+  "refs": [
+    {
+      "id": "rh-rowan-hoodie-identity",
+      "path": "/Users/tjmcgovern/websites/rennick_hale/public/images/products/rowan-hoodie/model-chalk-front.png",
+      "role": "Rennick & Hale fictional adult identity only: face and body; do not copy clothing, styling, setting, lighting or pose",
+      "sha256": "d8c8f0858d4e660e4602a60d32e3252505987d35ae6ef67d6dd035553e8b9dfe"
+    },
+    {
+      "id": "mens-hoodie-master-slate-front",
+      "path": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-51ef3ec2-d94b-4a97-8a5b-d278e9571d96.png",
+      "role": "Original Moravel garment construction reference",
+      "sha256": "1c14c9929d79eacd814f26df4924547cc6bfab3a139f959c0e36844e0c99facc",
+      "retainedPath": "public/images/products/mens-hoodie/master-slate-front.png"
+    }
+  ],
+  "prompt": "Aspect ratio 4:5. Image size 1122x1402. Create a NEW athletic photograph on a 4:5 canvas. First image reference is ONLY fictional adult identity: keep same face, age, skin tone, hair and body proportions. Do not reuse its pixels, pose, clothing, lighting, background or framing. Second reference defines the new Moravel garment. Dress this same adult in Moravel Men's Hoodie, slate #4A4F57. Oversized relaxed hip-length pullover hoodie, dropped shoulders, roomy long sleeves, rib cuffs and rib hem, simple hood without drawstrings, discreet on-seam side pockets, NO central kangaroo pocket. Matte fine dense technical jersey, simple original seams. Small tonal MORAVEL left chest condensed uppercase sans, plain rear. Styling: black tapered joggers and black trainers, no white shoes, no other logos. Scene: dark industrial gym entrance with concrete wall, hard directional sunlight. Pose: front three-quarter purposeful walking stride holding black gym bag low in one hand clear of hoodie. High contrast movement, believable athletic body, natural hands, sharp garment detail. Entire person including head and shoes within frame with clear margin; keep person in central 65% width for editorial crops. New front-focused camera angle and new setting, not an edit of the identity image. Wordmark tiny tone-on-tone MORAVEL in condensed uppercase sans like DIN Condensed only at rear waistband of bottoms or left chest/hem of tops. No extra text, logos or watermark. Generate exact wide portrait 4:5, 1122x1402.\nREQUIRED CANVAS: EXACT 4:5 aspect ratio, 1122 pixels wide by 1402 pixels tall, or larger 4:5 such as 2048x2560. Compose on a wider 4:5 frame, not a tall 3:4 frame. Add horizontal gym/track/city space around the subject to achieve 4:5. No border. Keep entire shoes and hair within frame.",
+  "source": "/Users/tjmcgovern/.codex/generated_images/01a0e8ea-7b72-7201-8118-47b48192b611/exec-b2f914ba-9ff1-4987-b03f-fc334196e445.png",
+  "tool": "built-in image_gen",
+  "generatedDate": "2026-09-28",
+  "qa": {
+    "status": "accepted",
+    "notes": "Visually inspected generation: garment silhouette, colour family, view, framing and scene; model identity and anatomy where applicable. Native dimensions independently verified at installation.",
+    "colorCheck": "Visual colour-family comparison; hex values are design targets.",
+    "typographyCheck": "Small generated condensed sans lettering; not vector-exact.",
+    "reviewDate": "2026-09-28"
+  },
+  "path": "public/images/products/mens-hoodie/model-slate-front.png"
+}
