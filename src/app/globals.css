@@ -1479,3 +1479,7 @@ html {
 .contact-form textarea {
   min-height: 48px;
 }
+.contact-form [data-slot="button"],
+.restock-optin [data-slot="button"] {
+  min-height: 48px;
+}
