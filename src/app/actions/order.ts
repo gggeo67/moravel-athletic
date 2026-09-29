@@ -5,7 +5,10 @@ import { redirect } from "next/navigation";
 import { parseLines, resolveLines, type ResolvedLine } from "@/lib/cart";
 import { verifyTurnstile } from "@/lib/turnstile";
 import { getSql, insertOrder } from "@/lib/orders-db";
-import type { OrderState } from "@/lib/order";
+import { restockProduct, type OrderState } from "@/lib/order";
+import { upsertSubscriber } from "@/lib/list-db";
+import { sendEmail } from "@/lib/email";
+import { listConsent, restock, site } from "@/config/site";
 
 /**
  * Checkout capture.
@@ -13,10 +16,14 @@ import type { OrderState } from "@/lib/order";
  * HARD CONSTRAINT: no card fields anywhere in this flow until real payment
  * processing exists.
  *
- * Stores the restock request (status 'awaiting_restock') and redirects to
- * /checkout/payment, which shows restock information. The row is written BEFORE the
- * redirect, so nothing is lost at that step. No confirmation email is sent:
- * nothing has been paid for yet.
+ * Stores the order (status 'awaiting_restock') and redirects to
+ * /checkout/payment?ref=<order ref>, which shows the restock page. The row is
+ * written BEFORE the redirect, so nothing is lost at that step.
+ *
+ * The restock email is opt-in: only when the unticked "restock_optin" box is
+ * ticked is a row written to email_subscribers (source 'restock', linked to the
+ * order ref, with the exact consent wording). The order saves either way, and a
+ * failed opt-in never loses the order.
  *
  * If DATABASE_URL is unset this fails loudly rather than dropping the order.
  */
@@ -44,6 +51,7 @@ export async function submitOrder(
   const city = field(formData, "city");
   const state = field(formData, "state", 40);
   const zip = field(formData, "zip", 20);
+  const wantsRestockEmail = formData.get("restock_optin") === "on";
 
   // Lines come from the client cart and are re-resolved here: the browser says
   // what the customer wants, the catalogue says what it costs.
@@ -60,7 +68,16 @@ export async function submitOrder(
   }
 
   // Echoed back on every error path so nothing the customer typed is lost.
-  const values = { name, email, address1, address2, city, state, zip };
+  const values = {
+    name,
+    email,
+    address1,
+    address2,
+    city,
+    state,
+    zip,
+    restock_optin: wantsRestockEmail ? "on" : "",
+  };
 
   if (lines.length === 0) {
     return {
@@ -120,10 +137,11 @@ export async function submitOrder(
     };
   }
 
+  const orderRef = randomUUID();
   try {
     await insertOrder(
       sql,
-      randomUUID(),
+      orderRef,
       { name, email, address1, address2: address2 || null, city, state, zip },
       lines.map((l) => ({
         product: l.handle,
@@ -144,5 +162,29 @@ export async function submitOrder(
     };
   }
 
-  redirect("/checkout/payment");
+  if (wantsRestockEmail) {
+    try {
+      const product = restockProduct(lines.map((l) => l.handle));
+      const { token } = await upsertSubscriber(sql, {
+        brand: site.key,
+        email,
+        source: "restock",
+        product,
+        orderRef,
+        consentText: listConsent.restock,
+      });
+      // Dormant until a sending domain is configured; never throws.
+      await sendEmail({
+        to: email,
+        subject: `Your ${site.name} order is saved`,
+        text: `${restock.message} ${restock.optedIn} ${restock.chargeNotice}\n\nOrder reference: ${orderRef}`,
+        unsubscribeToken: token,
+      });
+    } catch (error) {
+      // The order is saved; the restock page offers the opt-in again.
+      console.error("[order] restock opt-in failed:", error);
+    }
+  }
+
+  redirect(`/checkout/payment?ref=${orderRef}`);
 }

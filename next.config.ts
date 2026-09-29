@@ -11,5 +11,14 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      { source: "/contact", destination: "/pages/contact", permanent: true },
+      // Fabric lines renamed from their working names on 2026-09-29.
+      { source: "/collections/line-one", destination: "/collections/tempo-jersey", permanent: true },
+      { source: "/collections/line-two", destination: "/collections/surge-knit", permanent: true },
+      { source: "/collections/line-three", destination: "/collections/stride-woven", permanent: true },
+    ];
+  },
 };
 export default nextConfig;

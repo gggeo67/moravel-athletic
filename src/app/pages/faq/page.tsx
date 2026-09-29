@@ -1,4 +1,4 @@
-import { faqs } from "@/config/site";
+import { faqs, policyEffectiveDate } from "@/config/site";
 import { metadataForPage } from "@/lib/seo";
 import { Accordion } from "@/components/accordion";
 import { JsonLd } from "@/components/json-ld";
@@ -7,6 +7,7 @@ export default function Page() {
   return (
     <div className="wrap text-page">
       <h1>Frequently asked questions</h1>
+      <p className="effective-date">Updated {policyEffectiveDate}</p>
       <JsonLd
         data={{
           "@context": "https://schema.org",

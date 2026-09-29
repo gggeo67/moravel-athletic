@@ -936,7 +936,7 @@
 .checkout-item p {
   font-size: 12px;
 }
-.checkout-form input:not([type="hidden"]) {
+.checkout-form input:not([type="hidden"]):not([type="checkbox"]) {
   border-radius: 2px;
   font-size: 16px;
   min-height: 48px;
@@ -1416,4 +1416,66 @@ html {
     animation: none !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Service pages, consent checkboxes and the restock page (GEO readiness). */
+.text-page .effective-date {
+  margin-top: -20px;
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+.policy-list {
+  margin-top: 12px;
+  padding-left: 20px;
+  list-style: disc;
+  max-width: 75ch;
+  color: #4a4f57;
+}
+.policy-list li + li {
+  margin-top: 6px;
+}
+.text-page section p + p {
+  margin-top: 12px;
+}
+.consent-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  min-height: 44px;
+  padding-top: 4px;
+  cursor: pointer;
+}
+.consent-check input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  min-height: 0;
+  flex: none;
+  margin-top: 1px;
+}
+.text-page > p + p {
+  margin-top: 12px;
+}
+.restock-actions {
+  margin-top: 40px;
+}
+.restock-optin {
+  margin-top: 24px;
+  display: grid;
+  gap: 12px;
+  justify-items: start;
+}
+.restock-note,
+.contact-success {
+  margin-top: 24px;
+  font-weight: 500;
+}
+.contact-form {
+  margin-top: 32px;
+  max-width: 560px;
+}
+.contact-form select,
+.contact-form input,
+.contact-form textarea {
+  min-height: 48px;
 }

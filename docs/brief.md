@@ -30,21 +30,21 @@ name, price, size and composition facts are still open; colours and the image-al
 
 | # | Slot (stand-in name / handle) | Audience / category | Fabric-line slot | Slot price |
 | -- | -- | -- | -- | -- |
-| 1 | Women's Training Legging / `womens-training-legging` | Women / leggings | Line Two | $98 |
-| 2 | Women's Sports Bra / `womens-sports-bra` | Women / sports bra | Line Two | $58 |
-| 3 | Women's Bike Short / `womens-bike-short` | Women / shorts | Line Two | $68 |
-| 4 | Women's Training Tee / `womens-training-tee` | Women / tee | Line One | $48 |
-| 5 | Women's Jogger / `womens-jogger` | Women / joggers | Line One | $98 |
-| 6 | Women's Zip Hoodie / `womens-zip-hoodie` | Women / hoodie | Line One | $110 |
-| 7 | Men's Training Tee / `mens-training-tee` | Men / tee | Line One | $58 |
-| 8 | Men's Training Short / `mens-training-short` | Men / shorts | Line Three | $78 |
-| 9 | Men's Jogger / `mens-jogger` | Men / joggers | Line One | $98 |
-| 10 | Men's Quarter-Zip / `mens-quarter-zip` | Men / quarter-zip | Line One | $128 |
-| 11 | Men's Hoodie / `mens-hoodie` | Men / hoodie | Line One | $118 |
+| 1 | Women's Training Legging / `womens-training-legging` | Women / leggings | Surge Knit | $98 |
+| 2 | Women's Sports Bra / `womens-sports-bra` | Women / sports bra | Surge Knit | $58 |
+| 3 | Women's Bike Short / `womens-bike-short` | Women / shorts | Surge Knit | $68 |
+| 4 | Women's Training Tee / `womens-training-tee` | Women / tee | Tempo Jersey | $48 |
+| 5 | Women's Jogger / `womens-jogger` | Women / joggers | Tempo Jersey | $98 |
+| 6 | Women's Zip Hoodie / `womens-zip-hoodie` | Women / hoodie | Tempo Jersey | $110 |
+| 7 | Men's Training Tee / `mens-training-tee` | Men / tee | Tempo Jersey | $58 |
+| 8 | Men's Training Short / `mens-training-short` | Men / shorts | Stride Woven | $78 |
+| 9 | Men's Jogger / `mens-jogger` | Men / joggers | Tempo Jersey | $98 |
+| 10 | Men's Quarter-Zip / `mens-quarter-zip` | Men / quarter-zip | Tempo Jersey | $128 |
+| 11 | Men's Hoodie / `mens-hoodie` | Men / hoodie | Tempo Jersey | $118 |
 | 12 | Moravel Athletic Gift Card / `gift-card` | Unisex / gift card | none | $50 / $100 |
 
-Approved colours (2026-09-28): Black #111111, White #F2F2F0, Slate #4A4F57, Signal Blue #1F5BFF (two per garment). Fabric-line slots:
-Line One, Line Two, Line Three (`/collections/line-one` etc.).
+Approved colours (2026-09-28): Black #111111, White #F2F2F0, Slate #4A4F57, Signal Blue #1F5BFF (two per garment). Fabric lines (named 2026-09-29):
+Tempo Jersey, Surge Knit, Stride Woven (`/collections/tempo-jersey` etc.).
 
 ## Voice and look
 

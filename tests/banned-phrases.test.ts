@@ -24,9 +24,31 @@ const BANNED: RegExp[] = [
   /\bfictional (brand|company|store)\b/i,
   /\b(this|a) (preview|prototype) (site|store|build)\b/i,
   /\bpurchases? (are )?unavailable\b/i,
+  // Readiness pass (GEO shared spec, building block 3).
+  /\bnot quoting( yet)?\b/i,
+  /\b(isn'?t|is not|not) open yet\b/i,
+  /\bwill be (listed|published) here\b/i,
+  /\bgoes here once\b/i,
+  /\bnot confirmed\b/i,
+  /\bdevelopment placeholder\b/i,
+  /\bservice preview\b/i,
+  /\bproposed\b/i,
+  /\bproposal\b/i,
+  /\bintended first\b/i,
+  /\bfirst offering\b/i,
+  /\bsample price\b/i,
+  /\bconcept collection\b/i,
+  /\bnot yet taking\b/i,
+  // Visitor-facing "placeholder" only: not the HTML attribute or Tailwind variant.
+  /(?<![-\w])placeholder\b(?!\s*[=:])/i,
+  /\bfictional\b/i,
+  /\beditorial draft\b/i,
+  /\bnotify me when it'?s ready\b/i,
 ];
 
 // Exact strings that are allowed despite matching a pattern (keep this short).
+// The approved "We're restocking" checkout wording matches none of the patterns,
+// so nothing needs allowing here.
 const ALLOW: string[] = [];
 
 function files(dir: string): string[] {

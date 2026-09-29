@@ -76,17 +76,22 @@ export function websiteSchema(): JsonLdValue {
   };
 }
 
-/** Only emitted once a real legal entity is configured; never invented. */
+/** Organization markup naming the brand as operator; never an invented entity. */
 export function organizationSchema(): JsonLdValue | null {
-  if (!site.legalEntity) return null;
+  // The operator is the brand name only: no legalName, address or phone is
+  // published, and customer contact is the site's contact form.
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: site.name,
-    legalName: site.legalEntity,
+    name: site.operator,
     url: site.origin,
     description: site.description,
-    ...(site.contact.email ? { email: site.contact.email } : {}),
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer service",
+      url: absoluteUrl(site.contact.form),
+      availableLanguage: "en",
+    },
   };
 }
 

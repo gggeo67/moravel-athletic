@@ -25,12 +25,26 @@ export default function Page() {
                 sizes="(max-width:700px) 100vw, 33vw"
               />
             </div>
-            <h2 className="mt-5">Inside {line.name}</h2>
+            <h2 className="mt-5">
+              {storefront.journal.cardPrefix} {line.name}{" "}
+              {storefront.journal.cardSuffix}
+            </h2>
             <p>{line.description}</p>
-            <span className="text-link">Explore the fabric</span>
+            <span className="text-link">{storefront.journal.cta}</span>
           </Link>
         ))}
       </div>
+      <nav className="page-links" aria-label="More guides">
+        <Link className="text-link" href="/pages/size-guide">
+          Size & fit guide
+        </Link>
+        <Link className="text-link" href="/pages/materials">
+          All materials
+        </Link>
+        <Link className="text-link" href="/pages/gift-guide">
+          Holiday gift guide
+        </Link>
+      </nav>
       {journalArticles.length > 0 && (
         <section className="section-space">
           <h2>Journal</h2>

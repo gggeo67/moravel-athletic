@@ -128,8 +128,14 @@ describe("structured data", () => {
     expect(schema.url).toBe(site.origin);
   });
 
-  test("Organization schema is omitted while no legal entity is configured", () => {
-    expect(organizationSchema()).toBeNull();
+  test("Organization schema names the brand as operator, with no invented legal entity", () => {
+    const schema = organizationSchema() as Record<string, unknown>;
+    expect(schema.name).toBe(site.name);
+    expect(schema).not.toHaveProperty("legalName");
+    expect(schema).not.toHaveProperty("address");
+    expect(schema).not.toHaveProperty("telephone");
+    expect(schema).not.toHaveProperty("email");
+    expect(JSON.stringify(schema)).toContain(`${site.origin}/pages/contact`);
   });
 
   test("BreadcrumbList positions are 1-indexed and absolute", () => {

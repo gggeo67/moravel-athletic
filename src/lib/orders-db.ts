@@ -57,3 +57,25 @@ export async function insertOrder(
     `;
   }
 }
+
+/** Email and product slugs for an order ref, for the post-checkout opt-in. */
+export async function findOrder(
+  sql: Sql,
+  orderRef: string,
+): Promise<{ email: string; products: string[] } | null> {
+  const rows = (await sql`
+    select email, product from orders where order_ref = ${orderRef}
+  `) as { email: string; product: string }[];
+  if (rows.length === 0) return null;
+  return { email: rows[0].email, products: rows.map((r) => r.product) };
+}
+
+/** Whether this order has a live restock opt-in. */
+export async function hasRestockOptIn(sql: Sql, orderRef: string): Promise<boolean> {
+  const rows = (await sql`
+    select 1 from email_subscribers
+    where order_ref = ${orderRef} and source = 'restock' and status = 'subscribed'
+    limit 1
+  `) as unknown[];
+  return rows.length > 0;
+}

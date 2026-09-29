@@ -1,6 +1,6 @@
 "use client";
 
-import { restock } from "@/config/site";
+import { listConsent, restock } from "@/config/site";
 import { useActionState } from "react";
 import { submitOrder } from "@/app/actions/order";
 import { initialOrderState } from "@/lib/order";
@@ -10,7 +10,8 @@ import { Button } from "@/components/ui/button";
 /**
  * Checkout form: contact and shipping details only. NO card fields.
  *
- * Saves a restock request before showing the restock page.
+ * Saves the order before showing the restock page. The restock email is
+ * opt-in through an unticked checkbox; the order saves without it.
  */
 
 function Field({
@@ -123,6 +124,15 @@ export function OrderForm({ lines }: { lines: CartLine[] }) {
           defaultValue={was("state")}
         />
       </div>
+
+      <label className="consent-check">
+        <input
+          type="checkbox"
+          name="restock_optin"
+          defaultChecked={was("restock_optin") === "on"}
+        />
+        <span>{listConsent.restock}</span>
+      </label>
 
       <Button type="submit" disabled={pending} className="w-full">
         {pending ? restock.pendingLabel : restock.submitLabel}

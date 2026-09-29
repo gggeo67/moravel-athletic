@@ -25,3 +25,15 @@ export const initialOrderState: OrderState = {
   status: "idle",
   message: "",
 };
+
+/** The list row's product value for a restock opt-in: distinct slugs, sorted. */
+export function restockProduct(handles: string[]): string {
+  return [...new Set(handles)].sort().join(",");
+}
+
+export function isOrderRef(value: unknown): value is string {
+  return (
+    typeof value === "string" &&
+    /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/.test(value)
+  );
+}

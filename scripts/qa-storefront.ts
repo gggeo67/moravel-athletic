@@ -103,9 +103,9 @@ try {
       ])
         await page.getByLabel(label, { exact: true }).fill(value);
       await page
-        .getByRole("button", { name: "Notify me when available" })
+        .getByRole("button", { name: "Save my order" })
         .click();
-      await page.waitForURL("**/checkout/payment");
+      await page.waitForURL("**/checkout/payment?ref=*");
       await page.getByRole("heading", { name: "We’re restocking" }).waitFor();
       await page
         .getByText("You haven’t been charged.", { exact: true })

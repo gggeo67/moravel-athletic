@@ -1,10 +1,16 @@
 "use server";
 import { getSql } from "@/lib/orders-db";
-import { storefront } from "@/config/site";
+import { upsertSubscriber } from "@/lib/list-db";
+import { listConsent, site } from "@/config/site";
 export type SubscribeState = {
   status: "idle" | "success" | "error";
   message: string;
 };
+/**
+ * Newsletter sign-up. Requires the unticked consent checkbox; stores the exact
+ * label as consent_text in email_subscribers (source 'newsletter'). Signing up
+ * again after unsubscribing re-subscribes with fresh consent.
+ */
 export async function subscribe(
   _previous: SubscribeState,
   form: FormData,
@@ -28,10 +34,16 @@ export async function subscribe(
       message: "We couldn’t save your email. Please try again later.",
     };
   try {
-    await sql`insert into subscribers(email,consent_text) values(${email},${storefront.newsletter.consent}) on conflict(email) do nothing`;
+    await upsertSubscriber(sql, {
+      brand: site.key,
+      email,
+      source: "newsletter",
+      product: null,
+      consentText: listConsent.newsletter,
+    });
     return { status: "success", message: "You’re on the list." };
-  } catch {
-    console.error("[newsletter] insert failed");
+  } catch (error) {
+    console.error("[newsletter] insert failed:", (error as Error).name);
     return {
       status: "error",
       message: "We couldn’t save your email. Please try again.",

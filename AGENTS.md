@@ -25,7 +25,10 @@ Built with the geo-site skill. Read `docs/brief.md` before changing copy. The br
 - Visual direction: a vibe similar to https://www.gymshark.com (bold, energetic, high-contrast performance look). Reference only: never copy its copy, photos, product names or logos. Specific palette and type are chosen at the build stage.
 - Product and fabric-line names remain descriptive stand-ins until the brief is signed off. The user approved original Moravel imagery and the Black / White / Slate / Signal Blue palette on 2026-09-28, plus fit descriptions aligned with those images. Image lineage and QA live in `docs/images/manifest.json`.
 - Brand facts, the page map, nav and footer live in `src/config/site.ts`; products live in `src/content/catalog.ts`. Pages read from these; never hard-code a fact in a page.
-- Funnel: cart → `/checkout` saves to Neon (`status='awaiting_restock'`) → `/checkout/payment` shows the approved restock notification.
+- Funnel: cart → `/checkout` saves to Neon (`status='awaiting_restock'`) → `/checkout/payment?ref=<order_ref>` shows the approved "We're restocking" page, says whether the customer opted in to the restock email, and clears the bag. The restock email is an unticked checkbox writing to `email_subscribers` (see `docs/email-and-list.md`).
+- Contact is the `/pages/contact` form (`contact_messages`); no email address, street address or company registration is published. The operator is the brand name.
+- Service and policy copy (shipping, returns, FAQ, privacy, terms, accessibility) lives in `helpContent`, `faqs` and `serviceTerms` in `src/config/site.ts`, and must match Rennick & Hale's terms exactly.
+- Fabric lines: Tempo Jersey (`/collections/tempo-jersey`), Surge Knit (`/collections/surge-knit`), Stride Woven (`/collections/stride-woven`). The old `/collections/line-one|two|three` URLs redirect permanently (next.config.ts).
 - Checks: `bun run lint && bun run typecheck && bun test && bun run build`, then `bun run check:crawlability` against a running server. `bun run db:orders` applies the schema; `bun run db:test-order` proves the write path with an `@example.com` row and deletes it.
 
 <!-- BEGIN:nextjs-agent-rules -->
