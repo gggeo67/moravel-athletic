@@ -1,5 +1,6 @@
+import { BrandLogo } from "@/components/brand-logo";
 import Link from "next/link";
-import { site, storefront } from "@/config/site";
+import { site } from "@/config/site";
 import { Newsletter } from "@/components/newsletter";
 export function SiteFooter() {
   return (
@@ -13,7 +14,7 @@ export function SiteFooter() {
               className="wordmark"
               aria-label={`${site.name} home`}
             >
-              {storefront.wordmark}
+              <BrandLogo />
             </Link>
             <p>{site.line}</p>
           </div>

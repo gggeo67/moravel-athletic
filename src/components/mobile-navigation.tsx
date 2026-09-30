@@ -1,8 +1,9 @@
 "use client";
+import { BrandLogo } from "@/components/brand-logo";
 import { useRef } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { storefront, type NavItem } from "@/config/site";
+import { type NavItem } from "@/config/site";
 export function MobileNavigation({ items }: { items: NavItem[] }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const trigger = useRef<HTMLButtonElement>(null);
@@ -44,7 +45,7 @@ export function MobileNavigation({ items }: { items: NavItem[] }) {
         }}
       >
         <div className="navigation-dialog-header">
-          <span className="wordmark">{storefront.wordmark}</span>
+          <span className="wordmark" role="img" aria-label="Moravel Athletic"><BrandLogo /></span>
           <button
             aria-label="Close menu"
             onClick={() => dialog.current?.close()}
