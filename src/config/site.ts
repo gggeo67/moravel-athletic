@@ -238,42 +238,49 @@ export const categories = [
     value: "leggings",
     audience: "womens",
     image: "/images/editorial/category-leggings.webp",
+    garmentImage: "/images/products/womens-training-legging/master-black-front.webp",
   },
   {
     name: "Joggers",
     value: "joggers",
     audience: "womens",
     image: "/images/editorial/category-joggers.webp",
+    garmentImage: "/images/products/womens-jogger/master-slate-front.webp",
   },
   {
     name: "Shorts",
     value: "shorts",
     audience: "mens",
     image: "/images/editorial/category-shorts.webp",
+    garmentImage: "/images/products/mens-training-short/master-signal-blue-front.webp",
   },
   {
     name: "Tees",
     value: "tee",
     audience: "mens",
     image: "/images/editorial/category-tees.webp",
+    garmentImage: "/images/products/mens-training-tee/master-white-front.webp",
   },
   {
     name: "Sports bras",
     value: "sports bra",
     audience: "womens",
     image: "/images/editorial/category-bras.webp",
+    garmentImage: "/images/products/womens-sports-bra/master-black-front.webp",
   },
   {
     name: "Quarter-zips",
     value: "quarter-zip",
     audience: "mens",
     image: "/images/editorial/category-quarter-zips.webp",
+    garmentImage: "/images/products/mens-quarter-zip/master-black-front.webp",
   },
   {
     name: "Hoodies",
     value: "hoodie",
     audience: "womens",
     image: "/images/editorial/category-hoodies.webp",
+    garmentImage: "/images/products/womens-zip-hoodie/master-slate-front.webp",
   },
 ];
 
@@ -340,8 +347,8 @@ export const storefront = {
   giftGuide: {
     title: "Gifts for training and running.",
     text: "A layer, a pair of shorts, or the choice of a gift card.",
-    image: "/images/editorial/gift-guide.webp",
-    alt: "Model outside a gym wearing a Slate Moravel hoodie",
+    image: "/images/products/gift-card/artwork.webp",
+    alt: "Black Moravel Athletic gift card on a grey background",
   },
   journal: {
     title: "Fabric & fit guides",

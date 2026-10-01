@@ -3,45 +3,48 @@ import { useState } from "react";
 import Link from "next/link";
 import type { Product } from "@/content/catalog";
 import { ProductCard } from "@/components/product-card";
+import { ShopRail } from "@/components/shop-rail";
 import { storefront } from "@/config/site";
 export function NewArrivals({ products }: { products: Product[] }) {
   const [audience, setAudience] = useState("womens");
   return (
-    <section className="wrap section-space">
-      <div className="section-heading">
-        <div>
-          <h2>{storefront.newArrivals.title}</h2>
-          <p>{storefront.newArrivals.text}</p>
-        </div>
-        <div className="tabs" aria-label="Choose a collection">
-          <button
-            onClick={() => setAudience("womens")}
-            aria-pressed={audience === "womens"}
-          >
-            Women
-          </button>
-          <button
-            onClick={() => setAudience("mens")}
-            aria-pressed={audience === "mens"}
-          >
-            Men
-          </button>
-          <Link className="text-link" href={`/collections/${audience}`}>
-            Shop all
-          </Link>
-        </div>
-      </div>
-      <div
-        className="product-rail"
-        tabIndex={0}
-        aria-label={storefront.newArrivals.title}
+    <section className="wrap home-shopping home-products">
+      <ShopRail
+        resetKey={audience}
+        label={`${audience === "womens" ? "women’s" : "men’s"} training gear`}
+        heading={
+          <>
+            <h2>{storefront.newArrivals.title}</h2>
+            <div className="home-product-navigation">
+              <div className="tabs" aria-label="Choose a collection">
+                <button
+                  type="button"
+                  onClick={() => setAudience("womens")}
+                  aria-pressed={audience === "womens"}
+                >
+                  Women
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setAudience("mens")}
+                  aria-pressed={audience === "mens"}
+                >
+                  Men
+                </button>
+              </div>
+              <Link className="text-link" href={`/collections/${audience}`}>
+                Shop all
+              </Link>
+            </div>
+          </>
+        }
       >
         {products
           .filter((p) => p.audience === audience)
           .map((p) => (
             <ProductCard key={p.handle} product={p} />
           ))}
-      </div>
+      </ShopRail>
     </section>
   );
 }

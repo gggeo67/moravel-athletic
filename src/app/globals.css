@@ -419,6 +419,9 @@
 .editorial-photo img {
   object-fit: cover;
 }
+.journal-guides .fabric-card .editorial-photo {
+  aspect-ratio: 1;
+}
 .fabric-card h3 {
   margin-top: 20px;
   font-size: 28px;
@@ -476,7 +479,7 @@
   object-fit: contain;
 }
 .gift-guide-banner .banner-photo {
-  aspect-ratio: 2/3;
+  aspect-ratio: 4/5;
   min-height: 0;
 }
 .gift-guide-banner .banner-photo img {

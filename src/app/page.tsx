@@ -1,10 +1,12 @@
+import "./home.css";
 import Image from "next/image";
 import Link from "next/link";
 import { site, storefront } from "@/config/site";
 import { allProducts } from "@/content/catalog";
 import { metadataFor } from "@/lib/seo";
 import { NewArrivals } from "@/components/product-rail";
-import { FabricTiles, CategoryRail, BrandBanner } from "@/components/editorial";
+import { BrandBanner } from "@/components/editorial";
+import { HomeCategories, HomeMaterials } from "@/components/home-editorial";
 export const metadata = metadataFor({
   path: "/",
   title: `${site.name} · ${site.line}`,
@@ -12,8 +14,8 @@ export const metadata = metadataFor({
 });
 export default function Home() {
   return (
-    <>
-      <section className="hero">
+    <div className="moravel-home">
+      <section className="hero campaign-hero">
         <div className="hero-photo">
           <Image
             src={storefront.hero.image}
@@ -21,7 +23,7 @@ export default function Home() {
             fill
             preload
             quality={85}
-            sizes="(max-width: 700px) 818px, 100vw"
+            sizes="(max-width: 700px) 1100px, 100vw"
           />
         </div>
         <div className="hero-copy">
@@ -37,15 +39,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="wrap section-space">
-        <div className="section-heading">
-          <h2>{storefront.categoryTitle}</h2>
-        </div>
-        <CategoryRail />
-      </section>
+      <HomeCategories />
       <NewArrivals products={allProducts()} />
       <BrandBanner />
-      <FabricTiles />
-    </>
+      <HomeMaterials />
+    </div>
   );
 }

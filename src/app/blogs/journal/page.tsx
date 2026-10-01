@@ -10,7 +10,7 @@ export default function Page() {
         <h1>{storefront.journal.title}</h1>
         <p>{storefront.journal.text}</p>
       </div>
-      <div className="fabric-grid">
+      <div className="fabric-grid journal-guides">
         {fabricLines.map((line) => (
           <Link
             className="fabric-card"
@@ -19,8 +19,8 @@ export default function Page() {
           >
             <div className="editorial-photo">
               <Image
-                src={line.image}
-                alt={line.alt}
+                src={line.macro}
+                alt={`${line.name} fabric texture close-up`}
                 fill
                 sizes="(max-width:700px) 100vw, 33vw"
               />
