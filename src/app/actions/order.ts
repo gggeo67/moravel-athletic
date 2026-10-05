@@ -1,4 +1,5 @@
 "use server";
+import { captureConversion } from "@/lib/experiment-analytics-server";
 
 import { randomUUID } from "node:crypto";
 import { redirect } from "next/navigation";
@@ -162,6 +163,8 @@ export async function submitOrder(
     };
   }
 
+  await captureConversion("order_intent_saved", orderRef, { is_test: /@example\.(com|org|net)$/i.test(email) });
+
   if (wantsRestockEmail) {
     try {
       const product = restockProduct(lines.map((l) => l.handle));
@@ -173,6 +176,7 @@ export async function submitOrder(
         orderRef,
         consentText: listConsent.restock,
       });
+      await captureConversion("restock_signup_saved", orderRef, { is_test: /@example\.(com|org|net)$/i.test(email) });
       // Dormant until a sending domain is configured; never throws.
       await sendEmail({
         to: email,

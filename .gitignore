@@ -64,3 +64,8 @@ skills-lock.json
 
 # List and contact-message CSV exports (personal data; never committed)
 exports/
+
+# PostHog configuration and local installer cache
+.env.local
+.posthog-wizard-cache/
+!.env.example

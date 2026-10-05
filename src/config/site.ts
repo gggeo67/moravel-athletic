@@ -545,6 +545,7 @@ export const helpContent: Record<string, HelpSection[]> = {
     },
   ],
   "/policies/privacy-policy": [
+    { heading: "Optional analytics", text: "With your permission, we use PostHog to measure page visits, referral sources, link clicks, form starts and completed requests. Analytics does not include form contents, names, email addresses or session recordings. We store your choice in this browser; after you allow analytics, a session identifier and a first-party cookie lasting up to 30 minutes connect actions during your visit. PostHog processes the analytics and ordinary connection information. We disable location enrichment and do not create identified customer profiles. Decline to browse without PostHog, or change your choice using Analytics settings. We respect browser Do Not Track and Global Privacy Control signals. Essential form and checkout storage is separate." },
     {
       heading: "Who we are",
       text: "Moravel Athletic runs this website. For any privacy question or request, use our contact form.",

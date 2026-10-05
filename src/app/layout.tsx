@@ -1,3 +1,4 @@
+import { ExperimentAnalytics } from "@/components/experiment-analytics-client";
 import type { Metadata } from "next";
 import { Barlow, Barlow_Condensed } from "next/font/google";
 import "./globals.css";
@@ -59,6 +60,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           </main>
           <SiteFooter />
         </CartProvider>
+      <ExperimentAnalytics />
       </body>
     </html>
   );

@@ -1,4 +1,5 @@
 "use server";
+import { captureConversion } from "@/lib/experiment-analytics-server";
 
 import { listConsent, site } from "@/config/site";
 import { findOrder, getSql } from "@/lib/orders-db";
@@ -45,6 +46,7 @@ export async function optInRestock(
       orderRef: ref,
       consentText: listConsent.restock,
     });
+    await captureConversion("restock_signup_saved", ref, { is_test: /@example\.(com|org|net)$/i.test(order.email) });
     return { status: "success", message: "" };
   } catch (error) {
     console.error("[restock] opt-in failed:", error);
