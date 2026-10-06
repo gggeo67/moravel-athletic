@@ -1,6 +1,7 @@
 import { describe, expect, test } from "bun:test";
 import {
   allowedProperties,
+  performanceEvent,
   parseAnalyticsCookie,
   safeCampaign,
   safePath,
@@ -41,4 +42,27 @@ describe("analytics data boundaries", () => {
       ),
     ).not.toBeNull();
   });
+});
+
+test("performance telemetry redacts tokens and excludes private routes", () => {
+  expect(
+    performanceEvent({
+      url: "https://site.test/pricing?email=private@example.com#token",
+    }),
+  ).toEqual({ url: "https://site.test/pricing" });
+  for (const path of [
+    "/checkout/payment",
+    "/start/confirmation",
+    "/unsubscribe/token",
+    "/account",
+  ])
+    expect(performanceEvent({ url: "https://site.test" + path })).toBeNull();
+  expect(performanceEvent({ url: "not a URL" })).toBeNull();
+  expect(
+    allowedProperties({
+      experiment_arm: "control",
+      pair_id: "climbing",
+      email: "secret",
+    }),
+  ).toEqual({ experiment_arm: "control", pair_id: "climbing" });
 });

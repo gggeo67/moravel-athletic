@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import posthog from "posthog-js";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { analyticsSite } from "@/config/analytics";
 import {
   analyticsConsentKey,
@@ -12,6 +13,7 @@ import {
   safeCampaign,
   safePath,
   safeReferrer,
+  performanceEvent,
 } from "@/lib/experiment-analytics";
 import styles from "./experiment-analytics.module.css";
 
@@ -60,7 +62,9 @@ function capture(
     ...properties,
     site_id: analyticsSite.id,
     site_type: analyticsSite.kind,
-    experiment_id: "GEO-2078",
+    experiment_id: "GEO-2407",
+    experiment_arm: analyticsSite.experimentArm,
+    pair_id: analyticsSite.pairId,
     environment,
     is_test: environment !== "production",
     $current_url: location.origin + safePath(location.pathname),
@@ -161,7 +165,11 @@ export function ExperimentAnalytics() {
           destination_host: url.hostname,
           destination_path: safePath(url.pathname),
         });
-      else if (/^\/(start|contact|checkout|sign-up)(\/|$)/.test(url.pathname))
+      else if (
+        /^\/(?:pages\/)?(pricing|start|contact|checkout|sign-up|preorder)(\/|$)/.test(
+          url.pathname,
+        )
+      )
         capture("cta_clicked", { destination_path: safePath(url.pathname) });
     };
     const focus = (event: FocusEvent) => {
@@ -171,9 +179,15 @@ export function ExperimentAnalytics() {
       started.current.add(form);
       capture("form_started", { form_type: safePath(location.pathname) });
     };
+    const submit = (event: SubmitEvent) => {
+      if (event.target instanceof HTMLFormElement)
+        capture("form_submitted", { form_type: safePath(location.pathname) });
+    };
+    document.addEventListener("submit", submit);
     document.addEventListener("click", click);
     document.addEventListener("focusin", focus);
     return () => {
+      document.removeEventListener("submit", submit);
       document.removeEventListener("click", click);
       document.removeEventListener("focusin", focus);
     };
@@ -200,15 +214,22 @@ export function ExperimentAnalytics() {
   if (!enabled || choice === "loading") return null;
   return (
     <div className={styles.root}>
+      {choice === "allowed" && environment === "production" && (
+        <SpeedInsights
+          sampleRate={1}
+          debug={false}
+          beforeSend={(event) => (permitted() ? performanceEvent(event) : null)}
+        />
+      )}
       {open ? (
         <section className={styles.panel} aria-label="Analytics preferences">
           <strong>
             Optional analytics{analyticsSite.adultOnly ? " for grown-ups" : ""}
           </strong>
           <p>
-            Allow PostHog to measure visits, referral sources and completed
-            requests? No form contents or session recordings.{" "}
-            <a href={analyticsSite.privacy}>Privacy details</a>.
+            Allow PostHog to measure visits, referral sources and requests, and
+            Vercel to measure page performance? No form contents or session
+            recordings. <a href={analyticsSite.privacy}>Privacy details</a>.
           </p>
           <div className={styles.actions}>
             <button type="button" onClick={() => choose("declined")}>

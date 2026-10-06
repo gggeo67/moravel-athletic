@@ -206,7 +206,8 @@ export const fabricLines = [
   {
     handle: "tempo-jersey",
     name: "Tempo Jersey",
-    description: "Stretch jersey that keeps pace from the first rep to the last lap.",
+    description:
+      "Stretch jersey that keeps pace from the first rep to the last lap.",
     composition: "89% polyester / 11% elastane",
     image: "/images/editorial/collection-line-one.webp",
     alt: "Model carrying dumbbells in a White Moravel training tee",
@@ -224,7 +225,8 @@ export const fabricLines = [
   {
     handle: "stride-woven",
     name: "Stride Woven",
-    description: "Light woven stretch with zip side pockets, made for the stride.",
+    description:
+      "Light woven stretch with zip side pockets, made for the stride.",
     composition: "86% polyester / 14% elastane · 137 GSM",
     image: "/images/editorial/collection-line-three.webp",
     alt: "Model running on a blue track in Black Moravel training shorts",
@@ -238,7 +240,8 @@ export const categories = [
     value: "leggings",
     audience: "womens",
     image: "/images/editorial/category-leggings.webp",
-    garmentImage: "/images/products/womens-training-legging/master-black-front.webp",
+    garmentImage:
+      "/images/products/womens-training-legging/master-black-front.webp",
   },
   {
     name: "Joggers",
@@ -252,7 +255,8 @@ export const categories = [
     value: "shorts",
     audience: "mens",
     image: "/images/editorial/category-shorts.webp",
-    garmentImage: "/images/products/mens-training-short/master-signal-blue-front.webp",
+    garmentImage:
+      "/images/products/mens-training-short/master-signal-blue-front.webp",
   },
   {
     name: "Tees",
@@ -545,7 +549,10 @@ export const helpContent: Record<string, HelpSection[]> = {
     },
   ],
   "/policies/privacy-policy": [
-    { heading: "Optional analytics", text: "With your permission, we use PostHog to measure page visits, referral sources, link clicks, form starts and completed requests. Analytics does not include form contents, names, email addresses or session recordings. We store your choice in this browser; after you allow analytics, a session identifier and a first-party cookie lasting up to 30 minutes connect actions during your visit. PostHog processes the analytics and ordinary connection information. We disable location enrichment and do not create identified customer profiles. Decline to browse without PostHog, or change your choice using Analytics settings. We respect browser Do Not Track and Global Privacy Control signals. Essential form and checkout storage is separate." },
+    {
+      heading: "Optional analytics",
+      text: "With your permission, we use PostHog to measure page visits, referral sources, link clicks, form starts and completed requests. Analytics does not include form contents, names, email addresses or session recordings. We store your choice in this browser; after you allow analytics, a session identifier and a first-party cookie lasting up to 30 minutes connect actions during your visit. PostHog processes the analytics and ordinary connection information. With the same permission, Vercel Speed Insights measures page performance using technical timing data and page paths, without form contents or session recordings. We disable location enrichment and do not create identified customer profiles. Decline to browse without these optional analytics, or change your choice using Analytics settings. We respect browser Do Not Track and Global Privacy Control signals. Essential form and checkout storage is separate.",
+    },
     {
       heading: "Who we are",
       text: "Moravel Athletic runs this website. For any privacy question or request, use our contact form.",

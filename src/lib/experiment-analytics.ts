@@ -1,10 +1,11 @@
 // Shared fleet tracking contract. Do not pass form values or customer identifiers.
-export const analyticsConsentKey = "experiment-analytics-consent-v1";
-export const analyticsCookie = "experiment_analytics";
+export const analyticsConsentKey = "experiment-analytics-consent-v2";
+export const analyticsCookie = "experiment_analytics_v2";
 export const analyticsEvents = [
   "$pageview",
   "cta_clicked",
   "form_started",
+  "form_submitted",
   "outbound_clicked",
   "trial_requested",
   "quote_requested",
@@ -36,6 +37,8 @@ export const propertyKeys = new Set([
   "site_type",
   "environment",
   "experiment_id",
+  "experiment_arm",
+  "pair_id",
   "destination_host",
   "destination_path",
   "form_type",
@@ -77,4 +80,27 @@ export function parseAnalyticsCookie(value?: string) {
   return parts.length === 2 && parts.every((part) => uuid.test(part))
     ? { distinctId: parts[0], sessionId: parts[1] }
     : null;
+}
+
+/** Keep receipt/auth tokens and private confirmation routes out of performance telemetry. */
+export function performanceEvent<T extends { url: string; route?: string }>(
+  event: T,
+): T | null {
+  try {
+    const url = new URL(event.url);
+    if (
+      !/^https?:$/.test(url.protocol) ||
+      /\/(payment|confirmation|unsubscribe|receipt|account|login|auth)(\/|$)/i.test(
+        url.pathname,
+      )
+    )
+      return null;
+    return {
+      ...event,
+      url: url.origin + safePath(url.pathname),
+      ...(event.route ? { route: safePath(event.route) } : {}),
+    };
+  } catch {
+    return null;
+  }
 }
