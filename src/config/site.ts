@@ -110,7 +110,7 @@ export const site = {
   line: LINE,
 
   /** Canonical public origin, no trailing slash. Overridden by NEXT_PUBLIC_SITE_URL. */
-  origin: "https://moravel-athletic.vercel.app",
+  origin: "https://moravelathletic.com",
 
   locale: "en-US",
   lang: "en",
