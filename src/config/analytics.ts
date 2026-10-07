@@ -1,5 +1,5 @@
 export const analyticsSite = {
-  experimentArm: "test",
+  experimentArm: "control",
   pairId: "activewear",
   id: "moravel-athletic",
   kind: "brand",
