@@ -1,4 +1,6 @@
-import { cookies } from "next/headers";
+import { submissionAttribution } from "./visit-attribution-server";
+import { attributionProperties, parseAttribution } from "./visit-attribution";
+import { cookies, headers } from "next/headers";
 import { createHash } from "node:crypto";
 import { analyticsSite } from "@/config/analytics";
 import {
@@ -27,6 +29,12 @@ export async function captureConversion(
       )
     )
       return;
+    const requestHeaders = await headers();
+    if (
+      requestHeaders.get("sec-gpc") === "1" ||
+      requestHeaders.get("dnt") === "1"
+    )
+      return;
     const identity = parseAnalyticsCookie(
       (await cookies()).get(analyticsCookie)?.value,
     );
@@ -39,6 +47,9 @@ export async function captureConversion(
         api_key: token,
         event,
         properties: {
+          ...attributionProperties(
+            parseAttribution(await submissionAttribution()),
+          ),
           ...allowedProperties(properties),
           distinct_id: identity.distinctId,
           $session_id: identity.sessionId,

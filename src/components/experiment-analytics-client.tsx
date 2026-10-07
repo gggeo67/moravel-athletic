@@ -3,6 +3,18 @@
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import posthog from "posthog-js";
+import { Analytics } from "@vercel/analytics/next";
+import { track as vercelTrack } from "@vercel/analytics";
+import {
+  updateAttribution,
+  clearAttribution,
+  rememberArrival,
+} from "@/lib/visit-attribution-browser";
+import {
+  attributionProperties,
+  privatePath,
+  webAnalyticsEvent,
+} from "@/lib/visit-attribution";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { analyticsSite } from "@/config/analytics";
 import {
@@ -43,6 +55,7 @@ function permitted() {
   return enabled && !blocked() && consent() === "allowed";
 }
 function eraseCookie() {
+  clearAttribution();
   document.cookie = `${analyticsCookie}=; Path=/; Max-Age=0; SameSite=Lax`;
 }
 function syncCookie() {
@@ -58,7 +71,18 @@ function capture(
 ) {
   if (!initialized || !permitted()) return;
   syncCookie();
+  const attribution = attributionProperties(updateAttribution());
+  if (privatePath(location.pathname)) return;
+  if (environment === "production" && event !== "$pageview") {
+    vercelTrack(event, {
+      site_id: analyticsSite.id,
+      source: attribution.latest_source ?? "unknown",
+      path: safePath(location.pathname),
+      ...properties,
+    });
+  }
   posthog.capture(event, {
+    ...attribution,
     ...properties,
     site_id: analyticsSite.id,
     site_type: analyticsSite.kind,
@@ -125,6 +149,7 @@ export function ExperimentAnalytics() {
       if (value === "allowed") initialize();
       else eraseCookie();
     };
+    rememberArrival();
     // Read initial attribution in memory only; nothing is sent before consent.
     const referrer = safeReferrer(document.referrer);
     const query = new URLSearchParams(location.search);
@@ -147,6 +172,16 @@ export function ExperimentAnalytics() {
     initialize();
     if (lastPage.current !== pathname) {
       capture("$pageview", lastPage.current ? {} : (arrival.current ?? {}));
+      if (String(analyticsSite.kind) === "publisher") {
+        const section = pathname.split("/").filter(Boolean)[0] ?? "home";
+        if (
+          /^(reviews|guides|compare|comparisons|changes|plans|tools|destinations|planning|articles|resources)$/.test(
+            section,
+          ) &&
+          pathname.split("/").filter(Boolean).length > 1
+        )
+          capture("article_viewed", { content_section: section });
+      }
       lastPage.current = pathname;
     }
   }, [pathname, choice]);
@@ -162,6 +197,11 @@ export function ExperimentAnalytics() {
       if (!/^https?:$/.test(url.protocol)) return;
       if (url.origin !== location.origin)
         capture("outbound_clicked", {
+          link_position: link.closest("header")
+            ? "header"
+            : link.closest("footer")
+              ? "footer"
+              : "content",
           destination_host: url.hostname,
           destination_path: safePath(url.pathname),
         });
@@ -215,11 +255,20 @@ export function ExperimentAnalytics() {
   return (
     <div className={styles.root}>
       {choice === "allowed" && environment === "production" && (
-        <SpeedInsights
-          sampleRate={1}
-          debug={false}
-          beforeSend={(event) => (permitted() ? performanceEvent(event) : null)}
-        />
+        <>
+          <Analytics
+            beforeSend={(event) =>
+              permitted() ? webAnalyticsEvent(event) : null
+            }
+          />
+          <SpeedInsights
+            sampleRate={1}
+            debug={false}
+            beforeSend={(event) =>
+              permitted() ? performanceEvent(event) : null
+            }
+          />
+        </>
       )}
       {open ? (
         <section className={styles.panel} aria-label="Analytics preferences">
@@ -227,9 +276,11 @@ export function ExperimentAnalytics() {
             Optional analytics{analyticsSite.adultOnly ? " for grown-ups" : ""}
           </strong>
           <p>
-            Allow PostHog to measure visits, referral sources and requests, and
-            Vercel to measure page performance? No form contents or session
-            recordings. <a href={analyticsSite.privacy}>Privacy details</a>.
+            Allow PostHog and Vercel to measure visits, referral sources,
+            requests and page performance? We remember visit sources for up to
+            90 days and attach them to requests you submit. No form contents are
+            sent to analytics, and no session recordings.{" "}
+            <a href={analyticsSite.privacy}>Privacy details</a>.
           </p>
           <div className={styles.actions}>
             <button type="button" onClick={() => choose("declined")}>

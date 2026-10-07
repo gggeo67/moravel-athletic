@@ -1,3 +1,4 @@
+import { submissionAttribution } from "@/lib/visit-attribution-server";
 import { neon } from "@neondatabase/serverless";
 
 /**
@@ -49,11 +50,11 @@ export async function insertOrder(
     await sql`
       insert into orders
         (status, order_ref, name, email, address1, address2, city, state, zip,
-         product, size, color, quantity, unit_price, recipient_name, recipient_email)
+         product, size, color, quantity, unit_price, recipient_name, recipient_email, attribution)
       values
         ('awaiting_restock', ${orderRef}, ${contact.name}, ${contact.email}, ${contact.address1},
          ${contact.address2}, ${contact.city}, ${contact.state}, ${contact.zip},
-         ${line.product}, ${line.size}, ${line.color}, ${line.quantity}, ${line.unitPrice}, ${line.recipientName ?? null}, ${line.recipientEmail ?? null})
+         ${line.product}, ${line.size}, ${line.color}, ${line.quantity}, ${line.unitPrice}, ${line.recipientName ?? null}, ${line.recipientEmail ?? null}, ${await submissionAttribution()}::jsonb)
     `;
   }
 }
@@ -71,7 +72,10 @@ export async function findOrder(
 }
 
 /** Whether this order has a live restock opt-in. */
-export async function hasRestockOptIn(sql: Sql, orderRef: string): Promise<boolean> {
+export async function hasRestockOptIn(
+  sql: Sql,
+  orderRef: string,
+): Promise<boolean> {
   const rows = (await sql`
     select 1 from email_subscribers
     where order_ref = ${orderRef} and source = 'restock' and status = 'subscribed'

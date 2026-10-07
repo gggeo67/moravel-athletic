@@ -1,8 +1,9 @@
 // Shared fleet tracking contract. Do not pass form values or customer identifiers.
-export const analyticsConsentKey = "experiment-analytics-consent-v2";
-export const analyticsCookie = "experiment_analytics_v2";
+export const analyticsConsentKey = "experiment-analytics-consent-v3";
+export const analyticsCookie = "experiment_analytics_v3";
 export const analyticsEvents = [
   "$pageview",
+  "article_viewed",
   "cta_clicked",
   "form_started",
   "form_submitted",
@@ -33,6 +34,15 @@ export const propertyKeys = new Set([
   "utm_source",
   "utm_medium",
   "utm_campaign",
+  "utm_content",
+  "utm_term",
+  "first_source",
+  "latest_source",
+  "last_non_direct_source",
+  "landing_path",
+  "first_landing_path",
+  "content_section",
+  "link_position",
   "site_id",
   "site_type",
   "environment",

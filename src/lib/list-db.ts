@@ -1,3 +1,4 @@
+import { submissionAttribution } from "@/lib/visit-attribution-server";
 import { randomBytes } from "node:crypto";
 import type { neon } from "@neondatabase/serverless";
 
@@ -48,11 +49,12 @@ export async function upsertSubscriber(
   const email = input.email.trim().toLowerCase();
   const rows = (await sql`
     insert into email_subscribers
-      (brand, email, source, product, order_ref, consent_text, consent_version, unsubscribe_token, is_test)
+      (brand, email, source, product, order_ref, consent_text, consent_version, unsubscribe_token, is_test, attribution)
     values
       (${input.brand}, ${email}, ${input.source}, ${input.product ?? null}, ${input.orderRef ?? null},
-       ${input.consentText}, ${CONSENT_VERSION}, ${newToken()}, ${isTestEmail(email)})
+       ${input.consentText}, ${CONSENT_VERSION}, ${newToken()}, ${isTestEmail(email)}, ${await submissionAttribution()}::jsonb)
     on conflict (brand, email, source, product) do update set
+      attribution = case when excluded.attribution is null then email_subscribers.attribution when email_subscribers.attribution is null then excluded.attribution else excluded.attribution || jsonb_build_object('first', email_subscribers.attribution->'first') end,
       status = 'subscribed',
       consent_text = excluded.consent_text,
       consent_version = excluded.consent_version,
@@ -97,7 +99,10 @@ export type ContactInput = {
 };
 
 /** Messages from this email in the last 24 hours, for the 5-per-day limit. */
-export async function recentContactCount(sql: Sql, email: string): Promise<number> {
+export async function recentContactCount(
+  sql: Sql,
+  email: string,
+): Promise<number> {
   const [{ n }] = (await sql`
     select count(*)::int as n from contact_messages
     where email = ${email} and created_at > now() - interval '1 day'
