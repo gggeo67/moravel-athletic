@@ -1,4 +1,5 @@
 "use client";
+import { RequestSourceNotice } from "@/components/request-source-provider";
 import { useActionState } from "react";
 import { subscribe, type SubscribeState } from "@/app/actions/subscribe";
 import { storefront } from "@/config/site";
@@ -42,6 +43,7 @@ export function Newsletter() {
             {storefront.newsletter.consent}
           </label>
           <p role="status">{state.message}</p>
+          <RequestSourceNotice />
         </form>
       </div>
     </section>

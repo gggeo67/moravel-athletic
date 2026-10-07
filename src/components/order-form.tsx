@@ -1,5 +1,6 @@
 "use client";
 
+import { RequestSourceNotice } from "@/components/request-source-provider";
 import { listConsent, restock } from "@/config/site";
 import { useActionState } from "react";
 import { submitOrder } from "@/app/actions/order";
@@ -142,6 +143,7 @@ export function OrderForm({ lines }: { lines: CartLine[] }) {
         {state.status === "error" ? state.message : ""}
       </p>
       <p className="text-sm text-muted-foreground">{restock.checkoutNotice}</p>
+      <RequestSourceNotice />
     </form>
   );
 }

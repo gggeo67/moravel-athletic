@@ -1,3 +1,4 @@
+import { currentRequestSource } from "@/lib/request-source-server";
 import { submissionAttribution } from "@/lib/visit-attribution-server";
 import { randomBytes } from "node:crypto";
 import type { neon } from "@neondatabase/serverless";
@@ -49,10 +50,10 @@ export async function upsertSubscriber(
   const email = input.email.trim().toLowerCase();
   const rows = (await sql`
     insert into email_subscribers
-      (brand, email, source, product, order_ref, consent_text, consent_version, unsubscribe_token, is_test, attribution)
+      (brand, email, source, product, order_ref, consent_text, consent_version, unsubscribe_token, is_test, attribution, request_source)
     values
       (${input.brand}, ${email}, ${input.source}, ${input.product ?? null}, ${input.orderRef ?? null},
-       ${input.consentText}, ${CONSENT_VERSION}, ${newToken()}, ${isTestEmail(email)}, ${await submissionAttribution()}::jsonb)
+       ${input.consentText}, ${CONSENT_VERSION}, ${newToken()}, ${isTestEmail(email)}, ${await submissionAttribution()}::jsonb, ${currentRequestSource()}::jsonb)
     on conflict (brand, email, source, product) do update set
       attribution = case when excluded.attribution is null then email_subscribers.attribution when email_subscribers.attribution is null then excluded.attribution else excluded.attribution || jsonb_build_object('first', email_subscribers.attribution->'first') end,
       status = 'subscribed',

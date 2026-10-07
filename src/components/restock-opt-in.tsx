@@ -1,5 +1,6 @@
 "use client";
 
+import { RequestSourceNotice } from "@/components/request-source-provider";
 import { useActionState } from "react";
 import { optInRestock, type RestockOptInState } from "@/app/actions/restock";
 import { listConsent, restock } from "@/config/site";
@@ -28,6 +29,7 @@ export function RestockOptIn({ orderRef }: { orderRef: string }) {
       <p aria-live="polite" className="text-sm text-destructive">
         {state.status === "error" ? state.message : ""}
       </p>
+      <RequestSourceNotice />
     </form>
   );
 }

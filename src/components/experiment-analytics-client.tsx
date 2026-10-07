@@ -1,5 +1,6 @@
 "use client";
 
+import { RequestSourceProvider } from "./request-source-provider";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import posthog from "posthog-js";
@@ -133,7 +134,7 @@ function initialize() {
   syncCookie();
 }
 
-export function ExperimentAnalytics() {
+function ExistingExperimentAnalytics() {
   const pathname = usePathname();
   const [choice, setChoice] = useState<string | null>("loading");
   const [open, setOpen] = useState(false);
@@ -282,6 +283,11 @@ export function ExperimentAnalytics() {
             sent to analytics, and no session recordings.{" "}
             <a href={analyticsSite.privacy}>Privacy details</a>.
           </p>
+          <p>
+            For eligible US visits, a request may also include the source of
+            this visit. You can opt out on the form or choose Decline here.{" "}
+            <a href={analyticsSite.privacy}>Details</a>.
+          </p>
           <div className={styles.actions}>
             <button type="button" onClick={() => choose("declined")}>
               Decline
@@ -310,5 +316,14 @@ export function ExperimentAnalytics() {
         </button>
       )}
     </div>
+  );
+}
+
+export function ExperimentAnalytics() {
+  return (
+    <>
+      <RequestSourceProvider />
+      <ExistingExperimentAnalytics />
+    </>
   );
 }

@@ -1,3 +1,4 @@
+import { currentRequestSource } from "@/lib/request-source-server";
 import { submissionAttribution } from "@/lib/visit-attribution-server";
 import { neon } from "@neondatabase/serverless";
 
@@ -50,11 +51,11 @@ export async function insertOrder(
     await sql`
       insert into orders
         (status, order_ref, name, email, address1, address2, city, state, zip,
-         product, size, color, quantity, unit_price, recipient_name, recipient_email, attribution)
+         product, size, color, quantity, unit_price, recipient_name, recipient_email, attribution, request_source)
       values
         ('awaiting_restock', ${orderRef}, ${contact.name}, ${contact.email}, ${contact.address1},
          ${contact.address2}, ${contact.city}, ${contact.state}, ${contact.zip},
-         ${line.product}, ${line.size}, ${line.color}, ${line.quantity}, ${line.unitPrice}, ${line.recipientName ?? null}, ${line.recipientEmail ?? null}, ${await submissionAttribution()}::jsonb)
+         ${line.product}, ${line.size}, ${line.color}, ${line.quantity}, ${line.unitPrice}, ${line.recipientName ?? null}, ${line.recipientEmail ?? null}, ${await submissionAttribution()}::jsonb, ${currentRequestSource()}::jsonb)
     `;
   }
 }

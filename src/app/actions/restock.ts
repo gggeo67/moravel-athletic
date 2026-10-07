@@ -1,4 +1,5 @@
 "use server";
+import { withRequestSource } from "@/lib/request-source-server";
 import { captureConversion } from "@/lib/experiment-analytics-server";
 
 import { listConsent, site } from "@/config/site";
@@ -22,37 +23,41 @@ export async function optInRestock(
   _prev: RestockOptInState,
   form: FormData,
 ): Promise<RestockOptInState> {
-  const ref = form.get("ref");
-  if (!isOrderRef(ref))
-    return { status: "error", message: "We couldn't find that order." };
-  if (form.get("restock_optin") !== "on")
-    return { status: "error", message: "Tick the box to get the email." };
-
-  const sql = getSql();
-  if (!sql)
-    return {
-      status: "error",
-      message: "We couldn't save that. Try again in a few minutes.",
-    };
-  try {
-    const order = await findOrder(sql, ref);
-    if (!order)
+  return withRequestSource(form, async () => {
+    const ref = form.get("ref");
+    if (!isOrderRef(ref))
       return { status: "error", message: "We couldn't find that order." };
-    await upsertSubscriber(sql, {
-      brand: site.key,
-      email: order.email,
-      source: "restock",
-      product: restockProduct(order.products),
-      orderRef: ref,
-      consentText: listConsent.restock,
-    });
-    await captureConversion("restock_signup_saved", ref, { is_test: /@example\.(com|org|net)$/i.test(order.email) });
-    return { status: "success", message: "" };
-  } catch (error) {
-    console.error("[restock] opt-in failed:", error);
-    return {
-      status: "error",
-      message: "Something went wrong saving that. Try again.",
-    };
-  }
+    if (form.get("restock_optin") !== "on")
+      return { status: "error", message: "Tick the box to get the email." };
+
+    const sql = getSql();
+    if (!sql)
+      return {
+        status: "error",
+        message: "We couldn't save that. Try again in a few minutes.",
+      };
+    try {
+      const order = await findOrder(sql, ref);
+      if (!order)
+        return { status: "error", message: "We couldn't find that order." };
+      await upsertSubscriber(sql, {
+        brand: site.key,
+        email: order.email,
+        source: "restock",
+        product: restockProduct(order.products),
+        orderRef: ref,
+        consentText: listConsent.restock,
+      });
+      await captureConversion("restock_signup_saved", ref, {
+        is_test: /@example\.(com|org|net)$/i.test(order.email),
+      });
+      return { status: "success", message: "" };
+    } catch (error) {
+      console.error("[restock] opt-in failed:", error);
+      return {
+        status: "error",
+        message: "Something went wrong saving that. Try again.",
+      };
+    }
+  });
 }

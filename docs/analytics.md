@@ -31,3 +31,12 @@ Consent v3 adds Vercel Web Analytics and 90-day, same-browser first/latest/lates
 Brand database submissions store an attribution JSON snapshot in the same write as the submission. Existing rows remain NULL. Re-subscriptions keep their original first touch and update the latest touch when consented attribution exists. Browser-provided attribution is unverified evidence, not proof of engine origin or payment. Database failure handling remains the existing submission behavior.
 
 Publishers record article_viewed for recognized article routes, pageviews for all public routes, and outbound_clicked with destination and header/footer/content position. No publisher databases or experimental-brand placements were added. Vercel events exclude private routes and retain only allowed UTMs; PostHog receives no customer fields.
+
+## Current-request sources
+
+Prepared behind REQUEST_SOURCE_ENABLED (default off). US-only server validation, DNT/GPC and opt-out respected. No new browser storage or identifiers. Current request_source is separate from consented 90-day attribution. Run scripts/migrate-request-source.ts before deploying. Daily authenticated cron exports aggregate counts only and clears source fields after 90 days. Report query: docs/request-source-report.sql. Inkle/Jomli stay disabled pending audience review.
+
+The daily job runs at 08:15 UTC with a Vercel-managed CRON_SECRET header. `request_source_daily_snapshot` contains aggregate counts only, and `request_source_report_run` records freshness even when counts are zero. A missing site or an export older than 36 hours requires investigation. Do not divide these request totals by consent-only visitors. Sources are observations, not verified identities or causal proof.
+
+Dashboard: https://us.posthog.com/project/647412/dashboard/2179464
+Review sites continue their existing opt-in page/article/outbound analytics; no customer database or cross-site visitor tracking is added.
