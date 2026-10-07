@@ -40,3 +40,5 @@ The daily job runs at 08:15 UTC with a Vercel-managed CRON_SECRET header. `reque
 
 Dashboard: https://us.posthog.com/project/647412/dashboard/2179464
 Review sites continue their existing opt-in page/article/outbound analytics; no customer database or cross-site visitor tracking is added.
+
+The request-form source opt-out suppresses both the new request_source and existing consented attribution on that submission, even if detailed analytics was previously allowed. It does not retroactively delete earlier requests.

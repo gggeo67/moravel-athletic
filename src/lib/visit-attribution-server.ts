@@ -1,9 +1,11 @@
+import { requestSourceOptedOut } from "./request-source-server";
 import { cookies, headers } from "next/headers";
 import { attributionCookie, parseAttribution } from "./visit-attribution";
 import { analyticsCookie, parseAnalyticsCookie } from "./experiment-analytics";
 /** Null is expected for declined/blocked/missing/expired attribution. Never guesses. */
 export async function submissionAttribution(): Promise<string | null> {
   try {
+    if (requestSourceOptedOut()) return null;
     const h = await headers();
     if (h.get("sec-gpc") === "1" || h.get("dnt") === "1") return null;
     const jar = await cookies();

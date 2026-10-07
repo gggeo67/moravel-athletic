@@ -31,15 +31,12 @@ export function RequestSourceProvider() {
     }
     function attach(event: Event) {
       const e = event as FormDataEvent;
-      if (
-        !eligible ||
-        blocked() ||
-        !arrival ||
-        e.formData.get("request_source_opt_out") === "on"
-      ) {
+      if (blocked() || e.formData.get("request_source_opt_out") === "on") {
+        e.formData.set("request_source_opt_out", "on");
         e.formData.delete("request_source");
         return;
       }
+      if (!eligible || !arrival) { e.formData.delete("request_source"); return; }
       e.formData.set("request_source", JSON.stringify(arrival));
     }
     function optOut() {

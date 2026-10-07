@@ -26,19 +26,14 @@ export async function submissionRequestSource(
   }
 }
 
+
 // Request-local context isolates simultaneous submissions; no global visitor state.
 import { AsyncLocalStorage } from "node:async_hooks";
-const sourceContext = new AsyncLocalStorage<string | null>();
-export async function withRequestSource<T>(
-  form: FormData,
-  work: () => Promise<T>,
-): Promise<T> {
-  const source =
-    form.get("request_source_opt_out") === "on"
-      ? null
-      : await submissionRequestSource(form.get("request_source"));
-  return sourceContext.run(source, work);
+const sourceContext = new AsyncLocalStorage<{ source: string | null; optedOut: boolean }>();
+export async function withRequestSource<T>(form: FormData, work: () => Promise<T>): Promise<T> {
+  const optedOut = form.get("request_source_opt_out") === "on";
+  const source = optedOut ? null : await submissionRequestSource(form.get("request_source"));
+  return sourceContext.run({ source, optedOut }, work);
 }
-export function currentRequestSource(): string | null {
-  return sourceContext.getStore() ?? null;
-}
+export function currentRequestSource(): string | null { return sourceContext.getStore()?.source ?? null; }
+export function requestSourceOptedOut(): boolean { return sourceContext.getStore()?.optedOut === true; }
