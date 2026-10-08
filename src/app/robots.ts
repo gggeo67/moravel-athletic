@@ -20,6 +20,8 @@ export default function robots(): MetadataRoute.Robots {
   // OAI-SearchBot builds the ChatGPT Search index; ChatGPT-User fetches live
   // for a user; GPTBot collects training data and is configured separately.
   const rules: MetadataRoute.Robots["rules"] = [
+    { userAgent: "ClaudeBot", disallow: "/" },
+    { userAgent: "Google-Extended", disallow: "/" },
     { userAgent: "*", allow: "/", disallow },
     { userAgent: "OAI-SearchBot", allow: "/", disallow },
     { userAgent: "ChatGPT-User", allow: "/", disallow },
